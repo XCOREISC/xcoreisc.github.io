@@ -28,7 +28,7 @@ body{background:#fff;font-family:'Open Sans',sans-serif;font-size:16px;font-weig
 .invitacion .mail input{background:#1c6a8c}
 .invitacion .submit{color:#fff;float:left;position:relative;width:50px;}
 .invitacion .submit:before{color:#a3c4d7;font-size:18px;left:15px;position:absolute;top:10px}
-.invitacion .submit input{background:#1277ad;border-radius:0 20px 20px 0;cursor:pointer;line-height:37px;font-size:0}
+.invitacion .submit input{background:#1277ad;border-radius:0 20px 20px 0;cursor:pointer;line-height:40px;font-size:0}
 .invitacion input{border:none;box-sizing:border-box;color:#fff;font-size:17px;line-height:30px;outline:0;padding-left:10px;width:100%}
 .invitacion input::-webkit-input-placeholder{color:#fff}
 .escenarios{margin-top:50px;text-align:center;}
