@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1">
+    <title>Full Day PreCOREISC UNPRG</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/landing.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="contenido">
+            <h1 class="titulo">
+                <strong>Full Day </strong><span>PreCOREISC UNPRG</span>
+            </h1>
+            <p class="texto">
+                EL Mayor festival tecnológico donde se unen innovación, creatividad, ciencia y entretenimiento digital. Nuestro objetivo es crear la mayor comunidad Geek de la tierra y difundir el conocimiento.
+            </p>
+        </div>
+        <div class="degradado"></div>
+    </header>
+    <section class="contenedor">
+        <section class="invitacion">
+            <h2 class="titulo">
+                Recibe toda la información
+            </h2>
+            <form action="" method="post" class="formulario">
+                <div class="contForm1">
+                    <div class="contForm2">
+                        <div class="name icon-user">
+                            <input type="text" id="id_name" name="name" required placeholder="Nombre">
+                        </div>
+                        <div class="mail icon-at">
+                            <input type="text" id="id_name" name="email" required placeholder="Mail">
+                        </div>
+                        <div class="submit icon-check">
+                            <input type="submit" value="enviar"/>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </section>
+
+        <section class="escenarios">
+            <article class="escenario">
+                <h2 class="nombre">
+                    Auditorio FICSA
+                </h2>
+                <h3 class="slogan">
+                    descripción / eslogan
+                </h3>
+                <div class="imagen">
+                    <img src="images\escenario.jpg" alt="Auditorio-FICSA">
+                </div>
+                <div class="texto">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, cumque iure repellendus illum minima pariatur earum dicta! Repellat, praesentium molestias voluptatem modi delectus sunt voluptate sequi rem doloremque ullam enim.
+                    </p>
+                </div>
+                <a href="{% url 'speakers' scenario.name %}" class="vermas">
+                    ver más
+                </a>
+            </article>
+            <article class="escenario">
+                <h2 class="nombre">
+                    Auditorio Central UNPRG
+                </h2>
+                <h3 class="slogan">
+                    123
+                </h3>
+                <div class="imagen">
+                    <img src="images\escenario.jpg" alt="Auditorio-Central">
+                </div>
+                <div class="texto">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, cumque iure repellendus illum minima pariatur earum dicta! Repellat, praesentium molestias voluptatem modi delectus sunt voluptate sequi rem doloremque ullam enim.
+                    </p>
+                </div>
+                <a href="{% url 'speakers' scenario.name %}" class="vermas">
+                    ver más
+                </a>
+            </article>           
+        </section>
+
+        <section class="conferencias">
+            <article class="conferencia">
+                <div class="header-conf">
+                    <div class="imagen">
+                        <img src="images/avatar.jpg" width="86" alt="nombre-speaker">
+                    </div>
+                    <div class="nombre">
+                        <p>Nombre Ponente</p>
+                    </div>
+                </div>
+                <div class="descripcion">
+                    <p>
+                        Descripción ponencia
+                    </p>
+                </div>
+
+            </article>
+        </section>
+
+        
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/csrf_ajax.js"></script>
+    <script src="js/landing.js"></script>
+</body>
+</html>
