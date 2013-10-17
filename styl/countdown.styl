@@ -1,0 +1,17 @@
+@import "__constants/variables.styl"
+@import "__constants/mixins.styl"
+
+dl
+	font-size 0
+	padding (BASE_SPACE/2) 0
+	text-align center
+	& dt
+		font-size BASE_SPACE
+		display inline-block
+		vertical-align middle
+		margin-left BASE_SPACE
+		& span
+			display block
+			color COLOR_WHITE
+		&:first-child
+			margin-left -(BASE_SPACE/2)

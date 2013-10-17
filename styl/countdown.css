@@ -1,0 +1,18 @@
+dl {
+  font-size: 0;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+dl dt {
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+dl dt span {
+  display: block;
+  color: #ebedee;
+}
+dl dt:first-child {
+  margin-left: -0.5rem;
+}
