@@ -7,11 +7,22 @@
 	display block
 	text-align center
 	clearfix()
-	padding 0 BASE_SPACE
 	// Tittle
 	& h1 
 		color COLOR_WHITE
 		padding (BASE_SPACE/2) 0
+		background-color COLOR_THEME
+		margin-bottom BASE_SPACE
+	& h2
+		position absolute
+		display block
+		transform rotate(45deg)
+		right -15%
+		top BASE_SPACE
+		background-color COLOR_WHITE
+		color COLOR_THEME
+		padding (BASE_SPACE/2) 0
+		width 50%
 	// Menu button
 	& > a 
 		color COLOR_WHITE
@@ -31,6 +42,7 @@
 			position relative
 			//top -(BASE_SPACE/1.5)
 			color COLOR_WHITE
+			font-style normal
 		& span 
 			display inline-block
 			color COLOR_THEME
@@ -44,9 +56,11 @@
 			top -(BASE_SPACE)
 
 	& address
+		padding-left BASE_SPACE
 		& span
 			float left
 	& time
+		padding-right BASE_SPACE
 		& span
 			float right
 

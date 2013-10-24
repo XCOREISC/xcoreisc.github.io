@@ -2,7 +2,6 @@
 [role="header"] {
   display: block;
   text-align: center;
-  padding: 0 1rem;
 /*
 	& address	
 		&:before
@@ -35,6 +34,23 @@
 [role="header"] h1 {
   color: #ebedee;
   padding: 0.5rem 0;
+  background-color: #3498db;
+  margin-bottom: 1rem;
+}
+[role="header"] h2 {
+  position: absolute;
+  display: block;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: -15%;
+  top: 1rem;
+  background-color: #ebedee;
+  color: #3498db;
+  padding: 0.5rem 0;
+  width: 50%;
 }
 [role="header"] > a {
   color: #ebedee;
@@ -58,6 +74,7 @@
 [role="header"] address>strong {
   position: relative;
   color: #ebedee;
+  font-style: normal;
 }
 [role="header"] time span,
 [role="header"] address span {
@@ -77,8 +94,14 @@
   position: relative;
   top: -1rem;
 }
+[role="header"] address {
+  padding-left: 1rem;
+}
 [role="header"] address span {
   float: left;
+}
+[role="header"] time {
+  padding-right: 1rem;
 }
 [role="header"] time span {
   float: right;
