@@ -1,0 +1,53 @@
+@import "__constants/variables.styl"
+@import "__constants/mixins.styl"
+.schedule
+	text-align center
+	background-color COLOR_WHITE
+	width 100%
+	border-radius (BASE_SPACE/2)
+	border-spacing 0
+	border-collapse collapse
+	empty-cells show
+	& * 
+		padding (BASE_SPACE/2) 0
+	& th
+		color COLOR_WHITE
+		background-color COLOR_GREEN
+	& tr 
+		background-color lighten(COLOR_THEME,50%)
+		// Todas las horas
+		&:nth-child(n)
+			& td
+				&:nth-child(1)
+					background-color COLOR_GREEN
+		// Entrega de Materiales	
+		&:nth-child(1)
+			& td
+				&:nth-child(2)
+					background-color COLOR_BRIGHT
+		//Todas Las Conferencias 
+		&:nth-child(2),&:nth-child(3),&:nth-child(6),&:nth-child(7)
+			& td
+				&:nth-child(2),&:nth-child(3),&:nth-child(4)
+					background-color COLOR_TURQUOSE
+		//CONFERENCIAS iGNITE
+		&:nth-child(4)
+			& td
+				&:nth-child(2)
+					background-color COLOR_THEME
+		//BREAK
+		&:nth-child(5)
+			& td
+				&:nth-child(2)
+					background-color COLOR_RED
+
+		&:nth-child(6),&:nth-child(7)
+			& td
+				&:nth-child(3),&:nth-child(4)
+					background-color COLOR_ORANGE
+		&:nth-child(8)
+			& td
+				&:nth-child(2)
+					background-color COLOR_PURPLE
+				&:nth-child(3)
+					background-color COLOR_ORANGE

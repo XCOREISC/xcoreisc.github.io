@@ -14,15 +14,40 @@
 		background-color COLOR_THEME
 		margin-bottom BASE_SPACE
 	& h2
+		
+		/********* Style 1 - Tag Rotate ********
 		position absolute
-		display block
-		transform rotate(45deg)
 		right -15%
 		top BASE_SPACE
 		background-color COLOR_WHITE
 		color COLOR_THEME
 		padding (BASE_SPACE/2) 0
 		width 50%
+		transform rotate(45deg)
+		*/
+
+		/********* Style 2 - Ribbon ********/
+		background-color COLOR_GREEN
+		color COLOR_WHITE
+		width 60%
+		block-center()
+		border-radius .1rem 
+		padding (BASE_SPACE/4) 0
+		margin-bottom BASE_SPACE
+		&:before,&:after
+			content ""
+			position absolute
+			border-style: solid
+			border-width: BASE_SPACE
+			top BASE_SPACE*4.5
+			z-index -1
+		&:before
+			border-color: darken(COLOR_GREEN,10%) rgba(0, 0, 0, 0) darken(COLOR_GREEN,10%) darken(COLOR_GREEN,10%)  
+			right 15%
+		&:after
+			border-color: darken(COLOR_GREEN,10%)   darken(COLOR_GREEN,10%)   darken(COLOR_GREEN,10%) rgba(0, 0, 0, 0) 
+			left 15%
+		/** ./END Style 2 ***/
 	// Menu button
 	& > a 
 		color COLOR_WHITE

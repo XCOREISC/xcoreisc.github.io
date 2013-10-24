@@ -209,3 +209,7 @@ img.portada {
   border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) #ebedee;
   left: 50%;
 }
+.box-shadow-xcoreisc {
+  background-color: #ebedee;
+  color: #34495e;
+}

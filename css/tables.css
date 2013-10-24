@@ -1,0 +1,61 @@
+.schedule {
+  text-align: center;
+  background-color: #ebedee;
+  width: 100%;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  border-spacing: 0;
+  border-collapse: collapse;
+  empty-cells: show;
+}
+.schedule * {
+  padding: 0.5rem 0;
+}
+.schedule th {
+  color: #ebedee;
+  background-color: #16a085;
+}
+.schedule tr {
+  background-color: #99cbed;
+}
+.schedule tr:nth-child(n) td:nth-child(1) {
+  background-color: #16a085;
+}
+.schedule tr:nth-child(1) td:nth-child(2) {
+  background-color: #df9274;
+}
+.schedule tr:nth-child(2) td:nth-child(2),
+.schedule tr:nth-child(3) td:nth-child(2),
+.schedule tr:nth-child(6) td:nth-child(2),
+.schedule tr:nth-child(7) td:nth-child(2),
+.schedule tr:nth-child(2) td:nth-child(3),
+.schedule tr:nth-child(3) td:nth-child(3),
+.schedule tr:nth-child(6) td:nth-child(3),
+.schedule tr:nth-child(7) td:nth-child(3),
+.schedule tr:nth-child(2) td:nth-child(4),
+.schedule tr:nth-child(3) td:nth-child(4),
+.schedule tr:nth-child(6) td:nth-child(4),
+.schedule tr:nth-child(7) td:nth-child(4) {
+  background-color: #14ddb3;
+}
+.schedule tr:nth-child(4) td:nth-child(2) {
+  background-color: #3498db;
+}
+.schedule tr:nth-child(5) td:nth-child(2) {
+  background-color: #e74c3c;
+}
+.schedule tr:nth-child(6) td:nth-child(3),
+.schedule tr:nth-child(7) td:nth-child(3),
+.schedule tr:nth-child(6) td:nth-child(4),
+.schedule tr:nth-child(7) td:nth-child(4) {
+  background-color: #e67e22;
+}
+.schedule tr:nth-child(8) td:nth-child(2) {
+  background-color: #9b59b6;
+}
+.schedule tr:nth-child(8) td:nth-child(3) {
+  background-color: #e67e22;
+}

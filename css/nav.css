@@ -38,19 +38,48 @@
   margin-bottom: 1rem;
 }
 [role="header"] h2 {
-  position: absolute;
+/********* Style 1 - Tag Rotate ********
+		position absolute
+		right -15%
+		top BASE_SPACE
+		background-color COLOR_WHITE
+		color COLOR_THEME
+		padding (BASE_SPACE/2) 0
+		width 50%
+		transform rotate(45deg)
+		*/
+/********* Style 2 - Ribbon ********/
+  background-color: #16a085;
+  color: #ebedee;
+  width: 60%;
   display: block;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  right: -15%;
-  top: 1rem;
-  background-color: #ebedee;
-  color: #3498db;
-  padding: 0.5rem 0;
-  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 0.1rem;
+  -moz-border-radius: 0.1rem;
+  -ms-border-radius: 0.1rem;
+  -o-border-radius: 0.1rem;
+  border-radius: 0.1rem;
+  padding: 0.25rem 0;
+  margin-bottom: 1rem;
+/** ./END Style 2 ***/
+}
+[role="header"] h2:before,
+[role="header"] h2:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 1rem;
+  top: 4.5rem;
+  z-index: -1;
+}
+[role="header"] h2:before {
+  border-color: #149078 rgba(0,0,0,0) #149078 #149078;
+  right: 15%;
+}
+[role="header"] h2:after {
+  border-color: #149078 #149078 #149078 rgba(0,0,0,0);
+  left: 15%;
 }
 [role="header"] > a {
   color: #ebedee;
