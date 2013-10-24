@@ -24,7 +24,7 @@ form button {
   border: none;
   cursor: pointer;
   height: 2.5rem;
-  background-color: COLOR_HEADER;
+  background-color: #3498db;
   color: #ebedee;
   -webkit-border-radius: 0 1rem 1rem 0;
   -moz-border-radius: 0 1rem 1rem 0;
