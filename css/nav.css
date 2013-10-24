@@ -1,0 +1,209 @@
+/******************* RESET ***********************************************-*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+fieldset,
+ul,
+figcaption,
+figure {
+  margin: 0;
+}
+body {
+  background-color: #34495e;
+}
+fieldset,
+ul {
+  padding: 0;
+  border: none;
+}
+/*********************** HEADER ***********************************************/
+[role="header"] {
+  display: block;
+  text-align: center;
+}
+[role="header"]:before,
+[role="header"]:after {
+  content: " ";
+  display: table;
+}
+[role="header"]:after {
+  clear: both;
+}
+[role="header"] h1 {
+  color: #ebedee;
+  background-color: #3498db;
+  padding: 0.5rem 0;
+}
+[role="header"] a {
+  color: #ebedee;
+  position: absolute;
+  top: 0.25rem;
+  left: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+[role="header"] time,
+[role="header"] address {
+  display: block;
+  float: left;
+  width: 40%;
+  margin-top: 2.5rem;
+  color: #ebedee;
+}
+[role="header"] time strong,
+[role="header"] address strong {
+  position: relative;
+  top: -0.6666666666666666rem;
+}
+[role="header"] time span,
+[role="header"] address span {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #3498db;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: #ebedee;
+  padding: 0.25rem;
+  position: relative;
+  top: -1.2rem;
+}
+[role="header"] address:before {
+  content: "";
+  position: absolute;
+  height: 17rem;
+  border-top: 0.25rem solid #ebedee;
+  border-left: 0.25rem solid #ebedee;
+  width: 50%;
+  left: 5%;
+}
+[role="header"] time:before {
+  content: "";
+  position: absolute;
+  height: 17rem;
+  border-top: 0.25rem solid #ebedee;
+  border-right: 0.25rem solid #ebedee;
+  width: 50%;
+  right: 5%;
+}
+[role="header"] img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  float: left;
+  width: 20%;
+  z-index: 2;
+}
+/******************* navigation ***************/
+.menu {
+  background-color: #34495e;
+  position: fixed;
+  overflow-x: scroll;
+  text-shadow: -1rem 0 0rem rgba(0,0,0,0.25) inset;
+}
+.menu > img {
+  display: block;
+  margin: 0.5rem auto;
+  background-color: #ebedee;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 0.4rem solid rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0 0 0.2rem 0.1rem rgba(255,255,255,0.5);
+  -moz-box-shadow: 0 0 0.2rem 0.1rem rgba(255,255,255,0.5);
+  -ms-box-shadow: 0 0 0.2rem 0.1rem rgba(255,255,255,0.5);
+  -o-box-shadow: 0 0 0.2rem 0.1rem rgba(255,255,255,0.5);
+  box-shadow: 0 0 0.2rem 0.1rem rgba(255,255,255,0.5);
+}
+.menu > a {
+  display: block;
+  padding-left: 2rem;
+  border-bottom: 2px solid #415b75;
+  color: #b8bfc3;
+  line-height: 2;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.menu > a > span {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-right: 1rem;
+}
+.menu > ul {
+  display: block;
+  margin-top: 3rem;
+  font-size: 0;
+  color: #b8bfc3;
+}
+.menu > ul:before {
+  content: "Encuentranos en ";
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.menu > ul > li {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 14.285714285714286%;
+}
+.menu > ul > li a {
+  color: #ebedee;
+  text-decoration: none;
+}
+.menu-vertical {
+  width: 240px;
+  height: 100%;
+  top: 0;
+  z-index: 3;
+}
+.menu-left {
+  left: -240px;
+}
+.menu-left.menu-open {
+  left: 0;
+}
+.menu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+.menu-push-toright {
+  left: 240px;
+}
+.menu,
+.menu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}

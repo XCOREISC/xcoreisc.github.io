@@ -1,0 +1,155 @@
+@import "__constants/variables.styl"
+@import "__constants/mixins.styl"
+
+
+/******************* RESET ***********************************************-*/
+*
+	box-sizing  border-box
+	&:before,&:after 
+		box-sizing  border-box
+
+body,h1,h2,h3 ,fieldset,ul,figcaption,figure
+	margin 0
+body
+	background-color COLOR_DARK
+fieldset,ul
+	padding 0
+	border none
+/*********************** HEADER ***********************************************/
+[role="header"]
+	display block
+	text-align center
+	clearfix()
+	// Tittle
+	& h1 
+		color COLOR_WHITE
+		background-color COLOR_THEME
+		padding (BASE_SPACE/2) 0
+
+	// Menu button
+	& a 
+		color COLOR_WHITE
+		position  absolute
+		top (BASE_SPACE/4)
+		left BASE_SPACE
+		font-size BASE_SPACE*2
+		text-decoration none
+
+	// Pre COREISC Date
+	& time, & address
+		display block
+		float left
+		width 40%
+		margin-top 2.5rem
+		color COLOR_WHITE
+		//border-top (BASE_SPACE/4) solid COLOR_WHITE
+		& strong
+			position relative
+			top -(BASE_SPACE/1.5)
+		& span 
+			block-center()
+			color COLOR_THEME
+			text-align center
+			square(3rem)
+			radius(50%)
+			font-size 2rem
+			background-color COLOR_WHITE
+			padding (BASE_SPACE/4)
+			position relative
+			top -(BASE_SPACE*1.2)
+	& address	
+		&:before
+			content ""
+			position absolute
+			height 17rem
+			border-top (BASE_SPACE/4) solid COLOR_WHITE
+			border-left (BASE_SPACE/4) solid COLOR_WHITE
+			width 50%
+			left 5%
+	& time	
+		&:before
+			content ""
+			position absolute
+			height 17rem
+			border-top (BASE_SPACE/4) solid COLOR_WHITE
+			border-right (BASE_SPACE/4) solid COLOR_WHITE
+			width 50%
+			right 5%
+	// Logo X COREISC
+	& img 
+		radius(50%)
+		position relative
+		float left
+		width 20%
+		z-index  2
+
+
+/******************* navigation ***************/
+.menu 
+	background-color COLOR_DARK
+	position fixed
+	overflow-x scroll
+	text-shadow -(BASE_SPACE) 0 BASE_SPACE -(BASE_SPACE) rgba(0, 0, 0, 0.25) inset
+	& > img
+		display  block
+		margin  .5rem auto
+		background-color   COLOR_WHITE 
+		border-radius   50% 
+		border   .4rem solid rgba(0, 0, 0, .75) 
+		box-shadow   0 0 0.2rem 0.1rem rgba(255,255,255,.5)
+	& > a 
+		display  block
+		padding-left  2rem
+		border-bottom  2px solid lighten(COLOR_DARK, 10%)
+		color  darken(COLOR_WHITE, 20%)
+		line-height  2
+		text-decoration none
+		font-size 1.2rem
+		& > span
+			font-size  1.5rem
+			text-align  center
+			margin-right  BASE_SPACE
+	& > ul
+		display  block
+		margin-top  BASE_SPACE*3 
+		font-size  0
+		color  darken(COLOR_WHITE, 20%)
+		&:before
+			content  "Encuentranos en "
+			display  block
+			text-align  center
+			font-size  1.5rem
+		& > li
+			display  inline-block
+			font-size  1.5rem
+			text-align  center
+			width  (100/7)%
+			& a 
+				color  COLOR_WHITE
+				text-decoration none
+
+.menu-vertical
+	width 240px
+	height 100%
+	top 0
+	z-index 3
+
+.menu-left 
+	left -240px
+	&.menu-open
+		left 0
+
+.menu-push
+	overflow-x hidden
+	position relative
+	left 0
+
+.menu-push-toright
+	left 240px
+
+.menu,.menu-push
+	-webkit-transition  all 0.3s ease
+	-moz-transition  all 0.3s ease
+	-ms-transition  all 0.3s ease
+	-o-transition  all 0.3s ease
+	transition  all 0.3s ease

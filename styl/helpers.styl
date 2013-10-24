@@ -1,0 +1,179 @@
+@import "__constants/variables.styl"
+@import "__constants/mixins.styl"
+
+.text-center
+	text-align center 
+
+img
+	&.responsive
+		max-width 100%
+	&.portada
+		padding 0
+		border-radius (BASE_SPACE/4)
+		border (BASE_SPACE/4) solid COLOR_WHITE
+
+.block-center
+	block-center()
+.radius-small
+	border-radius (BASE_SPACE/2)
+/**************** colors ********************/
+.bck-sky-blue
+	background-color COLOR_SKY_BLUE
+.bck-white
+	background-color COLOR_WHITE
+.bck-green
+	background-color COLOR_GREEN
+.bck-dark
+	background-color COLOR_DARK
+.bck-glass
+	background-color darken(COLOR_THEME,30%)
+	border-radius (BASE_SPACE/2)
+
+/***************** MARGINS, PADDINGS ********/
+
+.margin-none  
+	margin: 0
+
+.margin  
+	margin:  BASE_SPACE
+
+.margin-left  
+	margin-left:  BASE_SPACE
+
+.margin-right  
+	margin-right:  BASE_SPACE
+
+.margin-top  
+	margin-top:  BASE_SPACE
+
+.margin-top-2  
+	margin-top:  BASE_SPACE*2
+
+.margin-top-3  
+	margin-top:  BASE_SPACE*3
+
+.margin-top-4  
+	margin-top:  BASE_SPACE*4
+
+.margin-top-6  
+	margin-top:  BASE_SPACE*6
+
+.margin-bottom  
+
+	margin-bottom:  BASE_SPACE
+
+.margin-bottom-2  
+
+	margin-bottom:  BASE_SPACE*2
+
+.margin-bottom-4  
+
+	margin-bottom:  BASE_SPACE*4
+
+
+
+.padding-none  
+
+	padding: 0
+
+.padding  
+
+	padding:  BASE_SPACE
+
+.padding-small  
+	padding: (BASE_SPACE/2 )
+
+.padding-left  
+	padding-left:  BASE_SPACE
+
+.padding-right  
+	padding-right:  BASE_SPACE
+
+.padding-top  
+	padding-top:  BASE_SPACE
+
+.padding-bottom  
+	padding-bottom:  BASE_SPACE
+
+.padding-top-2  
+	padding-top:  BASE_SPACE*2
+
+.padding-bottom-2  
+	padding-bottom:  BASE_SPACE*2
+
+.padding-top-4  
+	padding-top:  BASE_SPACE*4
+
+.padding-bottom-4  
+	padding-bottom:  BASE_SPACE*4
+
+
+.decorate
+	position: relative
+	&:before,&:after
+		content ""
+		position absolute
+	&:before
+		border-color: COLOR_WHITE rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) ;
+		border-style: solid;
+		border-width: 2rem;
+		content: " ";
+		display: block;
+		position: absolute;
+		left 42%
+		top 0 
+	&:after
+		border-top (BASE_SPACE/4) solid COLOR_WHITE
+		top 0
+		width 90%
+		left 5%
+
+
+
+.msg-newsletter
+	color COLOR_WHITE
+
+.border-vertical
+	position relative
+	&:before,&:after
+		content ""
+		position absolute
+	&:before
+		left 49%
+		top BASE_SPACE*1.5
+		height 70rem
+		border-right (BASE_SPACE/4) solid COLOR_WHITE
+
+.speaker
+	margin-left: 2%
+	width 45%
+	float left
+	margin-top 1%
+	& img
+		block-center()
+		radius(50%)
+		border (BASE_SPACE/4) solid COLOR_THEME
+		box-shadow 0 0 (BASE_SPACE/4) 4px lighten(COLOR_THEME,50%)
+	& figcaption
+		text-align center 
+		padding 0 BASE_SPACE
+		background-color COLOR_WHITE
+		radius( BASE_SPACE/4 )
+		&:before,&:after
+			content ""
+			position absolute
+		&:before
+			border-color: rgba(0, 0, 0, 0) COLOR_WHITE  rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) 
+			border-style: solid;
+			border-width: 2rem;
+			right 50%
+			margin-top -7rem
+
+	&:nth-child(2n+1)
+		margin-left: 6%
+		margin-top: 10rem
+		& figcaption
+			&:before
+				border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) COLOR_WHITE  
+				left 50%
+
