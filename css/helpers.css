@@ -6,6 +6,10 @@ img.responsive {
 }
 img.portada {
   padding: 0;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
   border-radius: 0.25rem;
   border: 0.25rem solid #ebedee;
 }
@@ -15,6 +19,10 @@ img.portada {
   margin-right: auto;
 }
 .radius-small {
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
   border-radius: 0.5rem;
 }
 /**************** colors ********************/
@@ -25,13 +33,17 @@ img.portada {
   background-color: #ebedee;
 }
 .bck-green {
-  background-color: #34cc67;
+  background-color: #16a085;
 }
 .bck-dark {
-  background-color: #222;
+  background-color: #34495e;
 }
 .bck-glass {
-  background-color: #1b6c8d;
+  background-color: #1d6ca1;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
   border-radius: 0.5rem;
 }
 /***************** MARGINS, PADDINGS ********/
@@ -155,14 +167,26 @@ img.portada {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
-  border: 0.25rem solid #279bca;
-  box-shadow: 0 0 0.25rem 4px #8ecfe9;
+  border: 0.25rem solid #3498db;
+  -webkit-box-shadow: 0 0 0.25rem 4px #99cbed;
+  -moz-box-shadow: 0 0 0.25rem 4px #99cbed;
+  -ms-box-shadow: 0 0 0.25rem 4px #99cbed;
+  -o-box-shadow: 0 0 0.25rem 4px #99cbed;
+  box-shadow: 0 0 0.25rem 4px #99cbed;
 }
 .speaker figcaption {
   text-align: center;
   padding: 0 1rem;
   background-color: #ebedee;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
   border-radius: 0.25rem;
 }
 .speaker figcaption:before,

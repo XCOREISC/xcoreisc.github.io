@@ -3,7 +3,6 @@
 
 dl
 	font-size 0
-	padding (BASE_SPACE/2) 0
 	text-align center
 	& dt
 		font-size BASE_SPACE
@@ -14,4 +13,30 @@ dl
 			display block
 			color COLOR_WHITE
 		&:first-child
+			block-center()
+			width 30%
+			height BASE_SPACE*2
+			background COLOR_WHITE
+			margin-top BASE_SPACE 
+			margin-bottom BASE_SPACE 
+			& span
+				color COLOR_THEME
+				display inline-block
+				text-align center
+			&:before,&:after
+				content ''
+				position: absolute
+			&:before
+				left 40%
+				border-width BASE_SPACE
+				border-style solid
+				border-color COLOR_DARK COLOR_WHITE COLOR_WHITE COLOR_DARK
+			&:after
+				left 55%
+				border-width BASE_SPACE
+				border-style solid
+				border-color COLOR_DARK COLOR_DARK COLOR_WHITE COLOR_WHITE
+
+
+		&:nth-child(2)
 			margin-left -(BASE_SPACE/2)
