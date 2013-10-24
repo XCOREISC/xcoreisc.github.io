@@ -66,8 +66,8 @@ ul {
   margin-top: 2.5rem;
   color: #ebedee;
 }
-[role="header"] time strong,
-[role="header"] address strong {
+[role="header"] time a,
+[role="header"] address a {
   position: relative;
   top: -0.6666666666666666rem;
 }
