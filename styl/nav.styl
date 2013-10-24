@@ -1,31 +1,17 @@
 @import "__constants/variables.styl"
 @import "__constants/mixins.styl"
 
-
-/******************* RESET ***********************************************-*/
-*
-	box-sizing  border-box
-	&:before,&:after 
-		box-sizing  border-box
-
-body,h1,h2,h3 ,fieldset,ul,figcaption,figure
-	margin 0
-body
-	background-color COLOR_DARK
-fieldset,ul
-	padding 0
-	border none
 /*********************** HEADER ***********************************************/
+
 [role="header"]
 	display block
 	text-align center
 	clearfix()
+	padding 0 BASE_SPACE
 	// Tittle
 	& h1 
 		color COLOR_WHITE
-		background-color COLOR_THEME
 		padding (BASE_SPACE/2) 0
-
 	// Menu button
 	& > a 
 		color COLOR_WHITE
@@ -34,7 +20,6 @@ fieldset,ul
 		left BASE_SPACE
 		font-size BASE_SPACE*2
 		text-decoration none
-
 	// Pre COREISC Date
 	& time, & address
 		display block
@@ -42,21 +27,30 @@ fieldset,ul
 		width 40%
 		margin-top 2.5rem
 		color COLOR_WHITE
-		//border-top (BASE_SPACE/4) solid COLOR_WHITE
-		& a
+		& a ,&>strong
 			position relative
-			top -(BASE_SPACE/1.5)
+			//top -(BASE_SPACE/1.5)
+			color COLOR_WHITE
 		& span 
-			block-center()
+			display inline-block
 			color COLOR_THEME
 			text-align center
 			square(3rem)
-			radius(50%)
+			border-radius 50%
 			font-size 2rem
 			background-color COLOR_WHITE
 			padding (BASE_SPACE/4)
 			position relative
-			top -(BASE_SPACE*1.2)
+			top -(BASE_SPACE)
+
+	& address
+		& span
+			float left
+	& time
+		& span
+			float right
+
+	/*
 	& address	
 		&:before
 			content ""
@@ -75,9 +69,10 @@ fieldset,ul
 			border-right (BASE_SPACE/4) solid COLOR_WHITE
 			width 50%
 			right 5%
+	*/
 	// Logo X COREISC
 	& img 
-		radius(50%)
+		border-radius 50%
 		position relative
 		float left
 		width 20%

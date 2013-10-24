@@ -4,8 +4,8 @@ $(document).on("ready",function(){
     min: 0,
     max: 60,
     readOnly :true,
-    width:70,
-    height:70,
+    width:60,
+    height:60,
     fgColor:"#ebedee",
     inputColor:"#ebedee",
     thickness:0.2
@@ -14,8 +14,8 @@ $(document).on("ready",function(){
     min: 0,
     max: 24,
     readOnly :true,
-    width:70,
-    height:70,
+    width:60,
+    height:60,
     fgColor:"#ebedee",
     inputColor:"#ebedee",
     thickness:0.2
@@ -24,8 +24,8 @@ $(document).on("ready",function(){
     min: 0,
     max: 60,
     readOnly :true,
-    width:70,
-    height:70,
+    width:60,
+    height:60,
     fgColor:"#ebedee",
     inputColor:"#ebedee",
     thickness:0.2
@@ -34,8 +34,8 @@ $(document).on("ready",function(){
     min: 0,
     max: 60,
     readOnly :true,
-    width:70,
-    height:70,
+    width:60,
+    height:60,
     fgColor:"#ebedee",
     inputColor:"#ebedee",
     thickness:0.2

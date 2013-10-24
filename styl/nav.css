@@ -2,7 +2,6 @@
 [role="header"] {
   display: block;
   text-align: center;
-  padding: 0 1rem;
 /*
 	& address	
 		&:before
@@ -51,6 +50,7 @@
   width: 40%;
   margin-top: 2.5rem;
   color: #ebedee;
+  padding: 0 1rem;
 }
 [role="header"] time a,
 [role="header"] address a,

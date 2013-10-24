@@ -7,43 +7,37 @@ dl dt {
   display: inline-block;
   vertical-align: middle;
   margin-left: 1rem;
+/*
+		&:first-child
+			block-center()
+			width 30%
+			height BASE_SPACE*2
+			background COLOR_WHITE
+			margin-top BASE_SPACE 
+			margin-bottom BASE_SPACE 
+			& span
+				color COLOR_THEME
+				display inline-block
+				text-align center
+			&:before,&:after
+				content ''
+				position: absolute
+			&:before
+				left 40%
+				border-width BASE_SPACE
+				border-style solid
+				border-color COLOR_DARK COLOR_WHITE COLOR_WHITE COLOR_DARK
+			&:after
+				left 55%
+				border-width BASE_SPACE
+				border-style solid
+				border-color COLOR_DARK COLOR_DARK COLOR_WHITE COLOR_WHITE
+			*/
 }
 dl dt span {
   display: block;
   color: #ebedee;
 }
-dl dt:first-child {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-  height: 2rem;
-  background: #ebedee;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-dl dt:first-child span {
-  color: #3498db;
-  display: inline-block;
-  text-align: center;
-}
-dl dt:first-child:before,
-dl dt:first-child:after {
-  content: '';
-  position: absolute;
-}
-dl dt:first-child:before {
-  left: 40%;
-  border-width: 1rem;
-  border-style: solid;
-  border-color: #34495e #ebedee #ebedee #34495e;
-}
-dl dt:first-child:after {
-  left: 55%;
-  border-width: 1rem;
-  border-style: solid;
-  border-color: #34495e #34495e #ebedee #ebedee;
-}
-dl dt:nth-child(2) {
+dl dt:nth-child(1) {
   margin-left: -0.5rem;
 }
