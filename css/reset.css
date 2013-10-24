@@ -21,7 +21,8 @@ h3,
 fieldset,
 ul,
 figcaption,
-figure {
+figure,
+picture {
   margin: 0;
 }
 body {
@@ -35,4 +36,16 @@ ul {
 a {
   outline: 0;
   text-decoration: none;
+}
+dl {
+  font-size: 0;
+  text-align: center;
+}
+dl dd {
+  font-size: 1rem;
+}
+dl dt {
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: middle;
 }

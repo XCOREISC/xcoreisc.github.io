@@ -1,3 +1,46 @@
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  position: relative;
+}
+.swipe-wrap:before,
+.swipe-wrap:after {
+  content: " ";
+  display: table;
+}
+.swipe-wrap:after {
+  clear: both;
+}
+.swipe-wrap > picture {
+  float: left;
+  width: 20%;
+  position: relative;
+}
+.swipe-wrap > picture img {
+  max-width: 100%;
+}
+/* END required styles */
+.cronograma {
+  width: 100%;
+}
+.cronograma dt,
+.cronograma dd {
+  text-align: center;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+.cronograma dt {
+  background-color: #ebedee;
+  width: 20%;
+}
+.cronograma dd {
+  width: 80%;
+  background-color: #3498db;
+}
 .schedule {
   text-align: center;
   background-color: #ebedee;
@@ -15,17 +58,20 @@
   padding: 0.5rem 0;
 }
 .schedule th {
-  color: #ebedee;
   background-color: #16a085;
 }
 .schedule tr {
-  background-color: #99cbed;
+  border-bottom: 1px solid #34495e;
 }
 .schedule tr:nth-child(n) td:nth-child(1) {
-  background-color: #16a085;
+  background-color: #38e4c2;
+  width: 10%;
 }
-.schedule tr:nth-child(1) td:nth-child(2) {
+.schedule tr:nth-child(n) td:nth-child(2) {
   background-color: #df9274;
+}
+.schedule tr:nth-child(2n+1) td:nth-child(1) {
+  background-color: #92f0de;
 }
 .schedule tr:nth-child(2) td:nth-child(2),
 .schedule tr:nth-child(3) td:nth-child(2),
@@ -40,6 +86,7 @@
 .schedule tr:nth-child(6) td:nth-child(4),
 .schedule tr:nth-child(7) td:nth-child(4) {
   background-color: #14ddb3;
+  width: 45%;
 }
 .schedule tr:nth-child(4) td:nth-child(2) {
   background-color: #3498db;
@@ -52,6 +99,7 @@
 .schedule tr:nth-child(6) td:nth-child(4),
 .schedule tr:nth-child(7) td:nth-child(4) {
   background-color: #e67e22;
+  width: 22.5%;
 }
 .schedule tr:nth-child(8) td:nth-child(2) {
   background-color: #9b59b6;

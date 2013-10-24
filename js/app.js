@@ -50,4 +50,15 @@ $(document).on("ready",function(){
       classie.toggle( body, 'menu-push-toright' );
       classie.toggle( menuLeft, 'menu-open' );
     };
+    
+  var elem = document.getElementById('cronograma');
+  window.mySwipe = Swipe(elem, {
+    // startSlide: 4,
+    // auto: 3000,
+    // continuous: true,
+    // disableScroll: true,
+    // stopPropagation: true,
+    // callback: function(index, element) {},
+    // transitionEnd: function(index, element) {}
+  });
 });
