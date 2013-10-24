@@ -90,8 +90,10 @@ fieldset,ul
 	position fixed
 	overflow-x scroll
 	text-shadow -(BASE_SPACE) 0 BASE_SPACE -(BASE_SPACE) rgba(0, 0, 0, 0.25) inset
+	box-shadow : inset -4px 0 15px 0 rgba(0,0,0,0.75) 
 	& > img
 		display  block
+		width 40%
 		margin  .5rem auto
 		background-color   COLOR_WHITE 
 		border-radius   50% 
@@ -105,6 +107,8 @@ fieldset,ul
 		line-height  2
 		text-decoration none
 		font-size 1.2rem
+		&:first-child
+			border-top  2px solid lighten(COLOR_DARK, 10%)
 		& > span
 			font-size  1.5rem
 			text-align  center

@@ -126,9 +126,15 @@ ul {
   position: fixed;
   overflow-x: scroll;
   text-shadow: -1rem 0 0rem rgba(0,0,0,0.25) inset;
+  -webkit-box-shadow: inset -4px 0 15px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: inset -4px 0 15px 0 rgba(0,0,0,0.75);
+  -ms-box-shadow: inset -4px 0 15px 0 rgba(0,0,0,0.75);
+  -o-box-shadow: inset -4px 0 15px 0 rgba(0,0,0,0.75);
+  box-shadow: inset -4px 0 15px 0 rgba(0,0,0,0.75);
 }
 .menu > img {
   display: block;
+  width: 40%;
   margin: 0.5rem auto;
   background-color: #ebedee;
   -webkit-border-radius: 50%;
@@ -151,6 +157,9 @@ ul {
   line-height: 2;
   text-decoration: none;
   font-size: 1.2rem;
+}
+.menu > a:first-child {
+  border-top: 2px solid #415b75;
 }
 .menu > a > span {
   font-size: 1.5rem;
