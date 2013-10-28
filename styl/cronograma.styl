@@ -1,0 +1,27 @@
+@import "__constants/variables.styl"
+@import "__constants/mixins.styl"
+
+.cronograma
+	display block
+	& h2, time
+		display block
+		text-align center
+	& h2
+		padding (BASE_SPACE/2) 0
+		background-color COLOR_PURPLE
+		color COLOR_WHITE
+	& time
+		padding (BASE_SPACE/4) 0
+		background-color darken(COLOR_PURPLE,50%)
+		color COLOR_WHITE
+	& dl 
+		display table-row
+		border-bottom (BASE_SPACE/5) solid COLOR_PURPLE
+		& dt
+			display table-cell
+			background-color COLOR_PURPLE
+			vertical-align middle
+			padding BASE_SPACE
+		& dd
+			display table-cell
+			background-color lighten(COLOR_PURPLE,50%)

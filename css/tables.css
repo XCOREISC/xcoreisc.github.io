@@ -23,87 +23,83 @@
   max-width: 100%;
 }
 /* END required styles */
-.cronograma {
-  width: 100%;
-}
-.cronograma dt,
-.cronograma dd {
-  text-align: center;
-  margin: 0;
-  display: inline-block;
-  vertical-align: top;
-}
-.cronograma dt {
-  background-color: #ebedee;
-  width: 20%;
-}
-.cronograma dd {
-  width: 80%;
-  background-color: #3498db;
-}
-.schedule {
-  text-align: center;
-  background-color: #ebedee;
-  width: 100%;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  border-radius: 0.5rem;
-  border-spacing: 0;
-  border-collapse: collapse;
-  empty-cells: show;
-}
-.schedule * {
-  padding: 0.5rem 0;
-}
-.schedule th {
-  background-color: #16a085;
-}
-.schedule tr {
-  border-bottom: 1px solid #34495e;
-}
-.schedule tr:nth-child(n) td:nth-child(1) {
-  background-color: #38e4c2;
-  width: 10%;
-}
-.schedule tr:nth-child(n) td:nth-child(2) {
-  background-color: #df9274;
-}
-.schedule tr:nth-child(2n+1) td:nth-child(1) {
-  background-color: #92f0de;
-}
-.schedule tr:nth-child(2) td:nth-child(2),
-.schedule tr:nth-child(3) td:nth-child(2),
-.schedule tr:nth-child(6) td:nth-child(2),
-.schedule tr:nth-child(7) td:nth-child(2),
-.schedule tr:nth-child(2) td:nth-child(3),
-.schedule tr:nth-child(3) td:nth-child(3),
-.schedule tr:nth-child(6) td:nth-child(3),
-.schedule tr:nth-child(7) td:nth-child(3),
-.schedule tr:nth-child(2) td:nth-child(4),
-.schedule tr:nth-child(3) td:nth-child(4),
-.schedule tr:nth-child(6) td:nth-child(4),
-.schedule tr:nth-child(7) td:nth-child(4) {
-  background-color: #14ddb3;
-  width: 45%;
-}
-.schedule tr:nth-child(4) td:nth-child(2) {
-  background-color: #3498db;
-}
-.schedule tr:nth-child(5) td:nth-child(2) {
-  background-color: #e74c3c;
-}
-.schedule tr:nth-child(6) td:nth-child(3),
-.schedule tr:nth-child(7) td:nth-child(3),
-.schedule tr:nth-child(6) td:nth-child(4),
-.schedule tr:nth-child(7) td:nth-child(4) {
-  background-color: #e67e22;
-  width: 22.5%;
-}
-.schedule tr:nth-child(8) td:nth-child(2) {
-  background-color: #9b59b6;
-}
-.schedule tr:nth-child(8) td:nth-child(3) {
-  background-color: #e67e22;
-}
+/*
+.cronograma
+	width 100%
+	& dt,& dd
+		text-align center
+		margin 0
+		display inline-block
+		vertical-align top
+	& dt
+		background-color COLOR_WHITE
+		width 20%
+	& dd
+		width 80%
+		background-color COLOR_THEME
+
+
+.schedule
+	text-align center
+	background-color COLOR_WHITE
+	width 100%
+	border-radius (BASE_SPACE/2)
+	border-spacing 0
+	border-collapse collapse
+	empty-cells show
+	& * 
+		padding (BASE_SPACE/2) 0
+	& th
+		background-color COLOR_GREEN
+	& tr 
+		border-bottom 1px solid COLOR_DARK
+		&:nth-child(n)
+			& td
+				// Todas las horas
+				&:nth-child(1)
+					background-color lighten(COLOR_GREEN,20)
+					width 10%
+				// Entrega de Materiales	
+				&:nth-child(2)
+					background-color COLOR_BRIGHT
+		&:nth-child(2n+1)
+			& td
+				// Todas las horas
+				&:nth-child(1)
+					background-color lighten(COLOR_GREEN,40)
+
+		//Todas Las Conferencias 
+		&:nth-child(2),&:nth-child(3),&:nth-child(6),&:nth-child(7)
+			& td
+				&:nth-child(2),&:nth-child(3),&:nth-child(4)
+					background-color COLOR_TURQUOSE
+					width: 45%
+
+		//CONFERENCIAS iGNITE
+		&:nth-child(4)
+			& td
+				&:nth-child(2)
+					background-color COLOR_THEME
+
+		//BREAK
+		&:nth-child(5)
+			& td
+				&:nth-child(2)
+					background-color COLOR_RED
+
+		//Talleres
+		&:nth-child(6),&:nth-child(7)
+			& td
+				&:nth-child(3),&:nth-child(4)
+					background-color COLOR_ORANGE
+					width (45/2)%
+
+		//Videoconferencia
+		&:nth-child(8)
+			& td
+				&:nth-child(2)
+					background-color COLOR_PURPLE
+				&:nth-child(3)
+					background-color COLOR_ORANGE
+
+*/

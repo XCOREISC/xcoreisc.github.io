@@ -1,0 +1,32 @@
+.cronograma {
+  display: block;
+}
+.cronograma h2,
+.cronograma time {
+  display: block;
+  text-align: center;
+}
+.cronograma h2 {
+  padding: 0.5rem 0;
+  background-color: #9b59b6;
+  color: #ebedee;
+}
+.cronograma time {
+  padding: 0.25rem 0;
+  background-color: #4f295e;
+  color: #ebedee;
+}
+.cronograma dl {
+  display: table-row;
+  border-bottom: 0.2rem solid #9b59b6;
+}
+.cronograma dl dt {
+  display: table-cell;
+  background-color: #9b59b6;
+  vertical-align: middle;
+  padding: 1rem;
+}
+.cronograma dl dd {
+  display: table-cell;
+  background-color: #cdacdb;
+}
