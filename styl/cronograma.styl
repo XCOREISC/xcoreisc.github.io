@@ -20,12 +20,6 @@
 		border-spacing 0
 		border-collapse collapse
 		empty-cells show
-		& tr
-			border-bottom none
-			&:nth-child(6),&:nth-child(8)
-				& td:nth-child(3) 
-					border-left (BASE_SPACE/5) solid darken(COLOR_PURPLE,50%)
-
 		& td
 			&:first-child
 				color COLOR_WHITE
@@ -36,6 +30,23 @@
 					border-radius 50%
 					padding BASE_SPACE
 					margin-top BASE_SPACE
+					&:before
+						font-family FontAwesome
+						content: "\f0d9"
+						position absolute
+						left 4rem
+						margin-top -1rem
+						font-size 4rem
+
+					&:after
+						content ""
+						position absolute
+						height 10rem
+						//border-top (BASE_SPACE/4) solid COLOR_WHITE
+						border-left (BASE_SPACE/2) solid COLOR_PURPLE
+						width 4rem
+						left 1.75rem
+						z-index -1
 			&:nth-child(2)
 				padding 0 BASE_SPACE
 				& div
@@ -44,5 +55,24 @@
 					background-color COLOR_WHITE
 					border-radius (BASE_SPACE/4)
 					margin-top BASE_SPACE
+			&:nth-child(3),&:nth-child(4)
+				padding 0 BASE_SPACE
+				background-color COLOR_WHITE
+				border-radius (BASE_SPACE/4)
+				border-top (BASE_SPACE*2) solid COLOR_DARK
+				& div
+					color COLOR_DARK
+			&:nth-child(3)
+				border-right (BASE_SPACE) solid COLOR_DARK
+			&:nth-child(4)
+				border-right (BASE_SPACE*2) solid COLOR_DARK
+				border-left (BASE_SPACE) solid COLOR_DARK
+		& tr
+			&:nth-child(8)
+				& td 
+					&:nth-child(2)
+						padding 0 0 0 BASE_SPACE
+					
+					
 
 
