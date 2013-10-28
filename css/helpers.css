@@ -19,11 +19,11 @@ img.portada {
   margin-right: auto;
 }
 .radius-small {
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  border-radius: 0.5rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  border-radius: 0.25rem;
 }
 /**************** colors ********************/
 .bck-sky-blue {

@@ -24,12 +24,14 @@
 			&:first-child
 				color COLOR_WHITE
 				& span 
-					background-color COLOR_PURPLE
+					background-color COLOR_WHITE
+					color COLOR_PURPLE
 					display block
 					square(4rem)
 					border-radius 50%
-					padding BASE_SPACE
+					padding (BASE_SPACE*0.8) 0
 					margin-top BASE_SPACE
+					border (BASE_SPACE/2) solid COLOR_PURPLE
 					&:before
 						font-family FontAwesome
 						content: "\f0d9"
@@ -37,7 +39,7 @@
 						left 4rem
 						margin-top -1rem
 						font-size 4rem
-
+						color COLOR_WHITE
 					&:after
 						content ""
 						position absolute
@@ -47,6 +49,7 @@
 						width 4rem
 						left 1.75rem
 						z-index -1
+			
 			&:nth-child(2)
 				padding 0 BASE_SPACE
 				& div
@@ -72,6 +75,19 @@
 				& td 
 					&:nth-child(2)
 						padding 0 0 0 BASE_SPACE
+
+			&:nth-child(8)
+				& td
+					&:first-child
+						& span
+							&:after
+								height 5rem
+			&:last-child
+				& td
+					&:first-child
+						& span
+							&:after
+								border-left none
 					
 					
 

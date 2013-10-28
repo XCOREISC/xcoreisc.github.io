@@ -101,8 +101,8 @@
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  /*padding-right: 1rem;
+  padding-left: 1rem;*/
 }
 
 .col-xs-1,

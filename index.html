@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/countdown.css" />
 	<link rel="stylesheet" href="css/forms.css" />
 	<link rel="stylesheet" href="css/helpers.css" />
+	<link rel="stylesheet" href="css/modals.css" />
 	<link rel="stylesheet" href="css/tables.css" />
 </head>
 <body class="menu-push">
@@ -63,8 +64,8 @@
 				<span>Segundos</span>
 			</dt>
   </dl>
-	<section>
-		<div class="navbar">
+	<section class="container">
+		<div class="navbar col-xs-12 col-sm-12">
 			<nav class="navbar-menu" id="navbar-menu">
 				<a href="#" class="selected">	<span class="fa fa-info"></span>	</a>
 				<a href="#">	<span class="fa fa-map-marker"></span>	</a>
@@ -76,7 +77,7 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, officia rem quas adipisci nisi laboriosam voluptates in dolorem fugit nostrum cum beatae totam consequuntur aut perspiciatis iure nesciunt iusto quo.</p>
 			</div>
 		</div>
-		<div class="cronograma">
+		<div class="cronograma col-xs-12 col-sm-12">
 			<h2>cronograma</h2>
 			<time>20 de Noviembre del 2013</time>
 			<table>
@@ -142,10 +143,51 @@
 
 
 
+
+
+
+
+
+
+
+
+		<div class="md-modal md-effect" id="modal-inscripcion">
+			<div class="container bck-white radius-small">
+				<div class="col-xs-12">
+					<h3 class="text-center">Paquete Pre COREISC</h3>
+					<form action="#">
+						<select name="" id="">
+							<option value="1">UNPRG</option>
+							<option value="1">USAT</option>
+							<option value="1">USS</option>
+							<option value="1">UDL</option>
+							<option value="1">UDCH</option>
+						</select>
+					</form>
+				</div>
+				<div class="col-xs-12">
+					<h3 class="text-center">Arma tu paquete</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, laboriosam, eveniet et provident tempora quos aspernatur. Minima, repudiandae, corporis facilis dignissimos natus enim eos laudantium pariatur sequi impedit. Praesentium, atque.</p>
+				</div>
+				<a class="button md-close">Close me!</a>
+			</div>
+
+			
+		</div>
+					
+
+		<a href="#" class="button modal margin-top margin-bottom " data-modal="modal-inscripcion">Inscribete</a>
+		<div class="md-overlay"></div><!-- the overlay element -->
+	
+
+	
+		
+
+
 		<div class="container">
 			
 			
-
+			<!--
 			<div class="row">
 				<form action="#">
 					<input type="email" placeholder="Tu Email" class="col-xs-offset-1 col-xs-8 col-lg-offset-3 col-lg-5"/>
@@ -157,6 +199,7 @@
 					Deja tu email y tendras todas las noticias del X COREISC
 				</h3>
 			</div>
+		-->
 		</div>
 	<section>
 		<h2 class="text-center margin-top">UNPRG</h2>
@@ -344,6 +387,7 @@
 <script src="js/lib/countdown.js"></script>
 <script src="js/lib/classie.js"></script>
 <script src="js/lib/swipe.js"></script>
+<script src="js/lib/modalEffects.js"></script>
 <script src="js/lib/picturefill.js"></script>
 <script src="js/app.js"></script>
 </body>
