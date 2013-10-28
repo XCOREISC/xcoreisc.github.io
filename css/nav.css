@@ -252,16 +252,3 @@
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.navbar {
-  text-align: center;
-}
-.navbar a {
-  float: left;
-  width: 20%;
-  padding: 1rem 0;
-  background-color: #ebedee;
-}
-.navbar .fa {
-  font-size: 2rem;
-  color: #3498db;
-}

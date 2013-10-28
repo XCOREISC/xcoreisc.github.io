@@ -1,0 +1,18 @@
+@import "__constants/variables.styl"
+@import "__constants/mixins.styl"
+
+.navbar
+	text-align center
+	background-color COLOR_WHITE
+	& a 
+		float left
+		width 20%
+		padding BASE_SPACE 0
+		border-bottom (BASE_SPACE/5) solid COLOR_GREEN
+		& .fa
+			font-size 2rem 
+			color COLOR_GREEN
+		&.selected
+			background-color COLOR_GREEN
+			& .fa 
+				color COLOR_WHITE
