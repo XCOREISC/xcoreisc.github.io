@@ -21,15 +21,28 @@
 		border-collapse collapse
 		empty-cells show
 		& tr
-			border-bottom (BASE_SPACE/5) solid darken(COLOR_PURPLE,50%)
+			border-bottom none
 			&:nth-child(6),&:nth-child(8)
 				& td:nth-child(3) 
 					border-left (BASE_SPACE/5) solid darken(COLOR_PURPLE,50%)
 
 		& td
-			background-color lighten(COLOR_PURPLE,50%)
-			padding BASE_SPACE
 			&:first-child
-				background-color COLOR_PURPLE
 				color COLOR_WHITE
+				& span 
+					background-color COLOR_PURPLE
+					display block
+					square(4rem)
+					border-radius 50%
+					padding BASE_SPACE
+					margin-top BASE_SPACE
+			&:nth-child(2)
+				padding 0 BASE_SPACE
+				& div
+					padding BASE_SPACE 0
+					color COLOR_DARK
+					background-color COLOR_WHITE
+					border-radius (BASE_SPACE/4)
+					margin-top BASE_SPACE
+
 

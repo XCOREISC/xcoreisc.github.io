@@ -23,17 +23,39 @@
   empty-cells: show;
 }
 .cronograma table tr {
-  border-bottom: 0.2rem solid #4f295e;
+  border-bottom: none;
 }
 .cronograma table tr:nth-child(6) td:nth-child(3),
 .cronograma table tr:nth-child(8) td:nth-child(3) {
   border-left: 0.2rem solid #4f295e;
 }
-.cronograma table td {
-  background-color: #cdacdb;
-  padding: 1rem;
-}
 .cronograma table td:first-child {
-  background-color: #9b59b6;
   color: #ebedee;
+}
+.cronograma table td:first-child span {
+  background-color: #9b59b6;
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.cronograma table td:nth-child(2) {
+  padding: 0 1rem;
+}
+.cronograma table td:nth-child(2) div {
+  padding: 1rem 0;
+  color: #34495e;
+  background-color: #ebedee;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
 }
