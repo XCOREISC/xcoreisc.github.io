@@ -14,14 +14,21 @@
 		padding (BASE_SPACE/4) 0
 		background-color darken(COLOR_PURPLE,50%)
 		color COLOR_WHITE
-	& dl 
-		display table-row
-		border-bottom (BASE_SPACE/5) solid COLOR_PURPLE
-		& dt
-			display table-cell
-			background-color COLOR_PURPLE
-			vertical-align middle
-			padding BASE_SPACE
-		& dd
-			display table-cell
+
+	& table
+		text-align center
+		border-spacing 0
+		border-collapse collapse
+		empty-cells show
+		& tr
+			border-bottom (BASE_SPACE/5) solid darken(COLOR_PURPLE,50%)
+			&:nth-child(6),&:nth-child(8)
+				& td:nth-child(3) 
+					border-left (BASE_SPACE/5) solid darken(COLOR_PURPLE,50%)
+
+		& td
 			background-color lighten(COLOR_PURPLE,50%)
+			padding BASE_SPACE
+			&:first-child
+				background-color COLOR_PURPLE
+

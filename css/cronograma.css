@@ -16,17 +16,23 @@
   background-color: #4f295e;
   color: #ebedee;
 }
-.cronograma dl {
-  display: table-row;
-  border-bottom: 0.2rem solid #9b59b6;
+.cronograma table {
+  text-align: center;
+  border-spacing: 0;
+  border-collapse: collapse;
+  empty-cells: show;
 }
-.cronograma dl dt {
-  display: table-cell;
-  background-color: #9b59b6;
-  vertical-align: middle;
+.cronograma table tr {
+  border-bottom: 0.2rem solid #4f295e;
+}
+.cronograma table tr:nth-child(6) td:nth-child(3),
+.cronograma table tr:nth-child(8) td:nth-child(3) {
+  border-left: 0.2rem solid #4f295e;
+}
+.cronograma table td {
+  background-color: #cdacdb;
   padding: 1rem;
 }
-.cronograma dl dd {
-  display: table-cell;
-  background-color: #cdacdb;
+.cronograma table td:first-child {
+  background-color: #9b59b6;
 }
