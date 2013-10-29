@@ -22,7 +22,8 @@ fieldset,
 ul,
 figcaption,
 figure,
-picture {
+picture,
+p {
   margin: 0;
 }
 body {

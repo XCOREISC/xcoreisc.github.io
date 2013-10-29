@@ -64,20 +64,76 @@
 				<span>Segundos</span>
 			</dt>
   </dl>
-	<section class="container">
-		<div class="navbar col-xs-12 col-sm-12">
-			<nav class="navbar-menu" id="navbar-menu">
-				<a href="#" class="selected">	<span class="fa fa-info"></span>	</a>
-				<a href="#">	<span class="fa fa-map-marker"></span>	</a>
-				<a href="#">	<span class="fa fa-calendar"></span>	</a>
-				<a href="#">	<span class="fa fa-picture-o"></span>	</a>
-				<a href="#">	<span class="fa fa-plus"></span>	</a>
-			</nav>
-			<div class="navbar-content" id="navbar-content">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, officia rem quas adipisci nisi laboriosam voluptates in dolorem fugit nostrum cum beatae totam consequuntur aut perspiciatis iure nesciunt iusto quo.</p>
+
+	<section class="container margin-top-2">
+
+
+		<div class="navbar">
+    	<span class="band" id="info"></span>
+
+			<div class="tab">
+				<a href="#info" class="navbar-content" id="icon-info">
+					<span class="fa fa-info"></span>
+				</a>
+				<div class="info">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, nobis, ut, necessitatibus vero possimus tempore aspernatur ea nemo esse officiis debitis quasi quos! Incidunt ratione laborum commodi dolore illo tenetur.
+					</p>
+				</div>
+			</div>
+
+			<span class="band" id="place"></span>
+			<div class="tab">
+				<a href="#place" class="navbar-content" id="icon-place"><span class="fa fa-map-marker"></span></a>
+				<div class="place">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, explicabo, perferendis, quibusdam quia ratione velit voluptatem earum sunt architecto ipsam adipisci reprehenderit ipsum dolore illum quasi cupiditate ullam cumque fugiat.
+					</p>
+				</div>
+			</div>
+
+			<span class="band" id="date"></span>
+			<div class="tab">
+				<a href="#date" class="navbar-content" id="icon-date"><span class="fa fa-calendar"></span></a>
+				<div class="date">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, velit laborum repudiandae ratione enim ipsam sit nihil beatae magni sunt! Ut, mollitia reiciendis maiores est obcaecati dolore aspernatur ea cupiditate!
+					</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, atque, tempore dolorum quia obcaecati corporis harum laborum commodi in fugit alias aspernatur sunt officiis laudantium natus ab sit eum iste.</p>
+       </div>
+			</div>
+
+			<span class="band" id="gallery"></span>
+			<div class="tab">
+				<a href="#gallery" class="navbar-content" id="icon-gallery"><span class="fa fa-picture-o"></span>	</a>
+				<div class="gallery">
+					<picture alt="UNPRG" class="">
+						<source src="images/galeria/1-xs.jpg">
+						<source src="images/galeria/1-sm.jpg" media="(min-width: 320px)">
+						<source src="images/galeria/1-md.jpg" media="(min-width: 480px)">
+						<noscript><img src="images/galeria/1-md.jpg" alt="galeria"></noscript>
+					</picture>
+					
+					<picture alt="galeria" class="">
+						<source src="images/galeria/2-xs.jpg">
+						<source src="images/galeria/2-sm.jpg" media="(min-width: 320px)">
+						<source src="images/galeria/2-md.jpg" media="(min-width: 480px)">
+						<noscript><img src="images/galeria/2-md.jpg" alt="galeria"></noscript>
+					</picture>
+
+					<picture alt="galeria" class="">
+						<source src="images/galeria/3-xs.jpg">
+						<source src="images/galeria/3-sm.jpg" media="(min-width: 320px)">
+						<source src="images/galeria/3-md.jpg" media="(min-width: 480px)">
+						<noscript><img src="images/galeria/3-md.jpg" alt="UNPRG"></noscript>
+					</picture>
+				</div>
 			</div>
 		</div>
-		<div class="cronograma col-xs-12 col-sm-12">
+
+
+
+		<div class="cronograma col-xs-12 col-sm-12 margin-top">
 			<h2>cronograma</h2>
 			<time>20 de Noviembre del 2013</time>
 			<table>
@@ -143,14 +199,6 @@
 
 
 
-
-
-
-
-
-
-
-
 		<div class="md-modal md-effect" id="modal-inscripcion">
 			<div class="container bck-white radius-small">
 				<div class="col-xs-12">
@@ -180,10 +228,6 @@
 		<div class="md-overlay"></div><!-- the overlay element -->
 	
 
-	
-		
-
-
 		<div class="container">
 			
 			
@@ -201,6 +245,8 @@
 			</div>
 		-->
 		</div>
+
+
 	<section>
 		<h2 class="text-center margin-top">UNPRG</h2>
 		<div id='cronograma' style='max-width:500px;margin:0 auto' class='swipe'>
@@ -237,72 +283,12 @@
 
 		</div>
 
-		<!--
-			<table class="schedule">
-				<thead>
-					<tr>
-						<th>Hora</th>
-						<th colspan="2">Auditorio Central</th>
-						<th colspan="2">Auditorio FICSA</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>7:30 - 8:30</td>
-						<td colspan="4">Entrega de Materiales</td>
-					</tr>
-					<tr>
-						<td>8:30 - 10:00</td>
-						<td colspan="2">Conferencia 1</td>
-						<td colspan="2">Conferencia 6</td>
-					</tr>
-					
-					<tr>
-						<td>10:00 - 11:30</td>
-						<td colspan="2">"Comunicaciones Empresariales Unificadas" <br/>Ing. Juan Villegas</td>
-						<td colspan="2"> "Código Limpio: La importancia de la Legibilidad"
-							<br/>Ing. Teran
-						</td>
-					</tr>
-					<tr>
-						<td>11:30 - 13:30</td>
-						<td colspan="4">Conferencias Ignite</td>
-					</tr>
-					<tr>
-						<td>13:30 - 15:00</td>
-						<td colspan="4">BREAK</td>
-					</tr>
-					<tr>
-						<td>15:00 - 16:30</td>
-						<td>Conferencia 3</td>
-						<td>Taller 1</td>
-						<td>Taller 2</td>
-					</tr>
-					<tr>
-						<td>16:30 - 18:00</td>
-						<td colspan="2">"Comunicaciones Empresariales Unificadas" <br/>Ing. Juan Villegas</td>
-						<td>"Comunicaciones Empresariales Unificadas" <br/>Ing. Juan Villegas</td>
-						<td>"Comunicaciones Empresariales Unificadas" <br/>Ing. Juan Villegas</td>
-					</tr>
-					<tr>
-						<td>18:00 - 19:30</td>
-						<td colspan="3">VideoConferencia</td>
-						<td>Taller 2</td>
-					</tr>
-				
-				</tbody>
-				<tfoot>
-					<tr>
-						
-					</tr>
-				</tfoot>
-			</table>-->
+		
 	</section>
-	<!--
 			<div class="row">
 				<div class="col-lg-6 bck-glass">
 					<div class="col-xs-offset-2 col-xs-8 bck-white border-vertical">
-						<h2 class="text-center">Cronograma</h2>
+						<h2 class="text-center">Expositores</h2>
 					</div>
 					<div class="speaker">
 						<figure>
@@ -365,9 +351,6 @@
 			</div>
 	</section>
 	<section>
-		<div class="row margin-top">
-			<img src="images/UNPRG-plaza-del-saber-medium.jpg" alt="Plaza del Saber UNPRG - Lambayeque" class="col-xs-10 col-xs-offset-1 portada responsive " />
-		</div>
 		
 	</section>
 	<footer class="bck-dark">
@@ -381,7 +364,7 @@
 			</div>
 		</div>
 	</footer>
--->
+
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/jquery.knob.js"></script>
 <script src="js/lib/countdown.js"></script>

@@ -1,20 +1,70 @@
 .navbar {
-  text-align: center;
-  background-color: #ebedee;
+  width: 100%;
+  position: relative;
 }
-.navbar a {
-  float: left;
-  width: 20%;
-  padding: 1rem 0;
-  border-bottom: 0.2rem solid #16a085;
+span.band {
+  position: fixed;
+  display: none;
 }
-.navbar a .fa {
-  font-size: 2rem;
-  color: #16a085;
-}
-.navbar a.selected {
-  background-color: #16a085;
-}
-.navbar a.selected .fa {
+span.band:target + .tab div {
+  opacity: 1;
+  background-color: #107864;
   color: #ebedee;
+}
+span.band:target + .tab .navbar-content {
+  background-color: #107864;
+  color: #f5f5f5;
+  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  -ms-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  -o-box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+.tab {
+  position: relative;
+}
+.tab div {
+  background: #16a085;
+  width: 100%;
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  color: #ebedee;
+  z-index: 5;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  padding: 1rem;
+}
+.tab div.gallery {
+  padding: 0 0 2rem 0;
+  font-size: 0;
+}
+.tab div.gallery img {
+  width: 33.333333333333336%;
+  display: inline-block;
+}
+.tab .navbar-content {
+  margin-top: -1.3rem;
+  float: left;
+  width: 25%;
+  background-color: #16a085;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #ebedee;
+  text-align: center;
+  position: relative;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+a.navbar-content:hover {
+  background-color: #6febd3;
+  color: #eff1f1;
 }

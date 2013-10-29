@@ -61,4 +61,38 @@ $(document).on("ready",function(){
     // callback: function(index, element) {},
     // transitionEnd: function(index, element) {}
   });
+  /************* ¨Links *************************/
+  var iconInfo= $("#icon-info"),
+  iconPlace= $("#icon-place"),
+  iconDate= $("#icon-date"),
+  iconGallery= $("#icon-gallery");
+
+  /*********** Tab content ******************/
+  var contentInfo=$(".info"),
+  contentDate=$(".date"),
+  contentPlace=$(".place"),
+  contentGallery=$(".gallery");
+
+
+  iconInfo.on("click",function(){
+    $(".navbar").css({"height":contentInfo.height()+'px'});
+    $(".cronograma").addClass("margin-top-3");
+  });
+  iconPlace.on("click",function(){
+    $(".navbar").css({"height":contentPlace.height()+'px'});
+    $(".cronograma").addClass("margin-top-3");
+  });
+  iconDate.on("click",function(){
+    $(".navbar").css({"height":contentDate.height()+'px'});
+    $(".cronograma").addClass("margin-top-3");
+  });
+  iconGallery.on("click",function(){
+    $(".navbar").css({"height":contentGallery.height()+'px'});
+    $(".cronograma").addClass("margin-top-3");
+  });
+
+
+
+
+
 });
