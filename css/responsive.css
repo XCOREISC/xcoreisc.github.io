@@ -22,4 +22,29 @@
     top: 2.3rem;
     padding: 0 0 3rem 0;
   }
+  #showMenu {
+    display: none;
+  }
+  [role="header"] {
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  .menu {
+    position: relative;
+    overflow: none;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    left: 0;
+  }
+  .menu > img {
+    display: none;
+  }
+  .menu > a {
+    display: inline-block;
+  }
 }
