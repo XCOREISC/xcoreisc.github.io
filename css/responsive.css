@@ -1,0 +1,20 @@
+@media only screen and (min-width: 992px) {
+  .navbar {
+    overflow: hidden;
+  }
+  .tab {
+    width: 50%;
+    float: left;
+  }
+  .tab a {
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .tab div {
+    opacity: 1;
+    position: relative;
+    top: 2.3rem;
+  }
+}

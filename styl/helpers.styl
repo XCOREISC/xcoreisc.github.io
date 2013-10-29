@@ -24,8 +24,12 @@ img
 	background-color COLOR_WHITE
 .bck-green
 	background-color COLOR_GREEN
+.bck-orange
+	background-color COLOR_ORANGE
 .bck-dark
 	background-color COLOR_DARK
+.bck-dark-2
+	background-color darken(COLOR_DARK,50%)
 .bck-glass
 	background-color darken(COLOR_THEME,30%)
 	border-radius (BASE_SPACE/2)
@@ -146,20 +150,45 @@ img
 		border-right (BASE_SPACE/4) solid COLOR_WHITE
 
 .speaker
-	margin-left: 2%
-	width 45%
-	float left
-	margin-top 1%
-	& img
-		block-center()
-		radius(50%)
-		border (BASE_SPACE/4) solid COLOR_THEME
-		box-shadow 0 0 (BASE_SPACE/4) 4px lighten(COLOR_THEME,50%)
-	& figcaption
+	width 100%
+	padding BASE_SPACE
+	overflow hidden
+	& figure
+		float left
+		width 20% 
+		& img
+			display block
+			width 100%
+			border-radius 50%
+			border (BASE_SPACE/4) solid COLOR_ORANGE
+		& a 
+			font-size BASE_SPACE
+			display block
+			color COLOR_WHITE
+			text-align center
+	& div
+		float left
+		width 80%
 		text-align center 
 		padding 0 BASE_SPACE
 		background-color COLOR_WHITE
 		radius( BASE_SPACE/4 )
+
+	&:nth-child(2n)
+		& figure, & div
+			float right
+
+.subtitle
+	display block
+	background-color COLOR_ORANGE
+	text-align center
+	padding (BASE_SPACE/2) 0
+	color COLOR_WHITE
+	
+	
+
+
+		/*
 		&:before,&:after
 			content ""
 			position absolute
@@ -183,3 +212,6 @@ img
 	background-color COLOR_WHITE
 	//box-shadow : inset 0 0 5px 2px rgba(0,0,0,0.75) 
 	color COLOR_DARK
+
+	*/
+

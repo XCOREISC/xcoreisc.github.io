@@ -10,11 +10,11 @@ span
 	&.band
 		 position fixed 
 		 display none
-		&:target + .tab div 
+		&:target + .tab > div 
 			opacity: 1
 			background-color: darken(COLOR_GREEN,25%)
 			color: COLOR_WHITE    
-		&:target + .tab .navbar-content 
+		&:target + .tab a 
 			background-color: darken(COLOR_GREEN,25%)
 			color: #f5f5f5
 			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
@@ -22,25 +22,37 @@ span
 
 .tab 
 	position relative
-	& div 
+	& >div 
 		background: COLOR_GREEN
 		width: 100%
 		position: absolute
 		top: BASE_SPACE
 		left: 0
 		color: COLOR_WHITE
-		z-index: 5
 		opacity:0
 		transition: all 1s ease
 		padding BASE_SPACE
 		&.gallery
-			padding 0 0 2rem 0
+			padding 0 
 			font-size 0
 			& img
 				width (100/3)%
 				display inline-block
+		&.place
+			padding 0 
+			& #map-unprg
+				width 100%
+				min-height 12rem
+				z-index 2
+				& .gmnoprint
+					& a
+						display none
+			& address
+				text-align center
+				font-weight bold
 
-	& .navbar-content
+
+	& a
 		margin-top: -1.3rem
 		float: left
 		width: 25%
@@ -53,7 +65,7 @@ span
 		transition: all .5s ease
  
 a
-	&.navbar-content:hover 
+	&a:hover 
 		background-color: lighten(COLOR_GREEN,50%)
 		color: lighten(COLOR_WHITE,20%)
    

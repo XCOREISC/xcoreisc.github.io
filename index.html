@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="css/helpers.css" />
 	<link rel="stylesheet" href="css/modals.css" />
 	<link rel="stylesheet" href="css/tables.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body class="menu-push">
 	<nav role="navigation" class="menu menu-vertical menu-left" id="nav">
@@ -77,7 +78,10 @@
 				</a>
 				<div class="info">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, nobis, ut, necessitatibus vero possimus tempore aspernatur ea nemo esse officiis debitis quasi quos! Incidunt ratione laborum commodi dolore illo tenetur.
+						Les presentamos el Pre X Coreisc, para este evento contaremos con :....
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, voluptate animi optio repudiandae aliquam soluta natus! Fugit, voluptate, laborum voluptas at quas hic minima nihil vero corporis dolor eum ea.
 					</p>
 				</div>
 			</div>
@@ -86,9 +90,9 @@
 			<div class="tab">
 				<a href="#place" class="navbar-content" id="icon-place"><span class="fa fa-map-marker"></span></a>
 				<div class="place">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, explicabo, perferendis, quibusdam quia ratione velit voluptatem earum sunt architecto ipsam adipisci reprehenderit ipsum dolore illum quasi cupiditate ullam cumque fugiat.
-					</p>
+					
+					<div id="map-unprg"></div>
+					<address>Universidad Nacional Pedro Ruíz Gallo</address>
 				</div>
 			</div>
 
@@ -133,7 +137,7 @@
 
 
 
-		<div class="cronograma col-xs-12 col-sm-12 margin-top">
+		<section class="cronograma col-xs-12 col-sm-12 col-md-6 col-lg-6 margin-top">
 			<h2>cronograma</h2>
 			<time>20 de Noviembre del 2013</time>
 			<table>
@@ -195,43 +199,74 @@
 				</tr>
 			</table>
 			
-		</div>
-
-
-
-		<div class="md-modal md-effect" id="modal-inscripcion">
-			<div class="container bck-white radius-small">
-				<div class="col-xs-12">
-					<h3 class="text-center">Paquete Pre COREISC</h3>
-					<form action="#">
-						<select name="" id="">
-							<option value="1">UNPRG</option>
-							<option value="1">USAT</option>
-							<option value="1">USS</option>
-							<option value="1">UDL</option>
-							<option value="1">UDCH</option>
-						</select>
-					</form>
+		</section>
+		<section class="col-xs-12 col-sm-12 col-md-6 col-lg-6 margin-top">
+			<h2 class="subtitle">Expositores</h2>
+			<div class="speaker">
+				<figure>
+					<img src="images/speakers/soyjavi.jpg" alt="" />
+					<a href="#">@Nombre</a>
+				</figure>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam, animi magni necessitatibus vel asperiores alias similique tenetur harum quam quos numquam est libero fuga eum consectetur placeat dicta laudantium.</p>
 				</div>
-				<div class="col-xs-12">
-					<h3 class="text-center">Arma tu paquete</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, laboriosam, eveniet et provident tempora quos aspernatur. Minima, repudiandae, corporis facilis dignissimos natus enim eos laudantium pariatur sequi impedit. Praesentium, atque.</p>
+			</div>
+			<div class="speaker">
+				<figure>
+					<img src="images/speakers/soyjavi.jpg" alt="" />
+					<a href="#">@Nombre</a>
+				</figure>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam, animi magni necessitatibus vel asperiores alias similique tenetur harum quam quos numquam est libero fuga eum consectetur placeat dicta laudantium.</p>
 				</div>
-				<a class="button md-close">Close me!</a>
+			</div>
+			<div class="speaker">
+				<figure>
+					<img src="images/speakers/soyjavi.jpg" alt="" />
+					<a href="#">@Nombre</a>
+				</figure>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, aperiam, animi magni necessitatibus vel asperiores alias similique tenetur harum quam quos numquam est libero fuga eum consectetur placeat dicta laudantium.</p>
+				</div>
 			</div>
 
-			
-		</div>
+		</section>
+
+			<div class="md-modal md-effect" id="modal-inscripcion">
+				<div class="container bck-white radius-small">
+					<div class="col-xs-12">
+						<h3 class="text-center">Paquete Pre COREISC</h3>
+						<form action="#">
+							<select name="" id="">
+								<option value="1">UNPRG</option>
+								<option value="1">USAT</option>
+								<option value="1">USS</option>
+								<option value="1">UDL</option>
+								<option value="1">UDCH</option>
+							</select>
+						</form>
+					</div>
+					<div class="col-xs-12">
+						<h3 class="text-center">Arma tu paquete</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, laboriosam, eveniet et provident tempora quos aspernatur. Minima, repudiandae, corporis facilis dignissimos natus enim eos laudantium pariatur sequi impedit. Praesentium, atque.</p>
+					</div>
+					<a class="button md-close">Close me!</a>
+				</div>
+			</div>
 					
+		<section class="col-xs-12">
+			<a href="#" class="modal margin-top margin-bottom " data-modal="modal-inscripcion">
+				Inscribete
+			</a>
+		</section>
+		
 
-		<a href="#" class="button modal margin-top margin-bottom " data-modal="modal-inscripcion">Inscribete</a>
 		<div class="md-overlay"></div><!-- the overlay element -->
-	
 
-		<div class="container">
+		<!--<div class="container">
 			
 			
-			<!--
+			
 			<div class="row">
 				<form action="#">
 					<input type="email" placeholder="Tu Email" class="col-xs-offset-1 col-xs-8 col-lg-offset-3 col-lg-5"/>
@@ -243,11 +278,11 @@
 					Deja tu email y tendras todas las noticias del X COREISC
 				</h3>
 			</div>
-		-->
+		
 		</div>
+		-->
 
-
-	<section>
+		<!--
 		<h2 class="text-center margin-top">UNPRG</h2>
 		<div id='cronograma' style='max-width:500px;margin:0 auto' class='swipe'>
 		  <div class='swipe-wrap'>
@@ -282,78 +317,11 @@
 		  <button onclick='mySwipe.next()'>siguiente</button>
 
 		</div>
+		-->
 
 		
 	</section>
-			<div class="row">
-				<div class="col-lg-6 bck-glass">
-					<div class="col-xs-offset-2 col-xs-8 bck-white border-vertical">
-						<h2 class="text-center">Expositores</h2>
-					</div>
-					<div class="speaker">
-						<figure>
-							<img src="images/speakers/soyjavi.jpg" alt="">
-							<figcaption>
-									<p>Founder at @tapquo, @lungojs & @quojs author .. #HTML5 evangelist, #JavaScript Lover, #W3C member… a human believer with @nextflip_org</p>
-								<address>
-									Bilbao, ES · tapquo.com 
-								</address>
-							</figcaption>
-						</figure>
-					</div>
-					<div class="speaker">
-						<figure>
-							<img src="images/speakers/soyjavi.jpg" alt="">
-							<figcaption>
-									<p>Founder at @tapquo, @lungojs & @quojs author .. #HTML5 evangelist, #JavaScript Lover, #W3C member… a human believer with @nextflip_org</p>
-								<address>
-									Bilbao, ES · tapquo.com 
-								</address>
-							</figcaption>
-						</figure>
-					</div>
-					<div class="speaker">
-						<figure>
-							<img src="images/speakers/soyjavi.jpg" alt="">
-							<figcaption>
-									<p>Founder at @tapquo, @lungojs & @quojs author .. #HTML5 evangelist, #JavaScript Lover, #W3C member… a human believer with @nextflip_org</p>
-								<address>
-									Bilbao, ES · tapquo.com 
-								</address>
-							</figcaption>
-						</figure>
-					</div>
-					<div class="speaker">
-						<figure>
-							<img src="images/speakers/soyjavi.jpg" alt="">
-							<figcaption>
-									<p>Founder at @tapquo, @lungojs & @quojs author .. #HTML5 evangelist, #JavaScript Lover, #W3C member… a human believer with @nextflip_org</p>
-								<address>
-									Bilbao, ES · tapquo.com 
-								</address>
-							</figcaption>
-						</figure>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<img src="images/UNPRG-plaza-del-saber-medium.jpg" alt="Plaza del Saber UNPRG - Lambayeque" class="col-xs-10 col-xs-offset-1 portada responsive" />
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, cupiditate neque repudiandae nihil rerum atque inventore a alias voluptatem in! Tempore, non eaque dolore laborum aspernatur esse deserunt quaerat atque.</p>
-					<div class="row">
-						<div class="col-lg-4">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similiqo fuga tempora et nulla rerum ab aliquid tempore corporis vitae?</p>
-						</div>
-						<div class="col-lg-8">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, doloribus, ipsum, quibusdam, porro odio explicabo sunt fugiat quia sed illo fuga tempora et nulla rerum ab aliquid tempore corporis vitae?</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore vel veritatis officia blanditiis totam vero nam. Porro, excepturinimi iusto!.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-	</section>
-	<section>
-		
-	</section>
-	<footer class="bck-dark">
+	<footer class="bck-dark-2">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, repellat, sapiente, nihil sunt molestias delectus eius corporis nulla dolorem tempore ducimus cum exercitationem impedit aliquid cupiditate voluptatem quisquam perspiciatis non.</div>
@@ -372,6 +340,8 @@
 <script src="js/lib/swipe.js"></script>
 <script src="js/lib/modalEffects.js"></script>
 <script src="js/lib/picturefill.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.10&key=AIzaSyBP3ZaMYVz0M19TaHkskzCYq-dncj2TxjI&sensor=true&language=es"></script>
+
 <script src="js/app.js"></script>
 </body>
 </html>
