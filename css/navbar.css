@@ -37,7 +37,7 @@ span.band:target + .tab a {
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 .tab >div.gallery {
   padding: 0;
@@ -53,6 +53,7 @@ span.band:target + .tab a {
 .tab >div.place #map-unprg {
   width: 100%;
   min-height: 12rem;
+  overflow: visible !important;
   z-index: 2;
 }
 .tab >div.place #map-unprg .gmnoprint a {
