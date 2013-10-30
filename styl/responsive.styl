@@ -32,7 +32,7 @@
 		& h1, & h2
 			background-color transparent
 			position relative
-			top 16rem
+			top 15rem
 			color COLOR_DARK
 			text-shadow 0 2px 1px COLOR_THEME
 			margin 0 auto
@@ -60,15 +60,14 @@
 				margin-left (60/2)%
 			&:nth-of-type(3)
 				width 20%
-
 			& img 
 				display block
 				margin 0 auto
-				width 60%
+				width 80%
 				float none
 				top 4rem
 				&.xcoreisc
-					width auto
+					width 80%
 					top BASE_SPACE
 					box-shadow 0 0 (BASE_SPACE/2) (BASE_SPACE/2) COLOR_DARK
 	.menu 
@@ -96,4 +95,31 @@
 	#countdown
 		position absolute
 		top 20rem
-		left 33.7%
+		left 24.5%
+		& input
+			text-shadow 0 1px 1px black
+		& span
+			position: relative
+			top -55px
+			font-weight bold
+			text-shadow 0 1px 1px black
+
+
+@media only screen and (min-width: 1200px) 
+	[role="header"]
+		& > a
+			& img 
+				width 60%
+				&.xcoreisc
+					width 60%
+	#countdown
+		left 30%
+@media only screen and (min-width: 1440px) 
+	[role="header"]
+		& > a
+			& img 
+				width 40%
+				&.xcoreisc
+					width 40%
+	#countdown
+		left 32.5%

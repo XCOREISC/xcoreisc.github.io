@@ -36,7 +36,7 @@
   [role="header"] h2 {
     background-color: transparent;
     position: relative;
-    top: 16rem;
+    top: 15rem;
     color: #34495e;
     text-shadow: 0 2px 1px #3498db;
     margin: 0 auto;
@@ -74,12 +74,12 @@
   [role="header"] > a img {
     display: block;
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
     float: none;
     top: 4rem;
   }
   [role="header"] > a img.xcoreisc {
-    width: auto;
+    width: 80%;
     top: 1rem;
     -webkit-box-shadow: 0 0 0.5rem 0.5rem #34495e;
     -moz-box-shadow: 0 0 0.5rem 0.5rem #34495e;
@@ -120,6 +120,37 @@
   #countdown {
     position: absolute;
     top: 20rem;
-    left: 33.7%;
+    left: 24.5%;
+  }
+  #countdown input {
+    text-shadow: 0 1px 1px #000;
+  }
+  #countdown span {
+    position: relative;
+    top: -55px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #000;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  [role="header"] > a img {
+    width: 60%;
+  }
+  [role="header"] > a img.xcoreisc {
+    width: 60%;
+  }
+  #countdown {
+    left: 30%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  [role="header"] > a img {
+    width: 40%;
+  }
+  [role="header"] > a img.xcoreisc {
+    width: 40%;
+  }
+  #countdown {
+    left: 32.5%;
   }
 }
