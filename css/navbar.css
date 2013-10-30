@@ -1,6 +1,7 @@
 .navbar {
   width: 100%;
   position: relative;
+  padding-top: 2rem;
 }
 span.band {
   position: fixed;

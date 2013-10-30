@@ -86,8 +86,10 @@ google.maps.event.addDomListener(window,'load',function(){
   });
 
 
+var h=window.screen.availHeight;
+var w=window.screen.availWidth;
 
-
+alert(w+"x"+h)
 
 
 
