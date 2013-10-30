@@ -41,27 +41,16 @@
 			width 30%
 			background-color COLOR_GREEN
 		& h2 
-			z-index 1	
-		& h1
-			z-index 2
 			&:before,&:after
-				content ""
-				position absolute
-				border-style: solid
-				border-width: 1.5rem
-				top 0
+				top -1rem 
 				z-index 1
+				border-width: 1.5rem
 			&:before
 				border-color: darken(COLOR_GREEN,10%) rgba(0, 0, 0, 0) darken(COLOR_GREEN,10%) darken(COLOR_GREEN,10%)  
-				right -1.5rem
-				top 1rem
-				z-index 1
+				right -2rem
 			&:after
 				border-color: darken(COLOR_GREEN,10%)   darken(COLOR_GREEN,10%)   darken(COLOR_GREEN,10%) rgba(0, 0, 0, 0) 
-				left -1.5rem
-				top 1rem
-				z-index 1
-
+				left -2rem
 		& > a
 			display block
 			width 10%
