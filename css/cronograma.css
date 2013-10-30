@@ -62,8 +62,7 @@
 .cronograma table td:nth-child(2) {
   padding: 0 1rem;
 }
-.cronograma table td:nth-child(2) div {
-  cursor: pointer;
+.cronograma table td:nth-child(2) > div {
   padding: 1rem 0;
   color: #34495e;
   background-color: #ebedee;
@@ -75,22 +74,8 @@
   margin-top: 1rem;
   position: relative;
 }
-.cronograma table td:nth-child(2) div:before {
-  content: "conferencia";
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-border-radius: 0 0.25rem 0 0.25rem;
-  -moz-border-radius: 0 0.25rem 0 0.25rem;
-  -ms-border-radius: 0 0.25rem 0 0.25rem;
-  -o-border-radius: 0 0.25rem 0 0.25rem;
-  border-radius: 0 0.25rem 0 0.25rem;
-  background-color: #9b59b6;
-  padding: 0 0.5rem;
-  color: #fff;
-}
-.cronograma table td:nth-child(3) div,
-.cronograma table td:nth-child(4) div {
+.cronograma table td:nth-child(3) > div,
+.cronograma table td:nth-child(4) > div {
   cursor: pointer;
   padding: 4.6rem 0;
   color: #34495e;
@@ -103,8 +88,8 @@
   margin-top: 1rem;
   position: relative;
 }
-.cronograma table td:nth-child(3) div:before,
-.cronograma table td:nth-child(4) div:before {
+.cronograma table td:nth-child(3) > div:before,
+.cronograma table td:nth-child(4) > div:before {
   content: "Taller";
   position: absolute;
   top: 0;
@@ -118,7 +103,7 @@
   padding: 0 0.5rem;
   color: #fff;
 }
-.cronograma table td:nth-child(4) div {
+.cronograma table td:nth-child(4) > div {
   padding: 6.7rem 0;
 }
 .cronograma table td:nth-child(3) {
@@ -127,6 +112,90 @@
 .cronograma table td:nth-child(4) {
   border-right: 2rem solid #34495e;
   border-left: 1rem solid #34495e;
+}
+.cronograma table tr:nth-child(2) td:nth-child(2) > div:before,
+.cronograma table tr:nth-child(3) td:nth-child(2) > div:before,
+.cronograma table tr:nth-child(6) td:nth-child(2) > div:before,
+.cronograma table tr:nth-child(7) td:nth-child(2) > div:before {
+  content: "conferencia";
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-border-radius: 0 0.25rem 0 0.25rem;
+  -moz-border-radius: 0 0.25rem 0 0.25rem;
+  -ms-border-radius: 0 0.25rem 0 0.25rem;
+  -o-border-radius: 0 0.25rem 0 0.25rem;
+  border-radius: 0 0.25rem 0 0.25rem;
+  background-color: #9b59b6;
+  padding: 0 0.5rem;
+  color: #fff;
+}
+.cronograma table tr:nth-child(4) td:nth-child(2) > a {
+  cursor: pointer;
+  display: block;
+  padding: 1rem 0;
+  color: #34495e;
+  background-color: #ebedee;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  position: relative;
+}
+.cronograma table tr:nth-child(4) td:nth-child(2) > a> div {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.cronograma table tr:nth-child(4) td:nth-child(2) > a> div:after {
+  content: "ignite";
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-border-radius: 0 0.25rem 0 0;
+  -moz-border-radius: 0 0.25rem 0 0;
+  -ms-border-radius: 0 0.25rem 0 0;
+  -o-border-radius: 0 0.25rem 0 0;
+  border-radius: 0 0.25rem 0 0;
+  background-color: #e74c3c;
+  padding: 0 0.5rem;
+  color: #fff;
+  width: 5rem;
+}
+.cronograma table tr:nth-child(4) td:nth-child(2) > a:hover {
+  background-color: #ee8277;
+  color: #ebedee;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.cronograma table tr:nth-child(4) td:nth-child(2) > a:hover:before {
+  font-family: FontAwesome;
+  content: "\f054";
+  position: absolute;
+  font-size: 2rem;
+  right: 0;
+  top: 1.1rem;
+  background-color: #e74c3c;
+  text-align: center;
+  width: 5rem;
+  -webkit-border-radius: 0 0 0.25rem 0;
+  -moz-border-radius: 0 0 0.25rem 0;
+  -ms-border-radius: 0 0 0.25rem 0;
+  -o-border-radius: 0 0 0.25rem 0;
+  border-radius: 0 0 0.25rem 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 .cronograma table tr:nth-child(8) td:nth-child(2) {
   padding: 0 0 0 1rem;
