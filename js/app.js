@@ -1,6 +1,101 @@
 
 
 
+
+
+
+
+
+
+$(document).on("ready",function(){
+	$('#countdown').countdown( {date: '20 november 2013 12:24:00'} );
+	$("#days").knob({
+    min: 0,
+    max: 60,
+    thickness:0.2
+  });
+  $("#hours").knob({
+    thickness:0.2
+  });
+  $("#mins").knob({
+    min: 0,
+    max: 60,
+    thickness:0.2
+  });
+  $("#secs").knob({
+    min: 0,
+    max: 60,
+    thickness:0.2
+  });
+  /************** navigation ************/
+    var menuLeft = document.getElementById( 'nav' ),
+        buttonNav=document.getElementById('showMenu'),
+        body = document.body;
+      
+    buttonNav.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( body, 'menu-push-toright' );
+      classie.toggle( menuLeft, 'menu-open' );
+    };
+    
+  var elem = document.getElementById('cronograma');
+  window.mySwipe = Swipe(elem, {
+    // startSlide: 4,
+    // auto: 3000,
+    // continuous: true,
+    // disableScroll: true,
+    // stopPropagation: true,
+    // callback: function(index, element) {},
+    // transitionEnd: function(index, element) {}
+  });
+  /************* ¨Links *************************/
+  var iconInfo= $("#icon-info"),
+  iconPlace= $("#icon-place"),
+  iconDate= $("#icon-date"),
+  iconGallery= $("#icon-gallery");
+
+  /*********** Tab content ******************/
+  var contentInfo=$(".info"),
+  contentDate=$(".date"),
+  contentPlace=$(".place"),
+  contentGallery=$(".gallery");
+
+
+  iconInfo.on("click",function(){
+    $(".navbar").css({"height":contentInfo.height()+'px'});
+    $(".cronograma").addClass("margin-top-3");
+  });
+  iconPlace.on("click",function(){
+    $(".navbar").css({"height":contentPlace.height()+'px'});
+    $(".cronograma").css({"margin-top":"1rem" } );
+  });
+  iconDate.on("click",function(){
+    $(".navbar").css({"height":contentDate.height()+'px'});
+    $(".cronograma").addClass("margin-top-3");
+  });
+  iconGallery.on("click",function(){
+    $(".navbar").css({"height":contentGallery.height()+'px'});
+    $(".cronograma").css({"margin-top":"1rem" } );
+  });
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 google.maps.event.addDomListener(window,'load',function(){
 
 
@@ -86,153 +181,72 @@ google.maps.event.addDomListener(window,'load',function(){
   });
 
 
-var h=window.screen.availHeight;
-var w=window.screen.availWidth;
-
-alert(w+"x"+h)
 
 
+function getWidth()
+  {
+    xWidth = null;
+    if(window.screen != null)
+      xWidth = window.screen.availWidth;
+ 
+    if(document.body != null)
+      xWidth = document.body.clientWidth;
+
+    if(window.innerWidth != null)
+      xWidth = window.innerWidth;
+ 
+    return xWidth;
+  }
+function getHeight() {
+  xHeight = null;
+  
+  if(document.body != null)
+    xHeight = document.body.clientHeight;
+
+  if(window.screen != null)
+    xHeight = window.screen.availHeight;
+ 
+  if(window.innerHeight != null)
+    xHeight =   window.innerHeight;
+ 
+ 
+  return xHeight;
+}
 
 
 
 
+var h=getHeight();
+var w=getWidth();
 
 
 
+function fillCircles(t) {
 
-
-
-
-
-
-$(document).on("ready",function(){
-	$('#countdown').countdown( {date: '20 november 2013 12:24:00'} );
-	$("#days").knob({
-    min: 0,
-    max: 60,
-    readOnly :true,
-    width:60,
-    height:60,
+  var countd={
+    width:t,
+    height:t,
     fgColor:"#ebedee",
     inputColor:"#ebedee",
-    thickness:0.2
-  });
-  $("#hours").knob({
-    min: 0,
-    max: 24,
-    readOnly :true,
-    width:60,
-    height:60,
-    fgColor:"#ebedee",
-    inputColor:"#ebedee",
-    thickness:0.2
-  });
-  $("#mins").knob({
-    min: 0,
-    max: 60,
-    readOnly :true,
-    width:60,
-    height:60,
-    fgColor:"#ebedee",
-    inputColor:"#ebedee",
-    thickness:0.2
-  });
-  $("#secs").knob({
-    min: 0,
-    max: 60,
-    readOnly :true,
-    width:60,
-    height:60,
-    fgColor:"#ebedee",
-    inputColor:"#ebedee",
-    thickness:0.2
-  });
-  /************** navigation ************/
-    var menuLeft = document.getElementById( 'nav' ),
-        buttonNav=document.getElementById('showMenu'),
-        body = document.body;
-      
-    buttonNav.onclick = function() {
-      classie.toggle( this, 'active' );
-      classie.toggle( body, 'menu-push-toright' );
-      classie.toggle( menuLeft, 'menu-open' );
-    };
-    
-  var elem = document.getElementById('cronograma');
-  window.mySwipe = Swipe(elem, {
-    // startSlide: 4,
-    // auto: 3000,
-    // continuous: true,
-    // disableScroll: true,
-    // stopPropagation: true,
-    // callback: function(index, element) {},
-    // transitionEnd: function(index, element) {}
-  });
-  /************* ¨Links *************************/
-  var iconInfo= $("#icon-info"),
-  iconPlace= $("#icon-place"),
-  iconDate= $("#icon-date"),
-  iconGallery= $("#icon-gallery");
+  }
+  $("#days").knob(countd);
+  $("#hours").knob(countd);
+  $("#mins").knob(countd);
+  $("#secs").knob(countd);
 
-  /*********** Tab content ******************/
-  var contentInfo=$(".info"),
-  contentDate=$(".date"),
-  contentPlace=$(".place"),
-  contentGallery=$(".gallery");
-
-
-  iconInfo.on("click",function(){
-    $(".navbar").css({"height":contentInfo.height()+'px'});
-    $(".cronograma").addClass("margin-top-3");
-  });
-  iconPlace.on("click",function(){
-    $(".navbar").css({"height":contentPlace.height()+'px'});
-    $(".cronograma").css({"margin-top":"1rem" } );
-  });
-  iconDate.on("click",function(){
-    $(".navbar").css({"height":contentDate.height()+'px'});
-    $(".cronograma").addClass("margin-top-3");
-  });
-  iconGallery.on("click",function(){
-    $(".navbar").css({"height":contentGallery.height()+'px'});
-    $(".cronograma").css({"margin-top":"1rem" } );
-  });
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
+if(w>=992 && h <=718){
+  fillCircles(120)
+  $("#header").css({"min-height":h+"px"});
+}else{
+  if(w>=992){
+    fillCircles(120)
+    $("#header").css({"min-height":"718px"});
+  }else{
+    fillCircles(60)
+  }
+}
 
