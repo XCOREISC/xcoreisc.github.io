@@ -24,6 +24,7 @@
 			&:first-child
 				color COLOR_WHITE
 				& span 
+					cursor pointer
 					background-color COLOR_WHITE
 					color COLOR_PURPLE
 					display block
@@ -37,7 +38,7 @@
 						content: "\f0d9"
 						position absolute
 						left 4rem
-						margin-top -1rem
+						margin-top -1.3rem
 						font-size 4rem
 						color COLOR_WHITE
 					&:after
@@ -53,18 +54,43 @@
 			&:nth-child(2)
 				padding 0 BASE_SPACE
 				& div
+					cursor: pointer
 					padding BASE_SPACE 0
 					color COLOR_DARK
 					background-color COLOR_WHITE
 					border-radius (BASE_SPACE/4)
 					margin-top BASE_SPACE
+					position relative
+					&:before
+						content "conferencia"
+						position absolute
+						top 0
+						right 0
+						border-radius 0 (BASE_SPACE/4) 0 (BASE_SPACE/4)
+						background-color COLOR_PURPLE
+						padding 0 (BASE_SPACE/2)
+						color white
 			&:nth-child(3),&:nth-child(4)
-				padding 0 BASE_SPACE
-				background-color COLOR_WHITE
-				border-radius (BASE_SPACE/4)
-				border-top (BASE_SPACE*2) solid COLOR_DARK
 				& div
+					cursor: pointer
+					padding 4.6rem 0
 					color COLOR_DARK
+					background-color COLOR_WHITE
+					border-radius (BASE_SPACE/4)
+					margin-top BASE_SPACE
+					position relative
+					&:before
+						content "Taller"
+						position absolute
+						top 0
+						right 0
+						border-radius 0 (BASE_SPACE/4) 0 (BASE_SPACE/4)
+						background-color COLOR_GREEN
+						padding 0 (BASE_SPACE/2)
+						color white
+			&:nth-child(4)
+				& div
+					padding 6.7rem 0
 			&:nth-child(3)
 				border-right (BASE_SPACE) solid COLOR_DARK
 			&:nth-child(4)

@@ -26,6 +26,7 @@
   color: #ebedee;
 }
 .cronograma table td:first-child span {
+  cursor: pointer;
   background-color: #ebedee;
   color: #9b59b6;
   display: block;
@@ -45,7 +46,7 @@
   content: "\f0d9";
   position: absolute;
   left: 4rem;
-  margin-top: -1rem;
+  margin-top: -1.3rem;
   font-size: 4rem;
   color: #ebedee;
 }
@@ -62,6 +63,7 @@
   padding: 0 1rem;
 }
 .cronograma table td:nth-child(2) div {
+  cursor: pointer;
   padding: 1rem 0;
   color: #34495e;
   background-color: #ebedee;
@@ -71,21 +73,53 @@
   -o-border-radius: 0.25rem;
   border-radius: 0.25rem;
   margin-top: 1rem;
+  position: relative;
 }
-.cronograma table td:nth-child(3),
-.cronograma table td:nth-child(4) {
-  padding: 0 1rem;
+.cronograma table td:nth-child(2) div:before {
+  content: "conferencia";
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-border-radius: 0 0.25rem 0 0.25rem;
+  -moz-border-radius: 0 0.25rem 0 0.25rem;
+  -ms-border-radius: 0 0.25rem 0 0.25rem;
+  -o-border-radius: 0 0.25rem 0 0.25rem;
+  border-radius: 0 0.25rem 0 0.25rem;
+  background-color: #9b59b6;
+  padding: 0 0.5rem;
+  color: #fff;
+}
+.cronograma table td:nth-child(3) div,
+.cronograma table td:nth-child(4) div {
+  cursor: pointer;
+  padding: 4.6rem 0;
+  color: #34495e;
   background-color: #ebedee;
   -webkit-border-radius: 0.25rem;
   -moz-border-radius: 0.25rem;
   -ms-border-radius: 0.25rem;
   -o-border-radius: 0.25rem;
   border-radius: 0.25rem;
-  border-top: 2rem solid #34495e;
+  margin-top: 1rem;
+  position: relative;
 }
-.cronograma table td:nth-child(3) div,
+.cronograma table td:nth-child(3) div:before,
+.cronograma table td:nth-child(4) div:before {
+  content: "Taller";
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-border-radius: 0 0.25rem 0 0.25rem;
+  -moz-border-radius: 0 0.25rem 0 0.25rem;
+  -ms-border-radius: 0 0.25rem 0 0.25rem;
+  -o-border-radius: 0 0.25rem 0 0.25rem;
+  border-radius: 0 0.25rem 0 0.25rem;
+  background-color: #16a085;
+  padding: 0 0.5rem;
+  color: #fff;
+}
 .cronograma table td:nth-child(4) div {
-  color: #34495e;
+  padding: 6.7rem 0;
 }
 .cronograma table td:nth-child(3) {
   border-right: 1rem solid #34495e;
