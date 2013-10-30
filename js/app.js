@@ -155,7 +155,8 @@ google.maps.event.addDomListener(window,'load',function(){
 
     var mapOptions = {
       zoom: 18,
-      center: new google.maps.LatLng(-6.707681,-79.903999),
+      //center: new google.maps.LatLng(-6.707681,-79.903999),
+      center: new google.maps.LatLng(-6.706584,-79.904665),
       mapTypeControlOptions: {
         mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
       }
@@ -169,7 +170,8 @@ google.maps.event.addDomListener(window,'load',function(){
     });
 
     // var image = 'images/icons/yetsu-mark-map.png';
-     var myLatLng = new google.maps.LatLng(-6.707681,-79.903999);
+     //var myLatLng = new google.maps.LatLng(-6.707681,-79.903999);
+     var myLatLng = new google.maps.LatLng(-6.706584,-79.904665);
       var beachMarker = new google.maps.Marker({
           position: myLatLng,
           map: map
