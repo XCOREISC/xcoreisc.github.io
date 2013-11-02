@@ -8,27 +8,33 @@
 		table
 			background-color transparent
 			display table
-			border-collapse separate
-			border-spacing 1rem
+			padding 1rem 
 			& tr 
 				display table-row
 				border-bottom none
 				font-size BASE_SPACE
-				&:first-child td:nth-child(2),&:nth-child(5) td:nth-child(2),&:last-child td:nth-child(2)
-					background-color COLOR_WHITE
-				&:nth-child(2) td:nth-child(2), &:nth-child(3) td:nth-child(2), &:nth-child(6) td:nth-child(2)
-				&:nth-child(7) td:nth-child(2), &:nth-child(8) td:nth-child(2)
-					background-color COLOR_WHITE
+				/**************** Conferencias ************************/
+				&:nth-child(2) td:nth-child(2),
+				&:nth-child(3) td:nth-child(2),
+				&:nth-child(6) td:nth-child(2),
+				&:nth-child(7) td:nth-child(2),
+				&:nth-child(8) td:nth-child(2)
+					actividad(true,false,false,false)
+				/**************** Protocolo ************************/
+				&:nth-child(1) td:nth-child(2),
+				&:nth-child(5) td:nth-child(2),
+				&:nth-child(9) td:nth-child(2)
+					actividad(false,true,false,false)
+				/******************* IGNITE ***************************/
 				&:nth-child(4) td:nth-child(2)
-					background-color COLOR_WHITE
-				&:last-child
-					& td
-						&:first-child
-							& span
-								&:after
-									border-left none !important
-									height 0 !important
-
+					actividad(false,false,true,false)
+				/***************** taLLERES ***************************/
+				&:nth-child(6) td:nth-child(3),
+				&:nth-child(6) td:nth-child(4)
+					actividad(false,false,false,true)
+				&:nth-child(6) td:nth-child(4)
+					& div
+						padding 6.9rem 0
 			& td 
 				display table-cell !important
 				width auto !important
@@ -61,7 +67,6 @@
 							left 1.2rem
 							z-index -1
 				&:nth-child(2),&:nth-child(3),&:nth-child(4)
-					background-color COLOR_WHITE !important
 					border-left none !important
 					border-bottom none !important
 

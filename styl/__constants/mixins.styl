@@ -1,10 +1,10 @@
 @import "vendor.styl"
-/************************* FIXS ****************************************************/
+/************************* FIXS ****************************/
 clearfix() 
 	&:before,
 	&:after 
-		content: " "
-		display: table 
+		content " "
+		display table 
 	&:after
 		clear: both
 /************************** BLOCKS *******************************************/
@@ -19,3 +19,44 @@ square(X)
 /************************************** DECORATORS *************************************/
 radius(radius)
 	border-radius radius
+/************** cronograma************************/
+
+actividad(varC=false,varP=false,varI=false,varT=false)
+	background-color transparent
+	padding 1rem 
+	position relative
+	& div
+		background-color COLOR_WHITE
+		padding 1rem 0
+		border-radius (BASE_SPACE/4)
+		cursor pointer
+		position relative
+		&:before
+			position absolute
+			top 0
+			right 0
+			border-radius 0 (BASE_SPACE/4) 0 (BASE_SPACE/4)
+			padding 0 (BASE_SPACE/2)
+			color white
+	if varC
+		& div:before
+			content "Conferencia"
+			background-color COLOR_PURPLE
+	if varP
+		& div:before
+			content "Protocolo"
+			background-color COLOR_THEME
+	if varI
+		& div:before
+			content "Ignite"
+			background-color COLOR_RED
+	if varT
+		& > div
+			padding 4.3rem 0
+		& div:before
+			content "Taller"
+			background-color COLOR_GREEN
+		&:after
+			content ""
+
+
