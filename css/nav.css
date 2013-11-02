@@ -187,7 +187,7 @@
 }
 .menu > a {
   display: block;
-  padding-left: 2rem;
+  padding-left: 1rem;
   border-bottom: 2px solid #415b75;
   color: #b8bfc3;
   line-height: 2;
@@ -198,7 +198,7 @@
   border-top: 2px solid #415b75;
 }
 .menu > a > span {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   margin-right: 1rem;
 }
@@ -212,11 +212,11 @@
   content: "Encuentranos en ";
   display: block;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .menu > ul > li {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   width: 14.285714285714286%;
 }
@@ -225,13 +225,13 @@
   text-decoration: none;
 }
 .menu-vertical {
-  width: 240px;
+  width: 14rem;
   height: 100%;
   top: 0;
   z-index: 3;
 }
 .menu-left {
-  left: -240px;
+  left: -14rem;
 }
 .menu-left.menu-open {
   left: 0;
@@ -242,7 +242,7 @@
   left: 0;
 }
 .menu-push-toright {
-  left: 240px;
+  left: 14rem;
 }
 .menu,
 .menu-push {
