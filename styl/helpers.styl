@@ -6,6 +6,12 @@
 picture 
 	& img
 		max-width 100%
+	&.img-speaker
+		block-center()
+		square(8rem)
+		& img 
+			border-radius 50%
+			border 0.2rem dotted COLOR_ORANGE
 img
 	&.responsive
 		max-width 100%
@@ -19,11 +25,13 @@ img
 	
 .radius-small
 	border-radius (BASE_SPACE/4)
+
 /**************** colors ********************/
 .bck-sky-blue
 	background-color COLOR_SKY_BLUE
 .bck-white
 	background-color COLOR_WHITE
+	color COLOR_DARK
 .bck-green
 	background-color COLOR_GREEN
 .bck-orange
@@ -35,6 +43,9 @@ img
 .bck-glass
 	background-color darken(COLOR_THEME,30%)
 	border-radius (BASE_SPACE/2)
+
+.color-orange
+	color COLOR_ORANGE
 
 /***************** MARGINS, PADDINGS ********/
 
