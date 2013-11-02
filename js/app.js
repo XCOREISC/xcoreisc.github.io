@@ -67,7 +67,7 @@ $(document).on("ready",function(){
   });
   iconPlace.on("click",function(){
     $(".navbar").css({"height":contentPlace.height()+'px'});
-    $(".cronograma").css({"margin-top":"1rem" } );
+    $(".cronograma").css({"margin-top":"3rem" } );
   });
   iconDate.on("click",function(){
     $(".navbar").css({"height":contentDate.height()+'px'});
@@ -75,7 +75,7 @@ $(document).on("ready",function(){
   });
   iconGallery.on("click",function(){
     $(".navbar").css({"height":contentGallery.height()+'px'});
-    $(".cronograma").css({"margin-top":"1rem" } );
+    $(".cronograma").css({"margin-top":"3rem" } );
   });
 
 
