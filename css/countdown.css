@@ -27,10 +27,13 @@
 				border-color COLOR_DARK COLOR_DARK COLOR_WHITE COLOR_WHITE
 			*/
 }
+#countdown dt input {
+  font-size: 1.3rem !important;
+}
 #countdown dt span {
   display: block;
   color: #ebedee;
 }
 #countdown dt:nth-child(1) {
-  margin-left: -0.5rem;
+  margin-left: 0.5rem;
 }

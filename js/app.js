@@ -248,7 +248,7 @@ if(w>=992 && h <=718){
     fillCircles(120)
     $("#header").css({"min-height":"718px"});
   }else{
-    fillCircles(60)
+    fillCircles(40)
   }
 }
 
