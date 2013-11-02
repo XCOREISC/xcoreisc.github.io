@@ -28,22 +28,8 @@ $(document).on("ready",function(){
     thickness:0.2
   });
   /************** navigation ************/
-    var menuLeft = document.getElementById( 'nav' ),
-        buttonNav=document.getElementById('showMenu'),
-        body = document.body;
-      
-    buttonNav.onclick = function() {
-      classie.toggle( this, 'active' );
-      classie.toggle( body, 'menu-push-toright' );
-      classie.toggle( menuLeft, 'menu-open' );
-    };
-    menuLeft.onclick = function() {
-      classie.toggle( this, 'active' );
-      classie.toggle( body, 'menu-push-toright' );
-      classie.toggle( menuLeft, 'menu-open' );
-    };
     
-    
+
   var elem = document.getElementById('cronograma');
   window.mySwipe = Swipe(elem, {
     // startSlide: 4,
@@ -254,7 +240,20 @@ if(w>=992 && h <=718){
     fillCircles(120)
     $("#header").css({"min-height":"718px"});
   }else{
-    fillCircles(40)
+    fillCircles(40);
+    var menuLeft = document.getElementById( 'nav' ),
+        buttonNav=document.getElementById('showMenu'),
+        body = document.body;
+    buttonNav.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( body, 'menu-push-toright' );
+      classie.toggle( menuLeft, 'menu-open' );
+    };
+    menuLeft.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( body, 'menu-push-toright' );
+      classie.toggle( menuLeft, 'menu-open' );
+    };
   }
 }
 
