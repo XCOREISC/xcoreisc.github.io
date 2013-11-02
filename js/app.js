@@ -37,6 +37,12 @@ $(document).on("ready",function(){
       classie.toggle( body, 'menu-push-toright' );
       classie.toggle( menuLeft, 'menu-open' );
     };
+    menuLeft.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( body, 'menu-push-toright' );
+      classie.toggle( menuLeft, 'menu-open' );
+    };
+    
     
   var elem = document.getElementById('cronograma');
   window.mySwipe = Swipe(elem, {
