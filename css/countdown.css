@@ -24,20 +24,3 @@
 #countdown dt:nth-child(1) {
   margin-left: 0.5rem;
 }
-.social {
-  text-align: center;
-}
-.social:before,
-.social:after {
-  content: " ";
-  display: table;
-}
-.social:after {
-  clear: both;
-}
-.social iframe,
-.social > div {
-  display: block !important;
-  float: left !important;
-  width: 33.333333333333336% !important;
-}

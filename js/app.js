@@ -44,31 +44,38 @@ $(document).on("ready",function(){
   var iconInfo= $("#icon-info"),
   iconPlace= $("#icon-place"),
   iconDate= $("#icon-date"),
+  iconSocial= $("#icon-social"),
   iconGallery= $("#icon-gallery");
 
   /*********** Tab content ******************/
   var contentInfo=$(".info"),
-  contentDate=$(".date"),
   contentPlace=$(".place"),
+  contentDate=$(".date"),
+  contentSocial=$(".social"),
   contentGallery=$(".gallery");
 
 
   iconInfo.on("click",function(){
     $(".navbar").css({"height":contentInfo.height()+'px'});
-    $(".cronograma").addClass("margin-top-3");
+    $(".cronograma").css({"margin-top":"2.2rem" } );
   });
   iconPlace.on("click",function(){
     $(".navbar").css({"height":contentPlace.height()+'px'});
-    $(".cronograma").css({"margin-top":"3rem" } );
+    $(".cronograma").css({"margin-top":"2.2rem" } );
   });
   iconDate.on("click",function(){
     $(".navbar").css({"height":contentDate.height()+'px'});
-    $(".cronograma").addClass("margin-top-3");
+    $(".cronograma").css({"margin-top":"2.2rem" } );
   });
   iconGallery.on("click",function(){
     $(".navbar").css({"height":contentGallery.height()+'px'});
-    $(".cronograma").css({"margin-top":"3rem" } );
+    $(".cronograma").css({"margin-top":"2.2rem" } );
   });
+  iconSocial.on("click",function(){
+    $(".navbar").css({"height":contentSocial.height()+'px'});
+    $(".cronograma").css({"margin-top":"2.2rem" } );
+  });
+
 
 
 
