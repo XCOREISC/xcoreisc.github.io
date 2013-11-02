@@ -1,31 +1,5 @@
 #countdown dt {
   margin-left: 1rem;
-/*
-		&:first-child
-			block-center()
-			width 30%
-			height BASE_SPACE*2
-			background COLOR_WHITE
-			margin-top BASE_SPACE 
-			margin-bottom BASE_SPACE 
-			& span
-				color COLOR_THEME
-				display inline-block
-				text-align center
-			&:before,&:after
-				content ''
-				position: absolute
-			&:before
-				left 40%
-				border-width BASE_SPACE
-				border-style solid
-				border-color COLOR_DARK COLOR_WHITE COLOR_WHITE COLOR_DARK
-			&:after
-				left 55%
-				border-width BASE_SPACE
-				border-style solid
-				border-color COLOR_DARK COLOR_DARK COLOR_WHITE COLOR_WHITE
-			*/
 }
 #countdown dt input {
   font-size: 1.3rem !important;
@@ -34,6 +8,33 @@
   display: block;
   color: #ebedee;
 }
+#countdown dt canvas {
+  -webkit-box-shadow: 0 0 0.2rem rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 0.2rem rgba(0,0,0,0.5);
+  -ms-box-shadow: 0 0 0.2rem rgba(0,0,0,0.5);
+  -o-box-shadow: 0 0 0.2rem rgba(0,0,0,0.5);
+  box-shadow: 0 0 0.2rem rgba(0,0,0,0.5);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.5);
+}
 #countdown dt:nth-child(1) {
   margin-left: 0.5rem;
+}
+.social:before,
+.social:after {
+  content: " ";
+  display: table;
+}
+.social:after {
+  clear: both;
+}
+.social iframe,
+.social > div {
+  display: block !important;
+  float: left !important;
+  width: 33.333333333333336% !important;
 }
