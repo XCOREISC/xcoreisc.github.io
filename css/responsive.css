@@ -290,11 +290,11 @@
   }
   [role="header"] h2:before {
     border-color: #149078 rgba(0,0,0,0) #149078 #149078;
-    right: -2rem;
+    right: -3rem;
   }
   [role="header"] h2:after {
     border-color: #149078 #149078 #149078 rgba(0,0,0,0);
-    left: -2rem;
+    left: -3rem;
   }
   [role="header"] > a {
     display: block;
