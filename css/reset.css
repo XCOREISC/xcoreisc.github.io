@@ -29,6 +29,14 @@ p {
 body {
   background-color: #34495e;
 }
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  empty-cells: show;
+}
+table td {
+  padding: 0;
+}
 fieldset,
 ul {
   padding: 0;

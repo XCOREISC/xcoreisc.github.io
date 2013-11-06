@@ -1,26 +1,122 @@
 @import "__constants/variables.styl"
 @import "__constants/mixins.styl"
 
+@media only screen and (min-width: 768px) 
+	.leyenda
+		display none
+	.cronograma
+		table
+			background-color transparent
+			display table
+			padding 1rem 
+			& tr 
+				display table-row
+				border-bottom none
+				font-size BASE_SPACE
+				/**************** Conferencias ************************/
+				&:nth-child(2) td:nth-child(2),
+				&:nth-child(3) td:nth-child(2),
+				&:nth-child(6) td:nth-child(2),
+				&:nth-child(7) td:nth-child(2),
+				&:nth-child(8) td:nth-child(2)
+					actividad(true,false,false,false)
+				/**************** Protocolo ************************/
+				&:nth-child(1) td:nth-child(2),
+				&:nth-child(5) td:nth-child(2),
+				&:nth-child(9) td:nth-child(2)
+					actividad(false,true,false,false)
+				/******************* IGNITE ***************************/
+				&:nth-child(4) td:nth-child(2)
+					actividad(false,false,true,false)
+				/***************** taLLERES ***************************/
+				&:nth-child(6) td:nth-child(3),
+				&:nth-child(6) td:nth-child(4)
+					actividad(false,false,false,true)
+				&:nth-child(6) td:nth-child(4)
+					& div
+						padding 6.9rem 0
+			& td 
+				display table-cell !important
+				width auto !important
+				border-radius (BASE_SPACE/4)
+				&:first-child
+					background-color transparent
+					& span 
+						position relative !important
+						background-color COLOR_WHITE
+						cursor pointer
+						display block
+						square(4rem)
+						border-radius 50%
+						padding (BASE_SPACE*0.8) 0
+						border (BASE_SPACE/2) solid COLOR_PURPLE
+						&:before
+							font-family FontAwesome
+							content: "\f0d9"
+							position absolute
+							left 3.5rem
+							margin-top -1.3rem
+							font-size 4rem
+							color COLOR_WHITE
+						&:after
+							content ""
+							position absolute
+							height 12rem
+							border-left (BASE_SPACE/2) solid COLOR_PURPLE
+							width 4rem
+							left 1.2rem
+							z-index -1
+				&:nth-child(2),&:nth-child(3),&:nth-child(4)
+					border-left none !important
+					border-bottom none !important
+
 @media only screen and (min-width: 992px) 
 	.navbar
-		overflow hidden
+		clearfix() 
 		padding-top 0
-	.tab
-		width 50%
-		float left
-		& a
-			margin-top 0
-			text-align center
-			width 100%
-			display block
-			z-index 2
-		& >div
-			opacity 1
-			position: relative
-			top 0
-			&.place
-				top 2.3rem
-				padding 0 0 3rem 0
+		& .band 
+			display none
+			z-index -2 !important
+		& .tab
+			width 50%
+			float left
+			& a
+				margin-top 0
+				text-align center
+				width 100%
+				display block
+				z-index 2
+			& >div
+				opacity 1
+				position: relative
+				top 0
+				&.place
+					top 2.3rem
+					padding 0 0 3rem 0
+				&.social
+					clearfix() 
+					& a 
+						display block
+						text-align center
+						font-size BASE_SPACE*2
+						color COLOR_WHITE
+						float left
+						width (100/7)%
+			&:last-of-type
+				width 100%
+				position absolute
+				top -2.2rem 
+				& > a
+					display none
+					z-index -1
+				& > div 
+					background-color rgba(0, 0, 0, .5)
+					border-radius (BASE_SPACE/2) (BASE_SPACE/2) 0 0 
+					& a 
+						background-color transparent
+
+						
+
 	// header 
 	#showMenu
 		display none
@@ -47,10 +143,10 @@
 				border-width: 1.5rem
 			&:before
 				border-color: darken(COLOR_GREEN,10%) rgba(0, 0, 0, 0) darken(COLOR_GREEN,10%) darken(COLOR_GREEN,10%)  
-				right -2rem
+				right -3rem
 			&:after
 				border-color: darken(COLOR_GREEN,10%)   darken(COLOR_GREEN,10%)   darken(COLOR_GREEN,10%) rgba(0, 0, 0, 0) 
-				left -2rem
+				left -3rem
 		& > a
 			display block
 			width 10%

@@ -28,16 +28,8 @@ $(document).on("ready",function(){
     thickness:0.2
   });
   /************** navigation ************/
-    var menuLeft = document.getElementById( 'nav' ),
-        buttonNav=document.getElementById('showMenu'),
-        body = document.body;
-      
-    buttonNav.onclick = function() {
-      classie.toggle( this, 'active' );
-      classie.toggle( body, 'menu-push-toright' );
-      classie.toggle( menuLeft, 'menu-open' );
-    };
     
+
   var elem = document.getElementById('cronograma');
   window.mySwipe = Swipe(elem, {
     // startSlide: 4,
@@ -52,31 +44,38 @@ $(document).on("ready",function(){
   var iconInfo= $("#icon-info"),
   iconPlace= $("#icon-place"),
   iconDate= $("#icon-date"),
+  iconSocial= $("#icon-social"),
   iconGallery= $("#icon-gallery");
 
   /*********** Tab content ******************/
   var contentInfo=$(".info"),
-  contentDate=$(".date"),
   contentPlace=$(".place"),
+  contentDate=$(".date"),
+  contentSocial=$(".social"),
   contentGallery=$(".gallery");
 
 
   iconInfo.on("click",function(){
     $(".navbar").css({"height":contentInfo.height()+'px'});
-    $(".cronograma").addClass("margin-top-3");
+    $(".cronograma").css({"margin-top":"2.2rem" } );
   });
   iconPlace.on("click",function(){
     $(".navbar").css({"height":contentPlace.height()+'px'});
-    $(".cronograma").css({"margin-top":"1rem" } );
+    $(".cronograma").css({"margin-top":"2.2rem" } );
   });
   iconDate.on("click",function(){
     $(".navbar").css({"height":contentDate.height()+'px'});
-    $(".cronograma").addClass("margin-top-3");
+    $(".cronograma").css({"margin-top":"2.2rem" } );
   });
   iconGallery.on("click",function(){
     $(".navbar").css({"height":contentGallery.height()+'px'});
-    $(".cronograma").css({"margin-top":"1rem" } );
+    $(".cronograma").css({"margin-top":"2.2rem" } );
   });
+  iconSocial.on("click",function(){
+    $(".navbar").css({"height":contentSocial.height()+'px'});
+    $(".cronograma").css({"margin-top":"2.2rem" } );
+  });
+
 
 
 
@@ -248,7 +247,20 @@ if(w>=992 && h <=718){
     fillCircles(120)
     $("#header").css({"min-height":"718px"});
   }else{
-    fillCircles(60)
+    fillCircles(40);
+    var menuLeft = document.getElementById( 'nav' ),
+        buttonNav=document.getElementById('showMenu'),
+        body = document.body;
+    buttonNav.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( body, 'menu-push-toright' );
+      classie.toggle( menuLeft, 'menu-open' );
+    };
+    menuLeft.onclick = function() {
+      classie.toggle( this, 'active' );
+      classie.toggle( body, 'menu-push-toright' );
+      classie.toggle( menuLeft, 'menu-open' );
+    };
   }
 }
 
