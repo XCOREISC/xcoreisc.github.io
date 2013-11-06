@@ -1,6 +1,7 @@
 @import "__constants/variables.styl"
 @import "__constants/mixins.styl"
 
+
 @media only screen and (min-width: 768px) 
 	.leyenda
 		display none
@@ -27,13 +28,20 @@
 					actividad(false,true,false,false)
 				/******************* IGNITE ***************************/
 				&:nth-child(4) td:nth-child(2)
+					&:after
+						margin-top -2rem
+						color COLOR_RED
+						top auto
+						right 1.5rem 
+						text-shadow none
+						cursor pointer
 					actividad(false,false,true,false)
 				/***************** taLLERES ***************************/
 				&:nth-child(6) td:nth-child(3),
 				&:nth-child(6) td:nth-child(4)
 					actividad(false,false,false,true)
 				&:nth-child(6) td:nth-child(4)
-					& div
+					& > div
 						padding 6.9rem 0
 			& td 
 				display table-cell !important

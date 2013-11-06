@@ -39,6 +39,11 @@
     border-radius: 0.25rem;
     cursor: pointer;
     position: relative;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
   }
   .cronograma table tr:nth-child(2) td:nth-child(2) div:before,
   .cronograma table tr:nth-child(3) td:nth-child(2) div:before,
@@ -56,11 +61,11 @@
     padding: 0 0.5rem;
     color: #fff;
   }
-  .cronograma table tr:nth-child(2) td:nth-child(2) div:before,
-  .cronograma table tr:nth-child(3) td:nth-child(2) div:before,
-  .cronograma table tr:nth-child(6) td:nth-child(2) div:before,
-  .cronograma table tr:nth-child(7) td:nth-child(2) div:before,
-  .cronograma table tr:nth-child(8) td:nth-child(2) div:before {
+  .cronograma table tr:nth-child(2) td:nth-child(2) > div:before,
+  .cronograma table tr:nth-child(3) td:nth-child(2) > div:before,
+  .cronograma table tr:nth-child(6) td:nth-child(2) > div:before,
+  .cronograma table tr:nth-child(7) td:nth-child(2) > div:before,
+  .cronograma table tr:nth-child(8) td:nth-child(2) > div:before {
     content: "Conferencia";
     background-color: #9b59b6;
   }
@@ -83,6 +88,11 @@
     border-radius: 0.25rem;
     cursor: pointer;
     position: relative;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
   }
   .cronograma table tr:nth-child(1) td:nth-child(2) div:before,
   .cronograma table tr:nth-child(5) td:nth-child(2) div:before,
@@ -98,9 +108,9 @@
     padding: 0 0.5rem;
     color: #fff;
   }
-  .cronograma table tr:nth-child(1) td:nth-child(2) div:before,
-  .cronograma table tr:nth-child(5) td:nth-child(2) div:before,
-  .cronograma table tr:nth-child(9) td:nth-child(2) div:before {
+  .cronograma table tr:nth-child(1) td:nth-child(2) > div:before,
+  .cronograma table tr:nth-child(5) td:nth-child(2) > div:before,
+  .cronograma table tr:nth-child(9) td:nth-child(2) > div:before {
     content: "Protocolo";
     background-color: #3498db;
   }
@@ -108,6 +118,14 @@
     background-color: transparent;
     padding: 1rem;
     position: relative;
+  }
+  .cronograma table tr:nth-child(4) td:nth-child(2):after {
+    margin-top: -2rem;
+    color: #e74c3c;
+    top: auto;
+    right: 1.5rem;
+    text-shadow: none;
+    cursor: pointer;
   }
   .cronograma table tr:nth-child(4) td:nth-child(2) div {
     background-color: #ebedee;
@@ -119,6 +137,11 @@
     border-radius: 0.25rem;
     cursor: pointer;
     position: relative;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
   }
   .cronograma table tr:nth-child(4) td:nth-child(2) div:before {
     position: absolute;
@@ -132,7 +155,19 @@
     padding: 0 0.5rem;
     color: #fff;
   }
-  .cronograma table tr:nth-child(4) td:nth-child(2) div:before {
+  .cronograma table tr:nth-child(4) td:nth-child(2) > a > div {
+    position: relative;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .cronograma table tr:nth-child(4) td:nth-child(2) > a > div:hover {
+    background-color: rgba(231,76,60,0.8);
+    color: #ebedee;
+  }
+  .cronograma table tr:nth-child(4) td:nth-child(2) > a > div:before {
     content: "Ignite";
     background-color: #e74c3c;
   }
@@ -153,6 +188,11 @@
     border-radius: 0.25rem;
     cursor: pointer;
     position: relative;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
   }
   .cronograma table tr:nth-child(6) td:nth-child(3) div:before,
   .cronograma table tr:nth-child(6) td:nth-child(4) div:before {
@@ -171,8 +211,8 @@
   .cronograma table tr:nth-child(6) td:nth-child(4) > div {
     padding: 4.3rem 0;
   }
-  .cronograma table tr:nth-child(6) td:nth-child(3) div:before,
-  .cronograma table tr:nth-child(6) td:nth-child(4) div:before {
+  .cronograma table tr:nth-child(6) td:nth-child(3) > div:before,
+  .cronograma table tr:nth-child(6) td:nth-child(4) > div:before {
     content: "Taller";
     background-color: #16a085;
   }
@@ -180,7 +220,7 @@
   .cronograma table tr:nth-child(6) td:nth-child(4):after {
     content: "";
   }
-  .cronograma table tr:nth-child(6) td:nth-child(4) div {
+  .cronograma table tr:nth-child(6) td:nth-child(4) > div {
     padding: 6.9rem 0;
   }
   .cronograma table td {

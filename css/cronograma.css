@@ -40,6 +40,17 @@
 }
 .cronograma table tr:nth-child(4) td:nth-child(2) {
   background-color: rgba(231,76,60,0.3);
+  position: relative;
+}
+.cronograma table tr:nth-child(4) td:nth-child(2):after {
+  font-family: "FontAwesome";
+  content: "\f055";
+  color: #ebedee;
+  text-shadow: 0 0 2px #34495e;
+  position: absolute;
+  font-size: 2rem;
+  top: 0;
+  right: 0.5rem;
 }
 .cronograma table tr:nth-child(6) td:nth-child(1) {
   position: relative;

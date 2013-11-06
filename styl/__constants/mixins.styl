@@ -31,6 +31,7 @@ actividad(varC=false,varP=false,varI=false,varT=false)
 		border-radius (BASE_SPACE/4)
 		cursor pointer
 		position relative
+		transition: all 0.3s ease-out
 		&:before
 			position absolute
 			top 0
@@ -39,21 +40,28 @@ actividad(varC=false,varP=false,varI=false,varT=false)
 			padding 0 (BASE_SPACE/2)
 			color white
 	if varC
-		& div:before
+		& > div:before
 			content "Conferencia"
 			background-color COLOR_PURPLE
 	if varP
-		& div:before
+		& > div:before
 			content "Protocolo"
 			background-color COLOR_THEME
 	if varI
-		& div:before
-			content "Ignite"
-			background-color COLOR_RED
+		& > a > div
+			position relative
+			transition: all 0.3s ease-out
+			&:hover
+				background-color rgba(231, 76, 60,.8)
+				color COLOR_WHITE
+			&:before
+				content "Ignite"
+				background-color COLOR_RED
+			
 	if varT
 		& > div
 			padding 4.3rem 0
-		& div:before
+		& > div:before
 			content "Taller"
 			background-color COLOR_GREEN
 		&:after
