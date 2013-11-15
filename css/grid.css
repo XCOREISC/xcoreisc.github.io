@@ -1,7 +1,7 @@
 
 .container {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  /*padding-right: 1rem;
+  padding-left: 1rem;*/
   margin-right: auto;
   margin-left: auto;
 }
@@ -27,8 +27,8 @@
 }
 
 .row {
-  margin-right: -1rem;
-  margin-left: -1rem;
+  /*margin-right: -1rem;*/
+  /*margin-left: -1rem;*/
 }
 
 .row:before,
@@ -101,8 +101,8 @@
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  /*padding-right: 1rem;
+  padding-left: 1rem;*/
 }
 
 .col-xs-1,
@@ -313,7 +313,7 @@
 
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 768px;
   }
   .col-sm-1,
   .col-sm-2,
@@ -476,7 +476,7 @@
 
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 992px;
   }
   .col-md-1,
   .col-md-2,
@@ -639,7 +639,7 @@
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1200px;
   }
   .col-lg-1,
   .col-lg-2,

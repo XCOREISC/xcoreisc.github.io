@@ -1,0 +1,73 @@
+@import "__constants/variables.styl"
+@import "__constants/mixins.styl"
+
+.navbar
+	width 100%
+	position relative
+	padding-top 1.2rem
+	//min-height 25rem
+
+span
+	&.band
+		 position fixed 
+		 display none
+		&:target + .tab > div 
+			opacity: 1
+			background-color: darken(COLOR_GREEN,25%)
+			color: COLOR_WHITE    
+		&:target + .tab a 
+			background-color: darken(COLOR_GREEN,25%)
+			color: #f5f5f5
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2)
+			z-index: 2
+
+.tab 
+	position relative
+	& >div 
+		background: COLOR_GREEN
+		width: 100%
+		position: absolute
+		top: BASE_SPACE
+		left: 0
+		color: COLOR_WHITE
+		opacity:0
+		transition: all 1s ease
+		padding 0 BASE_SPACE
+		&.gallery
+			padding 0 
+			font-size 0
+			& img
+				width (100/3)%
+				display inline-block
+		&.place
+			padding 0 
+			& #map-unprg
+				width 100%
+				min-height 12rem
+				overflow: visible !important
+				z-index 2
+				& .gmnoprint
+					& a
+						display none
+			& address
+				text-align center
+				font-weight bold
+
+
+	& a
+		margin-top: -1.3rem
+		float: left
+		width: 20%
+		background-color: COLOR_GREEN
+		text-decoration: none
+		font-size: 2rem
+		color: COLOR_WHITE
+		text-align: center
+		position: relative
+		transition: all .5s ease
+ 
+a
+	&a:hover 
+		background-color: lighten(COLOR_GREEN,50%)
+		color: lighten(COLOR_WHITE,20%)
+   

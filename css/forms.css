@@ -16,19 +16,62 @@ form input {
 }
 form button {
   padding: 0.5rem;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
   border: none;
   cursor: pointer;
   height: 2.5rem;
-  background-color: COLOR_HEADER;
+  background-color: #3498db;
   color: #ebedee;
   -webkit-border-radius: 0 1rem 1rem 0;
   -moz-border-radius: 0 1rem 1rem 0;
   -ms-border-radius: 0 1rem 1rem 0;
   -o-border-radius: 0 1rem 1rem 0;
   border-radius: 0 1rem 1rem 0;
+}
+.button {
+  padding: 1rem 0.5rem;
+  background-color: #3498db;
+  color: #ebedee;
+  text-align: center;
+  cursor: porinter;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0.2rem #1d6ca1;
+  -moz-box-shadow: 0 0.2rem #1d6ca1;
+  -ms-box-shadow: 0 0.2rem #1d6ca1;
+  -o-box-shadow: 0 0.2rem #1d6ca1;
+  box-shadow: 0 0.2rem #1d6ca1;
+}
+.button-inscribete {
+  padding: 1rem 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  background-color: #16a085;
+  color: #ebedee;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+  width: 70%;
+  -webkit-box-shadow: 0 0.3rem #0f705d;
+  -moz-box-shadow: 0 0.3rem #0f705d;
+  -ms-box-shadow: 0 0.3rem #0f705d;
+  -o-box-shadow: 0 0.3rem #0f705d;
+  box-shadow: 0 0.3rem #0f705d;
+}
+.button-inscribete:before {
+  font-family: FontAwesome;
+  content: "\f055";
+  position: absolute;
+  left: 20%;
+  margin-top: -1rem;
+  font-size: 3.2rem;
+  color: #ebedee;
 }

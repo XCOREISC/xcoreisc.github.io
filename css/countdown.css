@@ -1,49 +1,26 @@
-dl {
-  font-size: 0;
-  text-align: center;
-}
-dl dt {
-  font-size: 1rem;
-  display: inline-block;
-  vertical-align: middle;
+#countdown dt {
   margin-left: 1rem;
 }
-dl dt span {
+#countdown dt input {
+  font-size: 1.3rem !important;
+}
+#countdown dt span {
   display: block;
   color: #ebedee;
 }
-dl dt:first-child {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-  height: 2rem;
-  background: #ebedee;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+#countdown dt canvas {
+  -webkit-box-shadow: 0 0 0.2rem rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 0.2rem rgba(0,0,0,0.5);
+  -ms-box-shadow: 0 0 0.2rem rgba(0,0,0,0.5);
+  -o-box-shadow: 0 0 0.2rem rgba(0,0,0,0.5);
+  box-shadow: 0 0 0.2rem rgba(0,0,0,0.5);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.5);
 }
-dl dt:first-child span {
-  color: #3498db;
-  display: inline-block;
-  text-align: center;
-}
-dl dt:first-child:before,
-dl dt:first-child:after {
-  content: '';
-  position: absolute;
-}
-dl dt:first-child:before {
-  left: 40%;
-  border-width: 1rem;
-  border-style: solid;
-  border-color: #34495e #ebedee #ebedee #34495e;
-}
-dl dt:first-child:after {
-  left: 55%;
-  border-width: 1rem;
-  border-style: solid;
-  border-color: #34495e #34495e #ebedee #ebedee;
-}
-dl dt:nth-child(2) {
-  margin-left: -0.5rem;
+#countdown dt:nth-child(1) {
+  margin-left: 0.5rem;
 }

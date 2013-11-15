@@ -11,10 +11,38 @@ form
 		border-radius 1rem 0  0 1rem
 	button
 		padding (BASE_SPACE/2)
-		radius( (0) )
 		border  none
 		cursor pointer
 		height 2.5rem
-		background-color COLOR_HEADER
+		background-color COLOR_THEME
 		color COLOR_WHITE
 		border-radius 0 1rem 1rem 0
+
+.button
+	padding BASE_SPACE (BASE_SPACE/2)
+	background-color COLOR_THEME
+	color COLOR_WHITE
+	text-align center
+	cursor porinter
+	border-radius (BASE_SPACE/2)
+	box-shadow 0 .2rem darken(COLOR_THEME,30%)
+
+.button-inscribete
+	padding BASE_SPACE (BASE_SPACE/2)
+	block-center()
+	text-align center 
+	border  none
+	cursor pointer
+	background-color COLOR_GREEN
+	color COLOR_WHITE
+	border-radius (BASE_SPACE/4)
+	width 70%
+	box-shadow 0 .3rem darken(COLOR_GREEN,30%)
+	&:before
+		font-family FontAwesome
+		content: "\f055"
+		position absolute
+		left 20%
+		margin-top -1rem
+		font-size 3.2rem
+		color COLOR_WHITE

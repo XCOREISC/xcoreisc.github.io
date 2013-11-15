@@ -1,0 +1,185 @@
+@import "__constants/variables.styl"
+@import "__constants/mixins.styl"
+
+.cronograma
+	display block
+	& h2, time
+		display block
+		text-align center
+	& h2
+		padding (BASE_SPACE/2) 0
+		background-color COLOR_PURPLE
+		color COLOR_WHITE
+	& time
+		padding (BASE_SPACE/4) 0
+		background-color darken(COLOR_PURPLE,50%)
+		color COLOR_WHITE
+	& table
+		text-align center
+		display block
+		background-color COLOR_WHITE
+		& tr 
+			display: block
+			font-size 0
+			border-bottom 0.1rem dotted COLOR_PURPLE
+			&:first-child td:nth-child(2),&:nth-child(5) td:nth-child(2),&:last-child td:nth-child(2)
+				background-color rgba(52, 152, 219,.3)
+			&:nth-child(2) td:nth-child(2), &:nth-child(3) td:nth-child(2), &:nth-child(6) td:nth-child(2)
+			&:nth-child(7) td:nth-child(2), &:nth-child(8) td:nth-child(2)
+				background-color rgba(155, 89, 182,.3)
+			&:nth-child(4) td:nth-child(2)
+				background-color rgba(231, 76, 60,.3) 
+				position relative
+				&:after
+					font-family "FontAwesome"
+					content: "\f055"
+					color COLOR_WHITE 
+					text-shadow 0 0 2px COLOR_DARK
+					position absolute
+					font-size 2rem
+					top 0
+					right .5rem
+			&:nth-child(6)
+				& td
+					&:nth-child(1)
+						position relative
+						top 3.5rem
+					&:nth-child(2),&:nth-child(3)
+						border-bottom 0.1rem dotted COLOR_PURPLE
+					&:nth-child(3),&:nth-child(4)
+						margin-left 15%
+					&:nth-child(3),&:nth-child(4)
+						display block
+						background-color rgba(22, 160, 133,.2)
+					&:nth-child(3)
+						&:after
+							content "Culmina a las 18:00hrs"
+							color COLOR_PURPLE
+					&:nth-child(4)
+						&:after
+							content "Culmina a las 19:30hrs"
+							color COLOR_PURPLE
+					&:nth-child(2),&:nth-child(3),&:nth-child(4)
+						border-left 0.1rem dotted COLOR_PURPLE
+		& td
+			padding (BASE_SPACE/2) 0
+			font-size BASE_SPACE
+			&:first-child
+				color COLOR_PURPLE
+				display inline-block
+				width 15%
+			&:nth-child(2)
+				display inline-block
+				width 85%
+				border-left 0.1rem dotted COLOR_PURPLE
+
+/*
+
+			&:nth-child(3),&:nth-child(4)
+				& > div
+					cursor: pointer
+					padding 5rem 0
+					color COLOR_DARK
+					background-color COLOR_WHITE
+					position relative
+					&:before
+						content "Taller"
+						position absolute
+						top 0
+						right 0
+						border-radius 0 (BASE_SPACE/4) 0 (BASE_SPACE/4)
+						background-color COLOR_GREEN
+						padding 0 (BASE_SPACE/2)
+						color white
+			&:nth-child(4)
+				& > div
+					padding 6.4rem 0
+		& tr
+			&:nth-child(2),&:nth-child(3),&:nth-child(6),&:nth-child(7)
+				& td
+					position relative
+					&:nth-child(2)
+						& > div
+							&:before
+								content "conferencia"
+								position absolute
+								top 0
+								right 0
+								//border-radius 0 (BASE_SPACE/4) 0 (BASE_SPACE/4)
+								background-color COLOR_PURPLE
+								padding 0 (BASE_SPACE/2)
+								color white
+			&:nth-child(4)
+				& td
+					&:nth-child(2)
+						& > a
+							cursor: pointer
+							display block
+							padding 1rem 0
+							color COLOR_DARK
+							background-color COLOR_WHITE
+							border-radius (BASE_SPACE/4)
+							position relative
+							&> div
+								transition  all 0.3s ease
+								&:after
+									content "ignite"
+									position absolute
+									top 0
+									right 0
+									border-radius 0 (BASE_SPACE/4) 0 0
+									background-color COLOR_RED
+									padding 0 (BASE_SPACE/2)
+									color white
+									width 5rem
+							&:hover
+								background-color lighten(COLOR_RED,30%)
+								color COLOR_WHITE
+								transition  all 0.3s ease
+								&:before
+									font-family FontAwesome
+									content: "\f054"
+									position absolute
+									font-size 2rem
+									right 0
+									top 1.1rem
+									background-color COLOR_RED
+									text-align center
+									width 5rem
+									border-radius 0 0 (BASE_SPACE/4) 0
+									transition  all 0.3s ease
+									cursor pointer
+
+			&:nth-child(8)
+				& td
+					&:first-child
+						& span
+							&:after
+								height 5rem
+			&:last-child
+				& td
+					&:first-child
+						& span
+							&:after
+								border-left none
+*/
+
+.leyenda
+	background-color COLOR_WHITE
+	clearfix() 
+	& figure
+		padding .5rem 0
+		text-align center
+		&:first-child
+			content ""
+			background-color rgba(155, 89, 182,.3)
+		&:nth-child(2)
+			content ""
+			background-color rgba(22, 160, 133,.3)
+		&:nth-child(3)
+			content ""
+			background-color rgba(231, 76, 60,.3) 
+		&:last-child
+			content ""
+			background-color rgba(52, 152, 219,.3)
+

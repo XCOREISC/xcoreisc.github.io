@@ -1,0 +1,219 @@
+.cronograma {
+  display: block;
+}
+.cronograma h2,
+.cronograma time {
+  display: block;
+  text-align: center;
+}
+.cronograma h2 {
+  padding: 0.5rem 0;
+  background-color: #9b59b6;
+  color: #ebedee;
+}
+.cronograma time {
+  padding: 0.25rem 0;
+  background-color: #4f295e;
+  color: #ebedee;
+}
+.cronograma table {
+  text-align: center;
+  display: block;
+  background-color: #ebedee;
+}
+.cronograma table tr {
+  display: block;
+  font-size: 0;
+  border-bottom: 0.1rem dotted #9b59b6;
+}
+.cronograma table tr:first-child td:nth-child(2),
+.cronograma table tr:nth-child(5) td:nth-child(2),
+.cronograma table tr:last-child td:nth-child(2) {
+  background-color: rgba(52,152,219,0.3);
+}
+.cronograma table tr:nth-child(2) td:nth-child(2),
+.cronograma table tr:nth-child(3) td:nth-child(2),
+.cronograma table tr:nth-child(6) td:nth-child(2),
+.cronograma table tr:nth-child(7) td:nth-child(2),
+.cronograma table tr:nth-child(8) td:nth-child(2) {
+  background-color: rgba(155,89,182,0.3);
+}
+.cronograma table tr:nth-child(4) td:nth-child(2) {
+  background-color: rgba(231,76,60,0.3);
+  position: relative;
+}
+.cronograma table tr:nth-child(4) td:nth-child(2):after {
+  font-family: "FontAwesome";
+  content: "\f055";
+  color: #ebedee;
+  text-shadow: 0 0 2px #34495e;
+  position: absolute;
+  font-size: 2rem;
+  top: 0;
+  right: 0.5rem;
+}
+.cronograma table tr:nth-child(6) td:nth-child(1) {
+  position: relative;
+  top: 3.5rem;
+}
+.cronograma table tr:nth-child(6) td:nth-child(2),
+.cronograma table tr:nth-child(6) td:nth-child(3) {
+  border-bottom: 0.1rem dotted #9b59b6;
+}
+.cronograma table tr:nth-child(6) td:nth-child(3),
+.cronograma table tr:nth-child(6) td:nth-child(4) {
+  margin-left: 15%;
+}
+.cronograma table tr:nth-child(6) td:nth-child(3),
+.cronograma table tr:nth-child(6) td:nth-child(4) {
+  display: block;
+  background-color: rgba(22,160,133,0.2);
+}
+.cronograma table tr:nth-child(6) td:nth-child(3):after {
+  content: "Culmina a las 18:00hrs";
+  color: #9b59b6;
+}
+.cronograma table tr:nth-child(6) td:nth-child(4):after {
+  content: "Culmina a las 19:30hrs";
+  color: #9b59b6;
+}
+.cronograma table tr:nth-child(6) td:nth-child(2),
+.cronograma table tr:nth-child(6) td:nth-child(3),
+.cronograma table tr:nth-child(6) td:nth-child(4) {
+  border-left: 0.1rem dotted #9b59b6;
+}
+.cronograma table td {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+}
+.cronograma table td:first-child {
+  color: #9b59b6;
+  display: inline-block;
+  width: 15%;
+}
+.cronograma table td:nth-child(2) {
+  display: inline-block;
+  width: 85%;
+  border-left: 0.1rem dotted #9b59b6;
+}
+/*
+
+			&:nth-child(3),&:nth-child(4)
+				& > div
+					cursor: pointer
+					padding 5rem 0
+					color COLOR_DARK
+					background-color COLOR_WHITE
+					position relative
+					&:before
+						content "Taller"
+						position absolute
+						top 0
+						right 0
+						border-radius 0 (BASE_SPACE/4) 0 (BASE_SPACE/4)
+						background-color COLOR_GREEN
+						padding 0 (BASE_SPACE/2)
+						color white
+			&:nth-child(4)
+				& > div
+					padding 6.4rem 0
+		& tr
+			&:nth-child(2),&:nth-child(3),&:nth-child(6),&:nth-child(7)
+				& td
+					position relative
+					&:nth-child(2)
+						& > div
+							&:before
+								content "conferencia"
+								position absolute
+								top 0
+								right 0
+								//border-radius 0 (BASE_SPACE/4) 0 (BASE_SPACE/4)
+								background-color COLOR_PURPLE
+								padding 0 (BASE_SPACE/2)
+								color white
+			&:nth-child(4)
+				& td
+					&:nth-child(2)
+						& > a
+							cursor: pointer
+							display block
+							padding 1rem 0
+							color COLOR_DARK
+							background-color COLOR_WHITE
+							border-radius (BASE_SPACE/4)
+							position relative
+							&> div
+								transition  all 0.3s ease
+								&:after
+									content "ignite"
+									position absolute
+									top 0
+									right 0
+									border-radius 0 (BASE_SPACE/4) 0 0
+									background-color COLOR_RED
+									padding 0 (BASE_SPACE/2)
+									color white
+									width 5rem
+							&:hover
+								background-color lighten(COLOR_RED,30%)
+								color COLOR_WHITE
+								transition  all 0.3s ease
+								&:before
+									font-family FontAwesome
+									content: "\f054"
+									position absolute
+									font-size 2rem
+									right 0
+									top 1.1rem
+									background-color COLOR_RED
+									text-align center
+									width 5rem
+									border-radius 0 0 (BASE_SPACE/4) 0
+									transition  all 0.3s ease
+									cursor pointer
+
+			&:nth-child(8)
+				& td
+					&:first-child
+						& span
+							&:after
+								height 5rem
+			&:last-child
+				& td
+					&:first-child
+						& span
+							&:after
+								border-left none
+*/
+.leyenda {
+  background-color: #ebedee;
+}
+.leyenda:before,
+.leyenda:after {
+  content: " ";
+  display: table;
+}
+.leyenda:after {
+  clear: both;
+}
+.leyenda figure {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.leyenda figure:first-child {
+  content: "";
+  background-color: rgba(155,89,182,0.3);
+}
+.leyenda figure:nth-child(2) {
+  content: "";
+  background-color: rgba(22,160,133,0.3);
+}
+.leyenda figure:nth-child(3) {
+  content: "";
+  background-color: rgba(231,76,60,0.3);
+}
+.leyenda figure:last-child {
+  content: "";
+  background-color: rgba(52,152,219,0.3);
+}

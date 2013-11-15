@@ -1,9 +1,15 @@
 @import "__constants/variables.styl"
 @import "__constants/mixins.styl"
 
-.text-center
-	text-align center 
-
+picture 
+	& img
+		max-width 100%
+	&.img-speaker
+		& img 
+			border-radius 50%
+			block-center()
+			square(6rem)
+			border 0.2rem dotted COLOR_ORANGE
 img
 	&.responsive
 		max-width 100%
@@ -14,20 +20,42 @@ img
 
 .block-center
 	block-center()
+/************************** WIDTH ***********************/
+.w100
+	width 100%
+/************************ borders ************************/
 .radius-small
-	border-radius (BASE_SPACE/2)
-/**************** colors ********************/
+	border-radius (BASE_SPACE/4)
+/**************** TEXT *************************************/
+.text-center
+	text-align center
+.text-bold
+	font-weight bold
+/**************** colors ********************************/
 .bck-sky-blue
 	background-color COLOR_SKY_BLUE
 .bck-white
 	background-color COLOR_WHITE
+	color COLOR_DARK
 .bck-green
 	background-color COLOR_GREEN
+.bck-orange
+	background-color COLOR_ORANGE
 .bck-dark
 	background-color COLOR_DARK
+.bck-dark-2
+	background-color darken(COLOR_DARK,50%)
 .bck-glass
 	background-color darken(COLOR_THEME,30%)
 	border-radius (BASE_SPACE/2)
+
+.color-orange
+	color COLOR_ORANGE
+.color-white
+	color COLOR_WHITE
+.color-dark
+	color COLOR_DARK
+
 
 /***************** MARGINS, PADDINGS ********/
 
@@ -71,13 +99,9 @@ img
 	margin-bottom:  BASE_SPACE*4
 
 
-
 .padding-none  
-
 	padding: 0
-
 .padding  
-
 	padding:  BASE_SPACE
 
 .padding-small  
@@ -106,6 +130,15 @@ img
 
 .padding-bottom-4  
 	padding-bottom:  BASE_SPACE*4
+
+/****************** figures *************************/
+.circle
+	border-radius 50%
+	&.d4
+		square(4rem)
+		padding 1.3rem 1rem
+
+
 
 
 .decorate
@@ -145,35 +178,63 @@ img
 		border-right (BASE_SPACE/4) solid COLOR_WHITE
 
 .speaker
-	margin-left: 2%
-	width 45%
-	float left
-	margin-top 1%
-	& img
-		block-center()
-		radius(50%)
-		border (BASE_SPACE/4) solid COLOR_THEME
-		box-shadow 0 0 (BASE_SPACE/4) 4px lighten(COLOR_THEME,50%)
-	& figcaption
+	width 100%
+	padding BASE_SPACE
+	overflow hidden
+	& figure
+		float left
+		width 20% 
+		& img
+			display block
+			width 100%
+			border-radius 50%
+			border (BASE_SPACE/4) solid COLOR_ORANGE
+		& a 
+			font-size BASE_SPACE
+			display block
+			color COLOR_WHITE
+			text-align center
+	& div
+		float left
+		width 80%
 		text-align center 
 		padding 0 BASE_SPACE
 		background-color COLOR_WHITE
 		radius( BASE_SPACE/4 )
-		&:before,&:after
-			content ""
-			position absolute
-		&:before
-			border-color: rgba(0, 0, 0, 0) COLOR_WHITE  rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) 
-			border-style: solid;
-			border-width: 2rem;
-			right 50%
-			margin-top -7rem
 
-	&:nth-child(2n+1)
-		margin-left: 6%
-		margin-top: 10rem
-		& figcaption
-			&:before
-				border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) COLOR_WHITE  
-				left 50%
+	&:nth-child(2n)
+		& figure, & div
+			float right
 
+.subtitle
+	display block
+	background-color COLOR_ORANGE
+	color COLOR_WHITE 
+	text-align center
+	padding (BASE_SPACE/2) 0
+
+/*
+
+@import "reset.styl"
+@import "countdown.styl"
+@import "cronograma.styl"
+@import "forms.styl"
+@import "helpers.styl"
+@import "modals.styl"
+@import "nav.styl"
+@import "navbar.styl"
+@import "tables.styl"
+@import "text.styl"
+@import "responsive.styl"
+
+
+
+*/
+
+
+
+
+
+/***********************  XCOREISC ************************************/
+.border-precio
+	border .2rem solid COLOR_THEME

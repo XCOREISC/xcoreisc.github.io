@@ -1,5 +1,18 @@
-.text-center {
-  text-align: center;
+picture img {
+  max-width: 100%;
+}
+picture.img-speaker img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6rem;
+  height: 6rem;
+  border: 0.2rem dotted #e67e22;
 }
 img.responsive {
   max-width: 100%;
@@ -18,25 +31,44 @@ img.portada {
   margin-left: auto;
   margin-right: auto;
 }
-.radius-small {
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  border-radius: 0.5rem;
+/************************** WIDTH ***********************/
+.w100 {
+  width: 100%;
 }
-/**************** colors ********************/
+/************************ borders ************************/
+.radius-small {
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+}
+/**************** TEXT *************************************/
+.text-center {
+  text-align: center;
+}
+.text-bold {
+  font-weight: bold;
+}
+/**************** colors ********************************/
 .bck-sky-blue {
   background-color: #5fccff;
 }
 .bck-white {
   background-color: #ebedee;
+  color: #34495e;
 }
 .bck-green {
   background-color: #16a085;
 }
+.bck-orange {
+  background-color: #e67e22;
+}
 .bck-dark {
   background-color: #34495e;
+}
+.bck-dark-2 {
+  background-color: #1a242f;
 }
 .bck-glass {
   background-color: #1d6ca1;
@@ -45,6 +77,15 @@ img.portada {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
   border-radius: 0.5rem;
+}
+.color-orange {
+  color: #e67e22;
+}
+.color-white {
+  color: #ebedee;
+}
+.color-dark {
+  color: #34495e;
 }
 /***************** MARGINS, PADDINGS ********/
 .margin-none {
@@ -116,6 +157,19 @@ img.portada {
 .padding-bottom-4 {
   padding-bottom: 4rem;
 }
+/****************** figures *************************/
+.circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.circle.d4 {
+  width: 4rem;
+  height: 4rem;
+  padding: 1.3rem 1rem;
+}
 .decorate {
   position: relative;
 }
@@ -158,28 +212,33 @@ img.portada {
   border-right: 0.25rem solid #ebedee;
 }
 .speaker {
-  margin-left: 2%;
-  width: 45%;
-  float: left;
-  margin-top: 1%;
+  width: 100%;
+  padding: 1rem;
+  overflow: hidden;
 }
-.speaker img {
+.speaker figure {
+  float: left;
+  width: 20%;
+}
+.speaker figure img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  border: 0.25rem solid #3498db;
-  -webkit-box-shadow: 0 0 0.25rem 4px #99cbed;
-  -moz-box-shadow: 0 0 0.25rem 4px #99cbed;
-  -ms-box-shadow: 0 0 0.25rem 4px #99cbed;
-  -o-box-shadow: 0 0 0.25rem 4px #99cbed;
-  box-shadow: 0 0 0.25rem 4px #99cbed;
+  border: 0.25rem solid #e67e22;
 }
-.speaker figcaption {
+.speaker figure a {
+  font-size: 1rem;
+  display: block;
+  color: #ebedee;
+  text-align: center;
+}
+.speaker div {
+  float: left;
+  width: 80%;
   text-align: center;
   padding: 0 1rem;
   background-color: #ebedee;
@@ -189,23 +248,35 @@ img.portada {
   -o-border-radius: 0.25rem;
   border-radius: 0.25rem;
 }
-.speaker figcaption:before,
-.speaker figcaption:after {
-  content: "";
-  position: absolute;
+.speaker:nth-child(2n) figure,
+.speaker:nth-child(2n) div {
+  float: right;
 }
-.speaker figcaption:before {
-  border-color: rgba(0,0,0,0) #ebedee rgba(0,0,0,0) rgba(0,0,0,0);
-  border-style: solid;
-  border-width: 2rem;
-  right: 50%;
-  margin-top: -7rem;
+.subtitle {
+  display: block;
+  background-color: #e67e22;
+  color: #ebedee;
+  text-align: center;
+  padding: 0.5rem 0;
 }
-.speaker:nth-child(2n+1) {
-  margin-left: 6%;
-  margin-top: 10rem;
-}
-.speaker:nth-child(2n+1) figcaption:before {
-  border-color: rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0) #ebedee;
-  left: 50%;
+/*
+
+@import "reset.styl"
+@import "countdown.styl"
+@import "cronograma.styl"
+@import "forms.styl"
+@import "helpers.styl"
+@import "modals.styl"
+@import "nav.styl"
+@import "navbar.styl"
+@import "tables.styl"
+@import "text.styl"
+@import "responsive.styl"
+
+
+
+*/
+/***********************  XCOREISC ************************************/
+.border-precio {
+  border: 0.2rem solid #3498db;
 }

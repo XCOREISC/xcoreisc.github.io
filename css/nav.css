@@ -1,41 +1,27 @@
-/******************* RESET ***********************************************-*/
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-}
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-}
-body,
-h1,
-h2,
-h3,
-fieldset,
-ul,
-figcaption,
-figure {
-  margin: 0;
-}
-body {
-  background-color: #34495e;
-}
-fieldset,
-ul {
-  padding: 0;
-  border: none;
-}
 /*********************** HEADER ***********************************************/
 [role="header"] {
   display: block;
   text-align: center;
+/*
+	& address	
+		&:before
+			content ""
+			position absolute
+			height 17rem
+			border-top (BASE_SPACE/4) solid COLOR_WHITE
+			border-left (BASE_SPACE/4) solid COLOR_WHITE
+			width 50%
+			left 5%
+	& time	
+		&:before
+			content ""
+			position absolute
+			height 17rem
+			border-top (BASE_SPACE/4) solid COLOR_WHITE
+			border-right (BASE_SPACE/4) solid COLOR_WHITE
+			width 50%
+			right 5%
+	*/
 }
 [role="header"]:before,
 [role="header"]:after {
@@ -47,10 +33,55 @@ ul {
 }
 [role="header"] h1 {
   color: #ebedee;
-  background-color: #3498db;
   padding: 0.5rem 0;
+  background-color: #3498db;
+  margin-bottom: 1rem;
 }
-[role="header"] a {
+[role="header"] h2 {
+/********* Style 1 - Tag Rotate ********
+		position absolute
+		right -15%
+		top BASE_SPACE
+		background-color COLOR_WHITE
+		color COLOR_THEME
+		padding (BASE_SPACE/2) 0
+		width 50%
+		transform rotate(45deg)
+		*/
+/********* Style 2 - Ribbon ********/
+  background-color: #16a085;
+  color: #ebedee;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 0.1rem;
+  -moz-border-radius: 0.1rem;
+  -ms-border-radius: 0.1rem;
+  -o-border-radius: 0.1rem;
+  border-radius: 0.1rem;
+  padding: 0.25rem 0;
+  margin-bottom: 1rem;
+/** ./END Style 2 ***/
+}
+[role="header"] h2:before,
+[role="header"] h2:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 1rem;
+  top: 4.5rem;
+  z-index: -1;
+}
+[role="header"] h2:before {
+  border-color: #149078 rgba(0,0,0,0) #149078 #149078;
+  right: 15%;
+}
+[role="header"] h2:after {
+  border-color: #149078 #149078 #149078 rgba(0,0,0,0);
+  left: 15%;
+}
+[role="header"] > #showMenu {
   color: #ebedee;
   position: absolute;
   top: 0.25rem;
@@ -66,16 +97,17 @@ ul {
   margin-top: 2.5rem;
   color: #ebedee;
 }
-[role="header"] time strong,
-[role="header"] address strong {
+[role="header"] time a,
+[role="header"] address a,
+[role="header"] time>strong,
+[role="header"] address>strong {
   position: relative;
-  top: -0.6666666666666666rem;
+  color: #ebedee;
+  font-style: normal;
 }
 [role="header"] time span,
 [role="header"] address span {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
   color: #3498db;
   text-align: center;
   width: 3rem;
@@ -89,36 +121,40 @@ ul {
   background-color: #ebedee;
   padding: 0.25rem;
   position: relative;
-  top: -1.2rem;
+  top: -1rem;
 }
-[role="header"] address:before {
-  content: "";
-  position: absolute;
-  height: 17rem;
-  border-top: 0.25rem solid #ebedee;
-  border-left: 0.25rem solid #ebedee;
-  width: 50%;
-  left: 5%;
+[role="header"] address {
+  padding-left: 1rem;
 }
-[role="header"] time:before {
-  content: "";
-  position: absolute;
-  height: 17rem;
-  border-top: 0.25rem solid #ebedee;
-  border-right: 0.25rem solid #ebedee;
-  width: 50%;
-  right: 5%;
+[role="header"] address span {
+  float: left;
+}
+[role="header"] time {
+  padding-right: 1rem;
+}
+[role="header"] time span {
+  float: right;
 }
 [role="header"] img {
+  position: relative;
+  float: left;
+  width: 20%;
+  z-index: 2;
+  vertical-align: middle;
+}
+[role="header"] img.unprg {
+  margin: 5% 7.5%;
+}
+[role="header"] img.xcoreisc {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  position: relative;
-  float: left;
-  width: 20%;
-  z-index: 2;
+  width: 30%;
+}
+[role="header"] img.apeisc {
+  margin: 5% 7.5%;
 }
 /******************* navigation ***************/
 .menu {
@@ -126,9 +162,15 @@ ul {
   position: fixed;
   overflow-x: scroll;
   text-shadow: -1rem 0 0rem rgba(0,0,0,0.25) inset;
+  -webkit-box-shadow: inset -4px 0 15px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: inset -4px 0 15px 0 rgba(0,0,0,0.75);
+  -ms-box-shadow: inset -4px 0 15px 0 rgba(0,0,0,0.75);
+  -o-box-shadow: inset -4px 0 15px 0 rgba(0,0,0,0.75);
+  box-shadow: inset -4px 0 15px 0 rgba(0,0,0,0.75);
 }
 .menu > img {
   display: block;
+  width: 40%;
   margin: 0.5rem auto;
   background-color: #ebedee;
   -webkit-border-radius: 50%;
@@ -145,15 +187,18 @@ ul {
 }
 .menu > a {
   display: block;
-  padding-left: 2rem;
+  padding-left: 1rem;
   border-bottom: 2px solid #415b75;
   color: #b8bfc3;
   line-height: 2;
   text-decoration: none;
   font-size: 1.2rem;
 }
+.menu > a:first-child {
+  border-top: 2px solid #415b75;
+}
 .menu > a > span {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   margin-right: 1rem;
 }
@@ -167,11 +212,11 @@ ul {
   content: "Encuentranos en ";
   display: block;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .menu > ul > li {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   width: 14.285714285714286%;
 }
@@ -180,13 +225,13 @@ ul {
   text-decoration: none;
 }
 .menu-vertical {
-  width: 240px;
+  width: 14rem;
   height: 100%;
   top: 0;
   z-index: 3;
 }
 .menu-left {
-  left: -240px;
+  left: -14rem;
 }
 .menu-left.menu-open {
   left: 0;
@@ -197,7 +242,7 @@ ul {
   left: 0;
 }
 .menu-push-toright {
-  left: 240px;
+  left: 14rem;
 }
 .menu,
 .menu-push {

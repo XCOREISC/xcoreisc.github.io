@@ -1,0 +1,34 @@
+@import "__constants/variables.styl"
+@import "__constants/mixins.styl"
+
+/******************* RESET ***********************************************-*/
+*
+	box-sizing  border-box
+	&:before,&:after 
+		box-sizing  border-box
+
+body,h1,h2,h3 ,fieldset,ul,figcaption,figure,picture,p
+	margin 0
+body
+	background-color COLOR_DARK
+table
+	border-spacing 0
+	border-collapse collapse
+	empty-cells show
+	& td 
+		padding 0
+fieldset,ul
+	padding 0
+	border none
+a
+	outline 0
+	text-decoration none
+dl
+	font-size 0
+	text-align center
+	& dd
+		font-size BASE_SPACE
+	& dt
+		font-size BASE_SPACE
+		display inline-block
+		vertical-align middle
