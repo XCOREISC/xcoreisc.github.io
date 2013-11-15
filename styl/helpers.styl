@@ -144,33 +144,6 @@ img
 		padding 1.3rem 1rem
 
 
-
-
-.decorate
-	position: relative
-	&:before,&:after
-		content ""
-		position absolute
-	&:before
-		border-color: COLOR_WHITE rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) ;
-		border-style: solid;
-		border-width: 2rem;
-		content: " ";
-		display: block;
-		position: absolute;
-		left 42%
-		top 0 
-	&:after
-		border-top (BASE_SPACE/4) solid COLOR_WHITE
-		top 0
-		width 90%
-		left 5%
-
-
-
-.msg-newsletter
-	color COLOR_WHITE
-
 .border-vertical
 	position relative
 	&:before,&:after
@@ -182,34 +155,6 @@ img
 		height 70rem
 		border-right (BASE_SPACE/4) solid COLOR_WHITE
 
-.speaker
-	width 100%
-	padding BASE_SPACE
-	overflow hidden
-	& figure
-		float left
-		width 20% 
-		& img
-			display block
-			width 100%
-			border-radius 50%
-			border (BASE_SPACE/4) solid COLOR_ORANGE
-		& a 
-			font-size BASE_SPACE
-			display block
-			color COLOR_WHITE
-			text-align center
-	& div
-		float left
-		width 80%
-		text-align center 
-		padding 0 BASE_SPACE
-		background-color COLOR_WHITE
-		radius( BASE_SPACE/4 )
-
-	&:nth-child(2n)
-		& figure, & div
-			float right
 
 .subtitle
 	display block
@@ -231,16 +176,12 @@ img
 @import "text.styl"
 @import "responsive.styl"
 
-
-
 */
-
-
-
-
 
 /***********************  XCOREISC ************************************/
 .border-precio
 	border .2rem solid COLOR_THEME
 .bck-blue 
 	background-color #293863
+.border-right 
+	border-right .1rem solid COLOR_SKY_BLUE

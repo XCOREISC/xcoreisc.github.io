@@ -1,3 +1,23 @@
+.social {
+  background-color: rgba(0,0,0,0.5);
+}
+.social:before,
+.social:after {
+  content: " ";
+  display: table;
+}
+.social:after {
+  clear: both;
+}
+.social a {
+  float: left;
+  width: 14.285714285714286%;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  color: #ebedee;
+  padding: 1rem 0;
+}
 .navbar {
   width: 100%;
   position: relative;
@@ -38,7 +58,7 @@ span.band:target + .tab a {
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 .tab >div.gallery {
   padding: 0;
@@ -64,10 +84,13 @@ span.band:target + .tab a {
   text-align: center;
   font-weight: bold;
 }
+.tab >div.social {
+  position: relative;
+}
 .tab a {
   margin-top: -1.3rem;
   float: left;
-  width: 20%;
+  width: 25%;
   background-color: #16a085;
   text-decoration: none;
   font-size: 2rem;

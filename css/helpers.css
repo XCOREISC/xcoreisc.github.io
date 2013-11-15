@@ -176,33 +176,6 @@ img.portada {
   height: 4rem;
   padding: 1.3rem 1rem;
 }
-.decorate {
-  position: relative;
-}
-.decorate:before,
-.decorate:after {
-  content: "";
-  position: absolute;
-}
-.decorate:before {
-  border-color: #ebedee rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
-  border-style: solid;
-  border-width: 2rem;
-  content: " ";
-  display: block;
-  position: absolute;
-  left: 42%;
-  top: 0;
-}
-.decorate:after {
-  border-top: 0.25rem solid #ebedee;
-  top: 0;
-  width: 90%;
-  left: 5%;
-}
-.msg-newsletter {
-  color: #ebedee;
-}
 .border-vertical {
   position: relative;
 }
@@ -216,47 +189,6 @@ img.portada {
   top: 1.5rem;
   height: 70rem;
   border-right: 0.25rem solid #ebedee;
-}
-.speaker {
-  width: 100%;
-  padding: 1rem;
-  overflow: hidden;
-}
-.speaker figure {
-  float: left;
-  width: 20%;
-}
-.speaker figure img {
-  display: block;
-  width: 100%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  border: 0.25rem solid #e67e22;
-}
-.speaker figure a {
-  font-size: 1rem;
-  display: block;
-  color: #ebedee;
-  text-align: center;
-}
-.speaker div {
-  float: left;
-  width: 80%;
-  text-align: center;
-  padding: 0 1rem;
-  background-color: #ebedee;
-  -webkit-border-radius: 0.25rem;
-  -moz-border-radius: 0.25rem;
-  -ms-border-radius: 0.25rem;
-  -o-border-radius: 0.25rem;
-  border-radius: 0.25rem;
-}
-.speaker:nth-child(2n) figure,
-.speaker:nth-child(2n) div {
-  float: right;
 }
 .subtitle {
   display: block;
@@ -278,8 +210,6 @@ img.portada {
 @import "text.styl"
 @import "responsive.styl"
 
-
-
 */
 /***********************  XCOREISC ************************************/
 .border-precio {
@@ -287,4 +217,7 @@ img.portada {
 }
 .bck-blue {
   background-color: #293863;
+}
+.border-right {
+  border-right: 0.1rem solid #5fccff;
 }
