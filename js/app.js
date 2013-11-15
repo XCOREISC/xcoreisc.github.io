@@ -264,3 +264,14 @@ if(w>=992 && h <=718){
   }
 }
 
+/*
+
+var PCompleto=Backbone.Model.extend();
+
+var pUnprg=new PCompleto({
+  costo:35,
+  status:false
+});
+
+
+*/

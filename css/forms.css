@@ -31,7 +31,18 @@ form button {
   padding: 1rem 0.5rem;
   background-color: #3498db;
   color: #ebedee;
+  text-align: center;
   cursor: porinter;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 0.2rem #1d6ca1;
+  -moz-box-shadow: 0 0.2rem #1d6ca1;
+  -ms-box-shadow: 0 0.2rem #1d6ca1;
+  -o-box-shadow: 0 0.2rem #1d6ca1;
+  box-shadow: 0 0.2rem #1d6ca1;
 }
 .button-inscribete {
   padding: 1rem 0.5rem;

@@ -1,6 +1,3 @@
-.text-center {
-  text-align: center;
-}
 picture img {
   max-width: 100%;
 }
@@ -34,6 +31,11 @@ img.portada {
   margin-left: auto;
   margin-right: auto;
 }
+/************************** WIDTH ***********************/
+.w100 {
+  width: 100%;
+}
+/************************ borders ************************/
 .radius-small {
   -webkit-border-radius: 0.25rem;
   -moz-border-radius: 0.25rem;
@@ -41,7 +43,14 @@ img.portada {
   -o-border-radius: 0.25rem;
   border-radius: 0.25rem;
 }
-/**************** colors ********************/
+/**************** TEXT *************************************/
+.text-center {
+  text-align: center;
+}
+.text-bold {
+  font-weight: bold;
+}
+/**************** colors ********************************/
 .bck-sky-blue {
   background-color: #5fccff;
 }
@@ -73,7 +82,10 @@ img.portada {
   color: #e67e22;
 }
 .color-white {
-  color: #e67e22;
+  color: #ebedee;
+}
+.color-dark {
+  color: #34495e;
 }
 /***************** MARGINS, PADDINGS ********/
 .margin-none {
@@ -144,6 +156,19 @@ img.portada {
 }
 .padding-bottom-4 {
   padding-bottom: 4rem;
+}
+/****************** figures *************************/
+.circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.circle.d4 {
+  width: 4rem;
+  height: 4rem;
+  padding: 1.3rem 1rem;
 }
 .decorate {
   position: relative;
@@ -233,4 +258,25 @@ img.portada {
   color: #ebedee;
   text-align: center;
   padding: 0.5rem 0;
+}
+/*
+
+@import "reset.styl"
+@import "countdown.styl"
+@import "cronograma.styl"
+@import "forms.styl"
+@import "helpers.styl"
+@import "modals.styl"
+@import "nav.styl"
+@import "navbar.styl"
+@import "tables.styl"
+@import "text.styl"
+@import "responsive.styl"
+
+
+
+*/
+/***********************  XCOREISC ************************************/
+.border-precio {
+  border: 0.2rem solid #3498db;
 }

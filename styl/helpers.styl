@@ -1,7 +1,6 @@
 @import "__constants/variables.styl"
 @import "__constants/mixins.styl"
-.text-center
-	text-align center 
+
 picture 
 	& img
 		max-width 100%
@@ -21,11 +20,18 @@ img
 
 .block-center
 	block-center()
-	
+/************************** WIDTH ***********************/
+.w100
+	width 100%
+/************************ borders ************************/
 .radius-small
 	border-radius (BASE_SPACE/4)
-
-/**************** colors ********************/
+/**************** TEXT *************************************/
+.text-center
+	text-align center
+.text-bold
+	font-weight bold
+/**************** colors ********************************/
 .bck-sky-blue
 	background-color COLOR_SKY_BLUE
 .bck-white
@@ -46,7 +52,9 @@ img
 .color-orange
 	color COLOR_ORANGE
 .color-white
-	color COLOR_ORANGE
+	color COLOR_WHITE
+.color-dark
+	color COLOR_DARK
 
 
 /***************** MARGINS, PADDINGS ********/
@@ -91,13 +99,9 @@ img
 	margin-bottom:  BASE_SPACE*4
 
 
-
 .padding-none  
-
 	padding: 0
-
 .padding  
-
 	padding:  BASE_SPACE
 
 .padding-small  
@@ -126,6 +130,15 @@ img
 
 .padding-bottom-4  
 	padding-bottom:  BASE_SPACE*4
+
+/****************** figures *************************/
+.circle
+	border-radius 50%
+	&.d4
+		square(4rem)
+		padding 1.3rem 1rem
+
+
 
 
 .decorate
@@ -199,3 +212,29 @@ img
 	color COLOR_WHITE 
 	text-align center
 	padding (BASE_SPACE/2) 0
+
+/*
+
+@import "reset.styl"
+@import "countdown.styl"
+@import "cronograma.styl"
+@import "forms.styl"
+@import "helpers.styl"
+@import "modals.styl"
+@import "nav.styl"
+@import "navbar.styl"
+@import "tables.styl"
+@import "text.styl"
+@import "responsive.styl"
+
+
+
+*/
+
+
+
+
+
+/***********************  XCOREISC ************************************/
+.border-precio
+	border .2rem solid COLOR_THEME
