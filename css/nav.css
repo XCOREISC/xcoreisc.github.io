@@ -2,26 +2,6 @@
 [role="header"] {
   display: block;
   text-align: center;
-/*
-	& address	
-		&:before
-			content ""
-			position absolute
-			height 17rem
-			border-top (BASE_SPACE/4) solid COLOR_WHITE
-			border-left (BASE_SPACE/4) solid COLOR_WHITE
-			width 50%
-			left 5%
-	& time	
-		&:before
-			content ""
-			position absolute
-			height 17rem
-			border-top (BASE_SPACE/4) solid COLOR_WHITE
-			border-right (BASE_SPACE/4) solid COLOR_WHITE
-			width 50%
-			right 5%
-	*/
 }
 [role="header"]:before,
 [role="header"]:after {
@@ -89,61 +69,12 @@
   font-size: 2rem;
   text-decoration: none;
 }
-[role="header"] time,
-[role="header"] address {
-  display: block;
-  float: left;
-  width: 40%;
-  margin-top: 2.5rem;
-  color: #ebedee;
-}
-[role="header"] time a,
-[role="header"] address a,
-[role="header"] time>strong,
-[role="header"] address>strong {
-  position: relative;
-  color: #ebedee;
-  font-style: normal;
-}
-[role="header"] time span,
-[role="header"] address span {
-  display: inline-block;
-  color: #3498db;
-  text-align: center;
-  width: 3rem;
-  height: 3rem;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  font-size: 2rem;
-  background-color: #ebedee;
-  padding: 0.25rem;
-  position: relative;
-  top: -1rem;
-}
-[role="header"] address {
-  padding-left: 1rem;
-}
-[role="header"] address span {
-  float: left;
-}
-[role="header"] time {
-  padding-right: 1rem;
-}
-[role="header"] time span {
-  float: right;
-}
 [role="header"] img {
   position: relative;
-  float: left;
-  width: 20%;
-  z-index: 2;
-  vertical-align: middle;
 }
 [role="header"] img.unprg {
-  margin: 5% 7.5%;
+  top: 2rem;
+  width: 4rem;
 }
 [role="header"] img.xcoreisc {
   -webkit-border-radius: 50%;
@@ -151,10 +82,11 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
-  width: 30%;
+  width: 8rem;
 }
 [role="header"] img.apeisc {
-  margin: 5% 7.5%;
+  top: 2rem;
+  width: 4rem;
 }
 /******************* navigation ***************/
 .menu {

@@ -55,73 +55,19 @@
 		left BASE_SPACE
 		font-size BASE_SPACE*2
 		text-decoration none
-	// Pre COREISC Date
-	& time, & address
-		display block
-		float left
-		width 40%
-		margin-top 2.5rem
-		color COLOR_WHITE
-		& a ,&>strong
-			position relative
-			//top -(BASE_SPACE/1.5)
-			color COLOR_WHITE
-			font-style normal
-		& span 
-			display inline-block
-			color COLOR_THEME
-			text-align center
-			square(3rem)
-			border-radius 50%
-			font-size 2rem
-			background-color COLOR_WHITE
-			padding (BASE_SPACE/4)
-			position relative
-			top -(BASE_SPACE)
 
-	& address
-		padding-left BASE_SPACE
-		& span
-			float left
-	& time
-		padding-right BASE_SPACE
-		& span
-			float right
-
-	/*
-	& address	
-		&:before
-			content ""
-			position absolute
-			height 17rem
-			border-top (BASE_SPACE/4) solid COLOR_WHITE
-			border-left (BASE_SPACE/4) solid COLOR_WHITE
-			width 50%
-			left 5%
-	& time	
-		&:before
-			content ""
-			position absolute
-			height 17rem
-			border-top (BASE_SPACE/4) solid COLOR_WHITE
-			border-right (BASE_SPACE/4) solid COLOR_WHITE
-			width 50%
-			right 5%
-	*/
 	// Logo X COREISC
 	& img 
 		position relative
-		float left
-		width 20%
-		z-index  2
-		vertical-align middle
 		&.unprg
-			margin 5% (15/2)% 
+			top 2rem
+			width 4rem
 		&.xcoreisc
 			border-radius 50%
-			width 30%
+			width 8rem
 		&.apeisc
-			margin 5% (15/2)% 
+			top 2rem
+			width 4rem
 
 
 /******************* navigation ***************/
