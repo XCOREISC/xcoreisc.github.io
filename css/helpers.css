@@ -54,6 +54,9 @@ img.portada {
 .bck-sky-blue {
   background-color: #5fccff;
 }
+.bck-theme {
+  background-color: #3498db;
+}
 .bck-white {
   background-color: #ebedee;
   color: #34495e;
@@ -68,7 +71,7 @@ img.portada {
   background-color: #34495e;
 }
 .bck-dark-2 {
-  background-color: #1a242f;
+  background-color: #0a0f13;
 }
 .bck-glass {
   background-color: #1d6ca1;
@@ -86,6 +89,9 @@ img.portada {
 }
 .color-dark {
   color: #34495e;
+}
+.color-sky-blue {
+  color: #5fccff;
 }
 /***************** MARGINS, PADDINGS ********/
 .margin-none {
@@ -254,7 +260,6 @@ img.portada {
 }
 .subtitle {
   display: block;
-  background-color: #e67e22;
   color: #ebedee;
   text-align: center;
   padding: 0.5rem 0;
@@ -279,4 +284,7 @@ img.portada {
 /***********************  XCOREISC ************************************/
 .border-precio {
   border: 0.2rem solid #3498db;
+}
+.bck-blue {
+  background-color: #293863;
 }
