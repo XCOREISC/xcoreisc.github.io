@@ -8,7 +8,7 @@
 
 
 $(document).on("ready",function(){
-	$('#countdown').countdown( {date: '20 november 2013 12:24:00'} );
+	$('#countdown').countdown( {date: '2 december 2013 12:24:00'} );
 	$("#days").knob({
     min: 0,
     max: 60,
