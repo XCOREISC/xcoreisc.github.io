@@ -17,6 +17,8 @@
 		padding (BASE_SPACE/2) 0
 		background-color COLOR_THEME
 		margin-bottom BASE_SPACE
+		min-height 3rem 
+		z-index 2
 	& h2
 		/********* Style 1 - Tag Rotate ********
 		position absolute
@@ -54,17 +56,21 @@
 	// Menu button
 	& > #showMenu , & > #showSocial 
 		color COLOR_WHITE
-		position  absolute
 		square(3rem)
 		z-index 3
 		font-size BASE_SPACE*2
 		text-decoration none
+		padding-top .3rem
+		& span
+			transition transform ease 0.6s
 	& > #showMenu 
+		transition all ease 0.3s
+		background-color COLOR_THEME
+		position: fixed
 		left 0
 	& > #showSocial 
+		position  absolute
 		right 0
-		& span
-			transition transform ease 1s
 
 	// Logo X COREISC
 	& img 
@@ -160,7 +166,7 @@
 	position: absolute
 	right 0
 	top -20rem
-	transition top ease 1s
+	transition top ease 0.6s
 	z-index 2
 	& a 
 		text-align center
@@ -171,3 +177,5 @@
 	top 3rem
 .rotate-arrow-open
 	transform rotate(180deg)
+.rotate-arrow-open-nav
+	transform rotate(90deg)

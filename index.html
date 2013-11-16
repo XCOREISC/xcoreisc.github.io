@@ -26,7 +26,7 @@
 	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body class="menu-push">
+<body class="menu-push" id="Inicio">
 	<nav role="navigation" class="menu menu-vertical menu-left" id="nav">
 		<img src="images/logo-XCOREISC-UNPRG-2014-Lambayeque.jpg" alt="Logo X COREISC - @XCOREISC" />
 		<a href="#Inicio" class="selected"><span class="fa fa-home"></span> <span data-hover="Inicio">Inicio</span> </a>
@@ -48,14 +48,20 @@
 	<header role="header" id="header" class="">
 		<a href="#nav" id="showMenu"><span class="fa fa-reorder"></span></a>
 		<a href="#nav-social" id="showSocial"><span class="fa fa-chevron-down"></span></a>
-		<h1>Pre X COREISC - Full Day</h1>
+		<h1>Pre X COREISC</h1>
 		<a href="#" class="col-xs-offset-4 col-xs-4 logo">
 			<img src="images/logo-XCOREISC-UNPRG-2014-Lambayeque.jpg" alt="Logo X COREISC - @XCOREISC" class="xcoreisc" />
 		</a>
 	</header>
+	<section class="container min-height-4 bck-green">
+		<div class="col-xs-4 text-center margin-top">
+			<a href="https://twitter.com/XCOREISC" class="xcoreisc-sn">@XCOREISC</a>
+		</div>
+		<div class="col-xs-4 col-xs-offset-4 text-center margin-top">
+			<span class="xcoreisc-sn">Full Day</span>
+		</div>
+	</section>
 	<!--<h2>"Emprendimiento e innovación tecnológica del Perú para el Mundo"</h2>-->
-	
-
 	<section class="container">
 		
 
@@ -150,6 +156,7 @@
 				<tr>
 					<td><span> 11:30 </span></td>
 					<td colspan="3">
+						<!--
 						<aside class="md-modal md-effect" id="md-bu">
 							<div class="container bck-white radius-small">
 								<div class="row">
@@ -183,11 +190,39 @@
 								</div>
 							</div>
 						</aside>
-								
-						<a href="#" class="modal md-a-ignite" data-modal="md-bu">
+						-->	
+						<a href="#ignite">
 							<div>Conferencias Ignite</div>
 						</a>
-						<aside class="md-overlay"></aside><!-- the overlay element -->
+					    <aside id="ignite" class="modal">
+					        <div class="container">
+					            <div class="col-xs-12">
+									<img src="images/logos/Ignite-XCoreis-Logo.jpg" alt="">
+								</div>
+								<div class="col-xs-6">
+									<h4>	¿Qué es Ignite?</h4>
+									<p>Ignite es un evento que se llevó a cabo por primera vez el 2006 en Seattle, USA. El evento consiste en presentaciones de diferentes conferencistas en la que cada charla va acompañada de 20 diapositivas, que cambian automáticamente  cada 15 segundos, es decir que la duración de cada segmento es de 5 minutos.</p>
+								</div>
+								<div class="col-xs-6">
+									<h4>	¿Quiénes participan?</h4>
+									<p>Puede  participar cualquier persona que quiera y esté dispuesta a compartir algo atractivo e interesante con todos los asistentes; una idea, una historia o un proyecto. ¡Anímate! </p>
+								</div>
+								<div class="col-xs-6">
+									<h4>	¿Cuándo y dónde?</h4>
+									<p>Ignite ya se ha celebrado en más de 50 ciudades de todo el mundo, y en Noviembre por primera vez se realizara en el Full Day #PreCOREISC #UNPRG 2014!
+										El 13 de Noviembre de las 11 hs. a 13hs., en el auditorio principal de la Universidad Nacional Pedro Ruiz Gallo.</p>
+								</div>
+								<div class="col-xs-6">
+									<h4>	¿Cuánto cuesta? ¿Cómo me registro?</h4>
+									<p>¡Es gratis!. Para participar enviamos un correo a ignite@xcoreisc.com con el asunto “Quiero ser parte de Ignite!”. En el mensaje, delinea tu charla, incluye el tema del que vas a hablar, imágenes, etc. No olvides tu datos de contacto!.
+										 Nosotros la evaluaremos y te contactaremos, o en todo caso te tendremos en cuenta para las ediciones que se vienen (Si!, se vienen muchas más!).
+										No seas tímido, ven y participa, ¡te esperamos!.</p>
+								</div>
+					            <a href="#close" title="Close">Close</a>
+					        </div>
+					    </aside>
+
+
 					</td>
 				</tr>
 				<tr>
@@ -245,7 +280,7 @@
 
 		<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bck-white" id="Expositores">
 			<h2 class="subtitle bck-orange">Expositores</h2>
-			<div class="row">
+			<div class="row hr-orange">
 				<picture alt="" class="col-xs-3">
 					<source src="images/speakers/ing-celi.jpg">
 					<noscript>
@@ -257,7 +292,7 @@
 					<p>Basta experiencia en Auditoría de TI, Evaluación de Sistemas de Gestión de Riesgos y Controles de TI. Evaluación de Continuidad de Procesos y Seguridad de TI</p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row hr-orange">
 				<picture alt="" class="col-xs-3">
 					<source src="images/speakers/ing-teran.jpg">
 					<noscript>
@@ -269,7 +304,7 @@
 					<p>Profesional con experiencia en el análisis, desarrollo e implementación de Sistemas de información, experiencia de más de 05 años en cátedra universitaria en Universidades públicas y privadas</p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row hr-orange">
 				<picture alt="" class="col-xs-3">
 					<source src="images/speakers/serquen.jpg">
 					<noscript>
@@ -281,7 +316,7 @@
 					<p>Docente Universitario e Instructor Cisco CCNA, con maestrías en Ingeniería de Sistemas e Informática y en Administración de Empresas.</p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row hr-orange">
 				<picture alt="" class="col-xs-3">
 					<source src="images/speakers/ing-puican.jpg">
 					<noscript>
@@ -293,7 +328,7 @@
 					<p>Docente de la Universidad Nacional Pedro Ruiz Gallo. Experto en seguridad Informática</p>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row hr-orange">
 				<picture alt="" class="col-xs-3">
 					<source src="images/speakers/ing-reanio.jpg">
 					<noscript>
@@ -320,43 +355,7 @@
 			</div>
 
 		</section>
-		<!--
-			<div class="md-modal md-effect" id="md-inscripcion">
-				<div class="container bck-white radius-small">
-					<p>Para inscribite llena el formulario de inscripcion : <br>
-						<br> Luego de ello
-					</p>
-					<a class="button md-close">Cerrar</a>
-				</div>
-			</div>
-					
-		<section class="col-xs-12 col-sm-12 col-md-11 col-lg-11 margin-top" id="inscribete">
-			<a href="#" class="button-inscribete modal margin-top margin-bottom " data-modal="md-inscripcion">
-				Inscribete
-			</a>
-		</section>
-		-->
-
-		<div class="md-overlay"></div><!-- the overlay element -->
-
-		<!--<div class="container">
-			
-			
-			
-			<div class="row">
-				<form action="#">
-					<input type="email" placeholder="Tu Email" class="col-xs-offset-1 col-xs-8 col-lg-offset-3 col-lg-5"/>
-					<button class="col-xs-2 col-lg-1"><span class=" fa fa-chevron-right"></span></button>
-				</form>
-			</div>
-			<div class="row">
-				<h3 class="text-center col-xs-offset-1 col-xs-10 msg-newsletter">
-					Deja tu email y tendras todas las noticias del X COREISC
-				</h3>
-			</div>
 		
-		</div>
-		-->
 		<!--
 		<h2 class="text-center margin-top">UNPRG</h2>
 		<div id='cronograma' style='max-width:500px;margin:0 auto' class='swipe'>
@@ -474,12 +473,10 @@
 
 	</footer>
 
-<script src="js/lib/jquery.min.js"></script>
+<script src="bower_components/zepto/zepto.js"></script>
 <script src="bower_components/underscore/underscore.js"></script>
 <script src="bower_components/backbone/backbone.js"></script>
-<script src="js/lib/classie.js"></script>
-<script src="js/lib/swipe.js"></script>
-<script src="js/lib/modalEffects.js"></script>
+<script src="bower_components/swipe/swipe.js"></script>
 <script src="js/lib/picturefill.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.10&key=AIzaSyBP3ZaMYVz0M19TaHkskzCYq-dncj2TxjI&sensor=true&language=es"></script>
 

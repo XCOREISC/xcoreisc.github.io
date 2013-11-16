@@ -1,36 +1,13 @@
 
 
+//     social
+$("#showSocial").on('click',function(){
+  $("#showSocial").toggleClass('bck-dark');
+  $("#showSocial > span").toggleClass('rotate-arrow-open');
+  $("#social").toggleClass('open-social');
+});
 
-
-
-
-
-
-
-$(document).on("ready",function(){
-  $("#showSocial").on('click',function(){
-    $("#showSocial").toggleClass('bck-dark');
-    $("#showSocial > span").toggleClass('rotate-arrow-open');
-    $("#social").toggleClass('open-social');
-  });
-
-
-
-
-  /************** navigation ************/
-    
-
-  var elem = document.getElementById('cronograma');
-  window.mySwipe = Swipe(elem, {
-    // startSlide: 4,
-    // auto: 3000,
-    // continuous: true,
-    // disableScroll: true,
-    // stopPropagation: true,
-    // callback: function(index, element) {},
-    // transitionEnd: function(index, element) {}
-  });
-  /************* ¨Links *************************/
+/************* ¨Links *************************/
   var iconInfo= $("#icon-info"),
   iconPlace= $("#icon-place"),
   iconDate= $("#icon-date"),
@@ -65,6 +42,31 @@ $(document).on("ready",function(){
     $(".navbar").css({"height":contentSocial.height()+'px'});
     $(".cronograma").css({"margin-top":"2.2rem" } );
   });
+
+
+
+
+
+$(document).on("ready",function(){
+  
+
+
+
+
+  /************** navigation ************/
+    
+
+  var elem = document.getElementById('cronograma');
+  window.mySwipe = Swipe(elem, {
+    // startSlide: 4,
+    // auto: 3000,
+    // continuous: true,
+    // disableScroll: true,
+    // stopPropagation: true,
+    // callback: function(index, element) {},
+    // transitionEnd: function(index, element) {}
+  });
+  
 
 
 
@@ -220,19 +222,12 @@ if(w>=992 && h <=718){
   if(w>=992){
     $("#header").css({"min-height":"718px"});
   }else{
-    var menuLeft = document.getElementById( 'nav' ),
-        buttonNav=document.getElementById('showMenu'),
-        body = document.body;
-    buttonNav.onclick = function() {
-      classie.toggle( this, 'active' );
-      classie.toggle( body, 'menu-push-toright' );
-      classie.toggle( menuLeft, 'menu-open' );
-    };
-    menuLeft.onclick = function() {
-      classie.toggle( this, 'active' );
-      classie.toggle( body, 'menu-push-toright' );
-      classie.toggle( menuLeft, 'menu-open' );
-    };
+    $('#showMenu, #nav').on('click',function(){
+      $("#showMenu").toggleClass('button-nav');
+      $("#showMenu > span").toggleClass('rotate-arrow-open-nav');
+      $('body').toggleClass('menu-push-toright');
+      $('#nav').toggleClass('menu-open');
+    });
   }
 }
 

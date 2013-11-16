@@ -223,5 +223,22 @@ img.portada {
 }
 .logo {
   position: relative;
-  top: 9rem;
+  top: 9.5rem;
+  z-index: 2;
+}
+.min-height-4 {
+  min-height: 4rem;
+}
+.xcoreisc-sn {
+  font-weight: bold;
+  color: #ebedee;
+  display: block;
+  margin-top: 0.5rem;
+}
+.button-nav {
+  background-color: #34495e !important;
+  left: 14rem !important;
+}
+.hr-orange {
+  border-bottom: 0.1rem solid #f3bf91;
 }
