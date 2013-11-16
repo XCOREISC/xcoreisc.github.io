@@ -8,25 +8,15 @@
 
 
 $(document).on("ready",function(){
-	$('#countdown').countdown( {date: '2 december 2013 12:24:00'} );
-	$("#days").knob({
-    min: 0,
-    max: 60,
-    thickness:0.2
+  $("#showSocial").on('click',function(){
+    $("#showSocial").toggleClass('bck-dark');
+    $("#showSocial > span").toggleClass('rotate-arrow-open');
+    $("#social").toggleClass('open-social');
   });
-  $("#hours").knob({
-    thickness:0.2
-  });
-  $("#mins").knob({
-    min: 0,
-    max: 60,
-    thickness:0.2
-  });
-  $("#secs").knob({
-    min: 0,
-    max: 60,
-    thickness:0.2
-  });
+
+
+
+
   /************** navigation ************/
     
 
@@ -222,32 +212,14 @@ var w=getWidth();
 
 
 
-function fillCircles(t) {
-
-  var countd={
-    width:t,
-    height:t,
-    fgColor:"#ebedee",
-    inputColor:"#ebedee",
-  }
-  $("#days").knob(countd);
-  $("#hours").knob(countd);
-  $("#mins").knob(countd);
-  $("#secs").knob(countd);
-
-}
-
 
 
 if(w>=992 && h <=718){
-  fillCircles(120)
   $("#header").css({"min-height":h+"px"});
 }else{
   if(w>=992){
-    fillCircles(120)
     $("#header").css({"min-height":"718px"});
   }else{
-    fillCircles(40);
     var menuLeft = document.getElementById( 'nav' ),
         buttonNav=document.getElementById('showMenu'),
         body = document.body;

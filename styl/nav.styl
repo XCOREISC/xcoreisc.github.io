@@ -9,7 +9,8 @@
 	clearfix()
 	background-image url("../images/portada/unprg-xs.jpg")
 	background-size cover 
-	background-position 0 2.5rem
+	background-position 0 20px
+	padding-bottom 5rem 
 	// Tittle
 	& h1 
 		color COLOR_WHITE
@@ -51,13 +52,19 @@
 		/** ./END Style 2 ***/
 
 	// Menu button
-	& > #showMenu 
+	& > #showMenu , & > #showSocial 
 		color COLOR_WHITE
 		position  absolute
-		top (BASE_SPACE/4)
-		left BASE_SPACE
+		square(3rem)
+		z-index 3
 		font-size BASE_SPACE*2
 		text-decoration none
+	& > #showMenu 
+		left 0
+	& > #showSocial 
+		right 0
+		& span
+			transition transform ease 1s
 
 	// Logo X COREISC
 	& img 
@@ -122,6 +129,8 @@
 				color  COLOR_WHITE
 				text-decoration none
 
+
+
 .menu-vertical
 	width wNav
 	height 100%
@@ -143,4 +152,22 @@
 
 .menu,.menu-push
 	transition  all 0.3s ease
-
+/********************* Menu social ************************************/
+.social
+	width 3rem
+	background-color COLOR_DARK
+	padding 0 .5rem
+	position: absolute
+	right 0
+	top -17.5rem
+	transition top ease 1s
+	z-index 2
+	& a 
+		text-align center
+		font-size 2rem
+		color COLOR_WHITE
+		padding BASE_SPACE 0
+.open-social
+	top 3rem
+.rotate-arrow-open
+	transform rotate(180deg)
