@@ -221,3 +221,7 @@ img.portada {
 .border-right {
   border-right: 0.1rem solid #5fccff;
 }
+.logo {
+  position: relative;
+  top: 4rem;
+}
