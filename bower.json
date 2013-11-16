@@ -1,0 +1,28 @@
+{
+  "name": "PreCoreisc",
+  "version": "0.8.7",
+  "homepage": "https://github.com/XCOREISC/xcoreisc.github.io",
+  "authors": [
+    "skeiter9 <skeiter97@gmail.com>"
+  ],
+  "description": "Landing Page Pre X COREISC - 2 Dec. 2013",
+  "main": "path/to/main.css",
+  "keywords": [
+    "landing"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.0",
+    "swipe": "~2.0.0",
+    "underscore": "~1.5.2",
+    "zepto": "~1.0.0"
+  }
+}
