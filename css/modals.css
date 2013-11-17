@@ -25,9 +25,13 @@
   background: #fff;
   position: relative;
   margin: 2rem;
-  animation: minimise 500ms linear;
   overflow-y: scroll;
-  height: 22rem;
+  animation: minimise 500ms linear;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  border-radius: 0.4rem;
 }
 .modal a[href="#close"] {
   position: absolute;

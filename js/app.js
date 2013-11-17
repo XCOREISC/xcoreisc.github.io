@@ -231,6 +231,7 @@ if(w>=992 && h <=718){
   }
 }
 
+$(".modal > div ").css({'height':(h-50)+"px"});
 /*
 
 var PCompleto=Backbone.Model.extend();
