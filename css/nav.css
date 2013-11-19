@@ -99,26 +99,6 @@
   position: absolute;
   right: 0;
 }
-[role="header"] img {
-  position: relative;
-}
-[role="header"] img.unprg {
-  top: 2rem;
-  width: 4rem;
-}
-[role="header"] img.xcoreisc {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  width: 8rem;
-  border: 0.2rem solid #34495e;
-}
-[role="header"] img.apeisc {
-  top: 2rem;
-  width: 4rem;
-}
 /******************* navigation ***************/
 .menu {
   background-color: #34495e;

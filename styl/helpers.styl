@@ -17,6 +17,22 @@ img
 		padding 0
 		border-radius (BASE_SPACE/4)
 		border (BASE_SPACE/4) solid COLOR_WHITE
+	&.xcoreisc
+			position relative
+			top 8.5rem
+			z-index 2
+			border-radius 50%
+			width 6rem
+			border .2rem solid COLOR_DARK
+	&.unprg,&.apeisc
+		position: absolute
+		top -2.5rem
+		left 30%
+		square(3rem)
+		padding .1rem
+		border-radius 50%
+		background-color COLOR_WHITE
+		border .1rem solid COLOR_DARK
 
 .block-center
 	block-center()
@@ -185,10 +201,6 @@ img
 	background-color #293863
 .border-right 
 	border-right .1rem solid COLOR_SKY_BLUE
-.logo
-	position: relative
-	top 9.5rem
-	z-index 2
 .min-height-4
 	min-height 4rem 
 .xcoreisc-sn
