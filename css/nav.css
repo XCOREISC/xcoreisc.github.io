@@ -4,8 +4,8 @@
   text-align: center;
   background-image: url("../images/portada/unprg-xs.jpg");
   background-size: cover;
-  background-position: 0 20px;
-  padding-bottom: 5rem;
+  background-position: center;
+  min-height: 197px;
 }
 [role="header"]:before,
 [role="header"]:after {
