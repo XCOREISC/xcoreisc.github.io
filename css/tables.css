@@ -1,3 +1,6 @@
+#gallery-pics {
+  height: auto !important;
+}
 .swipe {
   overflow: hidden;
   visibility: hidden;
@@ -16,11 +19,10 @@
 }
 .swipe-wrap > picture {
   float: left;
-  width: 20%;
   position: relative;
 }
 .swipe-wrap > picture img {
-  max-width: 100%;
+  width: 100%;
 }
 /* END required styles */
 /*

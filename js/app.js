@@ -44,48 +44,18 @@ $("#showSocial").on('click',function(){
   });
 
 
-
-
-
-$(document).on("ready",function(){
-  
-
-
-
-
   /************** navigation ************/
-    
 
-  var elem = document.getElementById('cronograma');
+  var elem = document.getElementById('gallery-pics');
   window.mySwipe = Swipe(elem, {
     // startSlide: 4,
-    // auto: 3000,
-    // continuous: true,
+     auto: 4000,
+     continuous: true
     // disableScroll: true,
     // stopPropagation: true,
     // callback: function(index, element) {},
     // transitionEnd: function(index, element) {}
   });
-  
-
-
-
-
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 google.maps.event.addDomListener(window,'load',function(){
 
@@ -172,8 +142,6 @@ google.maps.event.addDomListener(window,'load',function(){
       infoWindow.open(map,beachMarker);
     });
   });
-
-
 
 
 function getWidth()

@@ -24,17 +24,6 @@
   z-index: 2;
 }
 [role="header"] h2 {
-/********* Style 1 - Tag Rotate ********
-		position absolute
-		right -15%
-		top BASE_SPACE
-		background-color COLOR_WHITE
-		color COLOR_THEME
-		padding (BASE_SPACE/2) 0
-		width 50%
-		transform rotate(45deg)
-		*/
-/********* Style 2 - Ribbon ********/
   background-color: #16a085;
   color: #ebedee;
   width: 60%;
@@ -208,7 +197,7 @@
   -ms-transition: top ease 0.6s;
   -o-transition: top ease 0.6s;
   transition: top ease 0.6s;
-  z-index: 2;
+  z-index: 1;
 }
 .social a {
   text-align: center;

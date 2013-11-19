@@ -67,7 +67,7 @@ span.band:target + .tab a {
 .tab >div.social {
   position: relative;
 }
-.tab a {
+.tab > a {
   margin-top: -1.3rem;
   float: left;
   width: 25%;

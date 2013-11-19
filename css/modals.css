@@ -24,7 +24,6 @@
 .modal > div {
   background: #fff;
   position: relative;
-  margin: 2rem;
   overflow-y: scroll;
   animation: minimise 500ms linear;
   -webkit-border-radius: 0.4rem;
@@ -60,6 +59,7 @@
   border-radius: 50%;
   text-decoration: none;
   padding-top: 0.3rem;
+  text-align: center;
 }
 .modal a[href="#close"]:focus:after,
 .modal a[href="#close"]:hover:after {

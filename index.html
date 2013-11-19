@@ -49,18 +49,21 @@
 		<a href="#nav" id="showMenu"><span class="fa fa-reorder"></span></a>
 		<a href="#nav-social" id="showSocial"><span class="fa fa-chevron-down"></span></a>
 		<h1>Pre X COREISC</h1>
-		<a href="#" class="col-xs-offset-4 col-xs-4 logo">
+		<a href="#" class="col-xs-offset-4 col-xs-4 logo" target="_blank">
 			<img src="images/logo-XCOREISC-UNPRG-2014-Lambayeque.jpg" alt="Logo X COREISC - @XCOREISC" class="xcoreisc" />
 		</a>
 	</header>
 	<section class="container min-height-4 bck-green">
-
 		<div class="col-xs-4 text-center margin-top">
-			<img src="images/logos/unprg.png" alt="Logo UNPRG" class="unprg" />
+			<a href="http://www.unprg.edu.pe" target="_blank">
+				<img src="images/logos/unprg.png" alt="Logo UNPRG" class="unprg" />
+			</a>
 			<a href="https://twitter.com/XCOREISC" class="xcoreisc-sn">@XCOREISC</a>
 		</div>
 		<div class="col-xs-4 col-xs-offset-4 text-center margin-top">
-			<img src="images/logos/apeisc.png" alt="Logo apeisc" class="apeisc" />
+			<a href="http://apeisc.org">
+				<img src="images/logos/apeisc.png" alt="Logo apeisc" class="apeisc" />
+			</a>
 			<span class="xcoreisc-sn">Full Day</span>
 		</div>
 	</section>
@@ -107,13 +110,14 @@
 			<div class="tab">
 				<a href="#gallery" class="navbar-content" id="icon-gallery"><span class="fa fa-picture-o"></span>	</a>
 				<div class="gallery">
-					<picture alt="UNPRG" class="">
-						<source src="images/galeria/1-xs.jpg">
-						<source src="images/galeria/1-sm.jpg" media="(min-width: 320px)">
-						<source src="images/galeria/1-md.jpg" media="(min-width: 480px)">
-						<noscript><img src="images/galeria/1-md.jpg" alt="galeria"></noscript>
-					</picture>
-					
+					<a href="#Galeria">
+						<picture alt="UNPRG" class="">
+							<source src="images/galeria/1-xs.jpg">
+							<source src="images/galeria/1-sm.jpg" media="(min-width: 320px)">
+							<source src="images/galeria/1-md.jpg" media="(min-width: 480px)">
+							<noscript><img src="images/galeria/1-md.jpg" alt="galeria"></noscript>
+						</picture>
+					</a>
 					<picture alt="galeria" class="">
 						<source src="images/galeria/2-xs.jpg">
 						<source src="images/galeria/2-sm.jpg" media="(min-width: 320px)">
@@ -128,6 +132,37 @@
 						<noscript><img src="images/galeria/3-md.jpg" alt="UNPRG"></noscript>
 					</picture>
 				</div>
+				<aside id="Galeria" class="modal">
+					<div class="container margin-top-2" id="gallery-pics" class="swipe">
+						  <div class='swipe-wrap'>
+
+						    <picture alt="galeria" class="">
+									<source src="images/galeria/1-sm.jpg">
+									<source src="images/galeria/1-md.jpg" media="(min-width: 320px)">
+									<noscript><img src="images/galeria/1-md.jpg" alt="galeria"></noscript>
+								</picture>
+
+								<picture alt="galeria" class="">
+									<source src="images/galeria/2-sm.jpg">
+									<source src="images/galeria/2-md.jpg" media="(min-width: 320px)">
+									<noscript><img src="images/galeria/2-md.jpg" alt="UNPRG"></noscript>
+								</picture>
+
+								<picture alt="galeria" class="">
+									<source src="images/galeria/3-sm.jpg">
+									<source src="images/galeria/3-md.jpg" media="(min-width: 320px)">
+									<noscript><img src="images/galeria/3-md.jpg" alt="UNPRG"></noscript>
+								</picture>
+
+
+						  </div>
+						</div>
+
+						  <button onclick='mySwipe.prev()'>anterior</button> 
+						  <button onclick='mySwipe.next()'>siguiente</button>
+
+						<a href="#close" title="Close">Close</a>
+				</aside>
 			</div>
 
 
@@ -159,46 +194,11 @@
 				<tr>
 					<td><span> 11:30 </span></td>
 					<td colspan="3">
-						<!--
-						<aside class="md-modal md-effect" id="md-bu">
-							<div class="container bck-white radius-small">
-								<div class="row">
-									<div class="col-lg-12">
-										<img src="images/logos/Ignite-XCoreis-Logo.jpg" alt="">
-									</div>
-									<div class="col-md-4 col-lg-4">
-										<h4>	¿Qué es Ignite?</h4>
-										<p>Ignite es un evento que se llevó a cabo por primera vez el 2006 en Seattle, USA. El evento consiste en presentaciones de diferentes conferencistas en la que cada charla va acompañada de 20 diapositivas, que cambian automáticamente  cada 15 segundos, es decir que la duración de cada segmento es de 5 minutos.</p>
-									</div>
-									
-									<div class="col-md-4 col-lg-4">
-										<h4>	¿Quiénes participan?</h4>
-										<p>Puede  participar cualquier persona que quiera y esté dispuesta a compartir algo atractivo e interesante con todos los asistentes; una idea, una historia o un proyecto. ¡Anímate! </p>
-									</div>
-									<div class="col-md-4 col-lg-4">
-										<h4>	¿Cuándo y dónde?</h4>
-										<p>Ignite ya se ha celebrado en más de 50 ciudades de todo el mundo, y en Noviembre por primera vez se realizara en el Full Day #PreCOREISC #UNPRG 2014!
-										El 2 de Deciembre de las 11 hs. a 13hs., en el auditorio principal de la Universidad Nacional Pedro Ruiz Gallo.</p>
-									</div>
-									<div class="col-md-4 col-lg-4">
-										<h4>	¿Cuánto cuesta? ¿Cómo me registro?</h4>
-										<p>¡Es gratis!. Para participar enviamos un correo a ignite@xcoreisc.com con el asunto “Quiero ser parte de Ignite!”. En el mensaje, delinea tu charla, incluye el tema del que vas a hablar, imágenes, etc. No olvides tu datos de contacto!.
-										 Nosotros la evaluaremos y te contactaremos, o en todo caso te tendremos en cuenta para las ediciones que se vienen (Si!, se vienen muchas más!).
-										No seas tímido, ven y participa, ¡te esperamos!.</p>
-									</div>
-
-									<div class="col-lg-11">
-										<a class="button md-close col-lg-12">Close me!</a>
-									</div>
-								</div>
-							</div>
-						</aside>
-						-->	
 						<a href="#ignite">
 							<div>Conferencias Ignite</div>
 						</a>
 					    <aside id="ignite" class="modal">
-					      <div class="container padding">
+					      <div class="container margin-2 padding">
 					        <div class="col-xs-12">
 										<img src="images/logos/Ignite-XCoreis-Logo.jpg" alt="" class="responsive" />
 									</div>
@@ -227,8 +227,6 @@
 					            <a href="#close" title="Close">Close</a>
 					        </div>
 					    </aside>
-
-
 					</td>
 				</tr>
 				<tr>
@@ -362,43 +360,6 @@
 
 		</section>
 		
-		<!--
-		<h2 class="text-center margin-top">UNPRG</h2>
-		<div id='cronograma' style='max-width:500px;margin:0 auto' class='swipe'>
-		  <div class='swipe-wrap'>
-
-		    <picture alt="UNPRG" class="">
-					<source src="images/speakers/ing-reanio.jpg">
-					<source src="images/UNPRG/1-sm.jpg" media="(min-width: 320px)">
-					<source src="images/UNPRG/1-md.jpg" media="(min-width: 480px)">
-					<noscript><img src="images/UNPRG/1-md.jpg" alt="UNPRG"></noscript>
-				</picture>
-				
-				<picture alt="UNPRG" class="">
-					<source src="images/speakers/ing-leiva.jpg">
-					<source src="images/UNPRG/2-sm.jpg" media="(min-width: 320px)">
-					<source src="images/UNPRG/2-md.jpg" media="(min-width: 480px)">
-					<noscript><img src="images/UNPRG/2-md.jpg" alt="UNPRG"></noscript>
-				</picture>
-
-				<picture alt="UNPRG" class="">
-					<source src="images/UNPRG/3-xs.jpg">
-					<source src="images/UNPRG/3-sm.jpg" media="(min-width: 320px)">
-					<source src="images/UNPRG/3-md.jpg" media="(min-width: 480px)">
-					<noscript><img src="images/UNPRG/3-md.jpg" alt="UNPRG"></noscript>
-				</picture>
-
-		  </div>
-		</div>
-
-		<div style='text-align:center;padding-top:20px;'>
-		  
-		  <button onclick='mySwipe.prev()'>anterior</button> 
-		  <button onclick='mySwipe.next()'>siguiente</button>
-
-		</div>
-		-->
-		
 	</section>
 
 	<section id="Costos" class="bck-white">
@@ -437,13 +398,6 @@
 	<footer class="bck-blue" id="Auspiciadores">
 
 		<div class="container">
-			<h2 class="text-center subtitle">Co-Organizadores</h2>
-			<a href="http://bit.ly/182X4UP" target="_blank" class="col-xs-6">
-				<img src="images/logos/unprg.png" alt="Logo UNPRG" class="unprg" />
-			</a>
-			<a href="http://bit.ly/182X5rG" target="_blank" class="col-xs-6">
-				<img src="images/logos/apeisc.png" alt="Logo apeisc" class="apeisc" />
-			</a>
 			<h2 class="text-center subtitle">Auspiciadores</h2>
 			<div class="col-xs-6">
 				<a href="http://bit.ly/182Zcfp" >
