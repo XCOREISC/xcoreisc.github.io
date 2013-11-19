@@ -324,7 +324,7 @@
   [role="header"] h2 {
     background-color: transparent;
     position: relative;
-    top: 15rem;
+    top: 4rem;
     color: #34495e;
     text-shadow: 0 2px 1px #3498db;
     margin: 0 auto;
@@ -333,47 +333,22 @@
     width: 30%;
     background-color: #16a085;
   }
-  [role="header"] h2:before,
-  [role="header"] h2:after {
-    top: -1rem;
-    z-index: 1;
-    border-width: 1.5rem;
+  [role="header"] h1:before,
+  [role="header"] h1:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 1rem;
+    top: 4.5rem;
+    z-index: -1;
   }
-  [role="header"] h2:before {
+  [role="header"] h1:before {
     border-color: #149078 rgba(0,0,0,0) #149078 #149078;
-    right: -3rem;
+    right: -2rem;
   }
-  [role="header"] h2:after {
+  [role="header"] h1:after {
     border-color: #149078 #149078 #149078 rgba(0,0,0,0);
-    left: -3rem;
-  }
-  [role="header"] > a {
-    display: block;
-    width: 10%;
-    float: left;
-    margin: 0;
-  }
-  [role="header"] > a:nth-of-type(2) {
-    margin-left: 30%;
-  }
-  [role="header"] > a:nth-of-type(3) {
-    width: 20%;
-  }
-  [role="header"] > a img {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    float: none;
-    top: 4rem;
-  }
-  [role="header"] > a img.xcoreisc {
-    width: 80%;
-    top: 1rem;
-    -webkit-box-shadow: 0 0 0.5rem 0.5rem #34495e;
-    -moz-box-shadow: 0 0 0.5rem 0.5rem #34495e;
-    -ms-box-shadow: 0 0 0.5rem 0.5rem #34495e;
-    -o-box-shadow: 0 0 0.5rem 0.5rem #34495e;
-    box-shadow: 0 0 0.5rem 0.5rem #34495e;
+    left: -2rem;
   }
   .menu {
     position: absolute;

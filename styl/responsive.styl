@@ -115,7 +115,7 @@
 		& h1, & h2
 			background-color transparent
 			position relative
-			top 15rem
+			top 4rem
 			color COLOR_DARK
 			text-shadow 0 2px 1px COLOR_THEME
 			margin 0 auto
@@ -123,36 +123,20 @@
 			text-align center
 			width 30%
 			background-color COLOR_GREEN
-		& h2 
+		& h1 
 			&:before,&:after
-				top -1rem 
-				z-index 1
-				border-width: 1.5rem
+				content ""
+				position absolute
+				border-style: solid
+				border-width: BASE_SPACE
+				top 1.5rem
+				z-index -1
 			&:before
 				border-color: darken(COLOR_GREEN,10%) rgba(0, 0, 0, 0) darken(COLOR_GREEN,10%) darken(COLOR_GREEN,10%)  
-				right -3rem
+				right -2rem
 			&:after
 				border-color: darken(COLOR_GREEN,10%)   darken(COLOR_GREEN,10%)   darken(COLOR_GREEN,10%) rgba(0, 0, 0, 0) 
-				left -3rem
-		& > a
-			display block
-			width 10%
-			float left
-			margin 0
-			&:nth-of-type(2)
-				margin-left (60/2)%
-			&:nth-of-type(3)
-				width 20%
-			& img 
-				display block
-				margin 0 auto
-				width 80%
-				float none
-				top 4rem
-				&.xcoreisc
-					width 80%
-					top BASE_SPACE
-					box-shadow 0 0 (BASE_SPACE/2) (BASE_SPACE/2) COLOR_DARK
+				left -2rem
 	.menu 
 		position absolute
 		height 3rem 
