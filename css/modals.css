@@ -46,9 +46,9 @@
   font-family: "FontAwesome";
   content: "\f00d";
   font-size: 2rem;
-  position: absolute;
-  right: -10px;
-  top: -10px;
+  position: fixed;
+  right: 1rem;
+  top: 0.5rem;
   color: #ebedee;
   width: 3rem;
   height: 3rem;
