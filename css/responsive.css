@@ -281,6 +281,9 @@
     top: 12rem;
     background: transparent;
   }
+  .cronograma.margin-top {
+    margin-top: 0;
+  }
   .navbar {
     padding-top: 0;
   }
@@ -306,6 +309,7 @@
     width: 100%;
     display: block;
     z-index: 2;
+    background-color: #107864;
   }
   .navbar .tab >div {
     opacity: 1;
