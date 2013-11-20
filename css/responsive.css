@@ -276,6 +276,11 @@
   }
 }
 @media only screen and (min-width: 992px) {
+  .lg-logos {
+    position: absolute;
+    top: 12rem;
+    background: transparent;
+  }
   .navbar {
     padding-top: 0;
   }
@@ -295,7 +300,7 @@
     width: 50%;
     float: left;
   }
-  .navbar .tab a {
+  .navbar .tab > a {
     margin-top: 0;
     text-align: center;
     width: 100%;
@@ -306,6 +311,11 @@
     opacity: 1;
     position: relative;
     top: 0;
+    min-height: 8rem;
+  }
+  .navbar .tab >div.info,
+  .navbar .tab >div.place {
+    min-height: 18rem;
   }
   .navbar .tab >div.place {
     top: 2.3rem;
@@ -328,10 +338,14 @@
     color: #34495e;
     text-shadow: 0 2px 1px #3498db;
     margin: 0 auto;
-    padding: 0;
     text-align: center;
     width: 30%;
     background-color: #16a085;
+    -webkit-border-radius: 0.2rem 0.2rem 0 0;
+    -moz-border-radius: 0.2rem 0.2rem 0 0;
+    -ms-border-radius: 0.2rem 0.2rem 0 0;
+    -o-border-radius: 0.2rem 0.2rem 0 0;
+    border-radius: 0.2rem 0.2rem 0 0;
   }
   [role="header"] h1:before,
   [role="header"] h1:after {
@@ -339,7 +353,7 @@
     position: absolute;
     border-style: solid;
     border-width: 1rem;
-    top: 4.5rem;
+    top: 1.5rem;
     z-index: -1;
   }
   [role="header"] h1:before {

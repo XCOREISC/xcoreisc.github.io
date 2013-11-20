@@ -40,11 +40,13 @@ span.band:target + .tab a {
   transition: all 1s ease;
   padding: 1rem;
 }
-.tab >div.gallery {
+.tab >div.gallery,
+.tab >div.videos {
   padding: 0;
   font-size: 0;
 }
-.tab >div.gallery img {
+.tab >div.gallery img,
+.tab >div.videos img {
   width: 33.333333333333336%;
   display: inline-block;
 }

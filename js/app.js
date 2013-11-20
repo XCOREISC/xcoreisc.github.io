@@ -10,14 +10,14 @@ $("#showSocial").on('click',function(){
 /************* ¨Links *************************/
   var iconInfo= $("#icon-info"),
   iconPlace= $("#icon-place"),
-  iconDate= $("#icon-date"),
+  iconVideos= $("#icon-videos"),
   iconSocial= $("#icon-social"),
   iconGallery= $("#icon-gallery");
 
   /*********** Tab content ******************/
   var contentInfo=$(".info"),
   contentPlace=$(".place"),
-  contentDate=$(".date"),
+  contentVideos=$(".videos"),
   contentSocial=$(".social"),
   contentGallery=$(".gallery");
 
@@ -30,8 +30,8 @@ $("#showSocial").on('click',function(){
     $(".navbar").css({"height":contentPlace.height()+'px'});
     $(".cronograma").css({"margin-top":"2.2rem" } );
   });
-  iconDate.on("click",function(){
-    $(".navbar").css({"height":contentDate.height()+'px'});
+  iconVideos.on("click",function(){
+    $(".navbar").css({"height":contentVideos.height()+'px'});
     $(".cronograma").css({"margin-top":"2.2rem" } );
   });
   iconGallery.on("click",function(){

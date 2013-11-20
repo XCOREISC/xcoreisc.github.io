@@ -132,21 +132,41 @@
 
 .menu,.menu-push
 	transition  all 0.3s ease
+
 /********************* Menu social ************************************/
 .social
-	width 3rem
+	clearfix()
+	width 11rem
 	background-color COLOR_DARK
-	padding 0 .5rem
 	position: absolute
 	right 0
 	top -20rem
 	transition top ease 0.6s
 	z-index 1
+	border-radius .2rem 0 .2rem .2rem 
 	& a 
+		float left 
+		display block
+		square(2.5rem)
 		text-align center
 		font-size 2rem
 		color COLOR_WHITE
-		padding BASE_SPACE 0
+		margin .5rem
+		/*
+		& .fa-facebook
+			color #3b5998
+		& .fa-twitter
+			color #00aced
+		& .fa-youtube
+			color #bb0000
+		& .fa-pinterest
+			color #cb2027
+		& .fa-foursquare
+			color #0072b1
+		& .fa-google-plus
+			color #dd4b39
+		*/
+
 .open-social
 	top 3rem
 .rotate-arrow-open

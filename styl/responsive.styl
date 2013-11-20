@@ -1,7 +1,6 @@
 @import "__constants/variables.styl"
 @import "__constants/mixins.styl"
 
-
 @media only screen and (min-width: 768px) 
 	.leyenda
 		display none
@@ -79,6 +78,10 @@
 					border-bottom none !important
 
 @media only screen and (min-width: 992px) 
+	.lg-logos
+		position: absolute
+		top 12rem
+		background transparent
 	.navbar
 		clearfix() 
 		padding-top 0
@@ -88,7 +91,7 @@
 		& .tab
 			width 50%
 			float left
-			& a
+			& > a
 				margin-top 0
 				text-align center
 				width 100%
@@ -98,6 +101,9 @@
 				opacity 1
 				position: relative
 				top 0
+				min-height 8rem
+				&.info,&.place
+					min-height 18rem
 				&.place
 					top 2.3rem
 					padding 0 0 3rem 0
@@ -119,10 +125,10 @@
 			color COLOR_DARK
 			text-shadow 0 2px 1px COLOR_THEME
 			margin 0 auto
-			padding 0
 			text-align center
 			width 30%
 			background-color COLOR_GREEN
+			border-radius .2rem .2rem 0 0
 		& h1 
 			&:before,&:after
 				content ""

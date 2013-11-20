@@ -18,12 +18,14 @@ img
 		border-radius (BASE_SPACE/4)
 		border (BASE_SPACE/4) solid COLOR_WHITE
 	&.xcoreisc
-			position relative
-			top 9.5rem
-			z-index 2
-			border-radius 50%
-			width 6rem
-			border .2rem solid COLOR_DARK
+		position relative
+		display block
+		margin 0 auto
+		top -3rem
+		border-radius 50%
+		width 6rem
+		border .2rem solid COLOR_DARK
+
 	&.unprg,&.apeisc
 		position: absolute
 		top -2.5rem
@@ -203,8 +205,13 @@ img
 	background-color #293863
 .border-right 
 	border-right .1rem solid COLOR_SKY_BLUE
-.min-height-4
-	min-height 4rem 
+.date-fullDay
+	&:after
+		content "2 de Diciembre"
+		position: absolute
+		width 100%
+		text-align center
+		top 3.5rem
 .xcoreisc-sn
 	font-weight bold
 	color COLOR_WHITE
@@ -215,3 +222,16 @@ img
 	left wNav !important
 .hr-orange
 	border-bottom 0.1rem solid lighten(COLOR_ORANGE,50%) 
+
+.video-container
+	position relative
+	padding-bottom 56.25%
+	padding-top 30px
+	height 0
+	overflow hidden
+	& iframe
+		position: absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
