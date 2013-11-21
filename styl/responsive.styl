@@ -77,11 +77,23 @@
 					border-left none !important
 					border-bottom none !important
 
-@media only screen and (min-width: 992px) 
+@media only screen and (min-width: 992px)
+
 	.lg-logos
 		position: absolute
 		top 12rem
 		background transparent
+	img
+		&.xcoreisc
+			square(8rem)
+		&.unprg
+			left 100%
+			square(5rem)
+		&.apeisc
+			right 100%
+			square(5rem)
+			left auto
+
 	.cronograma.margin-top
 		margin-top 0
 	.navbar
@@ -182,14 +194,11 @@
 
 
 @media only screen and (min-width: 1200px) 
-	[role="header"]
-		& > a
-			& img 
-				width 60%
-				&.xcoreisc
-					width 60%
-	#countdown
-		left 30%
+	&.xcoreisc
+		text-align left
+	&.unprg,&.apeisc
+		text-align left
+
 @media only screen and (min-width: 1440px) 
 	[role="header"]
 		& > a
@@ -197,5 +206,3 @@
 				width 40%
 				&.xcoreisc
 					width 40%
-	#countdown
-		left 32.5%

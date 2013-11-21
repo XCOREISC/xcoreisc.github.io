@@ -281,6 +281,21 @@
     top: 12rem;
     background: transparent;
   }
+  img.xcoreisc {
+    width: 8rem;
+    height: 8rem;
+  }
+  img.unprg {
+    left: 100%;
+    width: 5rem;
+    height: 5rem;
+  }
+  img.apeisc {
+    right: 100%;
+    width: 5rem;
+    height: 5rem;
+    left: auto;
+  }
   .cronograma.margin-top {
     margin-top: 0;
   }
@@ -414,14 +429,12 @@
   }
 }
 @media only screen and (min-width: 1200px) {
-  [role="header"] > a img {
-    width: 60%;
+  &.xcoreisc {
+    text-align: left;
   }
-  [role="header"] > a img.xcoreisc {
-    width: 60%;
-  }
-  #countdown {
-    left: 30%;
+  &.unprg,
+  &.apeisc {
+    text-align: left;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -430,8 +443,5 @@
   }
   [role="header"] > a img.xcoreisc {
     width: 40%;
-  }
-  #countdown {
-    left: 32.5%;
   }
 }
