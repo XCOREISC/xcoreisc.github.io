@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 PreCoreisc
 ==========
 =======
@@ -17,4 +16,3 @@ Source Tree:
  		---fonts
  index.html
  README.md
->>>>>>> gh-pages
