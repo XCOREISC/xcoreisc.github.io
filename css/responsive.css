@@ -127,7 +127,7 @@
     text-shadow: none;
     cursor: pointer;
   }
-  .cronograma table tr:nth-child(4) td:nth-child(2) div {
+  .cronograma table tr:nth-child(4) td:nth-child(2) a div {
     background-color: #ebedee;
     padding: 1rem 0;
     -webkit-border-radius: 0.25rem;
