@@ -255,6 +255,8 @@ img.apeisc {
 }
 .date-fullDay:after {
   content: "2 de Diciembre";
+  color: #ebedee;
+  font-weight: bold;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -264,7 +266,7 @@ img.apeisc {
   font-weight: bold;
   color: #ebedee;
   display: block;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 .button-nav {
   background-color: #34495e !important;
@@ -304,4 +306,7 @@ mark {
 }
 .pago li {
   margin-top: 1rem;
+}
+#Expositores p {
+  min-height: 7rem;
 }

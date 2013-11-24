@@ -337,6 +337,7 @@
     display: block;
     z-index: 2;
     background-color: #107864;
+    cursor: default;
   }
   .navbar .tab >div {
     opacity: 1;

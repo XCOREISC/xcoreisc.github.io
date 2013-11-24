@@ -23,6 +23,17 @@ span
 
 .tab 
 	position relative
+	& > a
+		margin-top: -1.3rem
+		float: left
+		width: 25%
+		background-color: COLOR_GREEN
+		text-decoration: none
+		font-size: 2rem
+		color: COLOR_WHITE
+		text-align: center
+		position: relative
+		transition: all .5s ease
 	& >div 
 		background: COLOR_GREEN
 		width: 100%
@@ -56,22 +67,3 @@ span
 				font-weight bold
 		&.social
 			position: relative
-
-
-	& > a
-		margin-top: -1.3rem
-		float: left
-		width: 25%
-		background-color: COLOR_GREEN
-		text-decoration: none
-		font-size: 2rem
-		color: COLOR_WHITE
-		text-align: center
-		position: relative
-		transition: all .5s ease
- 
-a
-	&a:hover 
-		background-color: lighten(COLOR_GREEN,50%)
-		color: lighten(COLOR_WHITE,20%)
-   

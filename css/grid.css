@@ -15,30 +15,9 @@
 .container:after {
   clear: both;
 }
-
-.container:before,
-.container:after {
-  display: table;
-  content: " ";
-}
-
-.container:after {
-  clear: both;
-}
-
 .row {
   /*margin-right: -1rem;*/
   /*margin-left: -1rem;*/
-}
-
-.row:before,
-.row:after {
-  display: table;
-  content: " ";
-}
-
-.row:after {
-  clear: both;
 }
 
 .row:before,

@@ -181,7 +181,11 @@ var h=getHeight();
 var w=getWidth();
 
 
-
+  iconInfo.click(function(e) {e.preventDefault();});
+  iconInfo.attr('disabled', true);
+  iconPlace.click(function(e) {e.preventDefault();});
+  iconVideos.click(function(e) {e.preventDefault();});
+  iconGallery.click(function(e) {e.preventDefault();});
 
 
 if(w>=992 && h <=718){
