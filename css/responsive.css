@@ -127,7 +127,7 @@
     text-shadow: none;
     cursor: pointer;
   }
-  .cronograma table tr:nth-child(4) td:nth-child(2) a div {
+  .cronograma table tr:nth-child(4) td:nth-child(2) div {
     background-color: #ebedee;
     padding: 1rem 0;
     -webkit-border-radius: 0.25rem;
@@ -280,7 +280,6 @@
     position: absolute;
     top: 12rem;
     background: transparent;
-    width:100%;
   }
   img.xcoreisc {
     width: 8rem;
@@ -332,27 +331,59 @@
     float: left;
   }
   .navbar .tab > a {
-    margin-top: 0;
-    text-align: center;
-    width: 100%;
-    display: block;
-    z-index: 2;
-    background-color: #107864;
-    cursor: default;
+    display: none;
   }
   .navbar .tab >div {
     opacity: 1;
     position: relative;
     top: 0;
-    min-height: 8rem;
   }
   .navbar .tab >div.info,
   .navbar .tab >div.place {
     min-height: 18rem;
   }
   .navbar .tab >div.place {
-    top: 2.3rem;
     padding: 0 0 3rem 0;
+  }
+  .navbar .tab:first-of-type:before {
+    content: "";
+    font-family: "FontAwesome";
+    font-size: 1.5rem;
+    color: #ebedee;
+    text-align: center;
+    width: 100%;
+    display: block;
+    background-color: #107864;
+  }
+  .navbar .tab:nth-of-type(2):before {
+    content: "";
+    font-family: "FontAwesome";
+    font-size: 1.5rem;
+    color: #ebedee;
+    text-align: center;
+    width: 100%;
+    display: block;
+    background-color: #107864;
+  }
+  .navbar .tab:nth-of-type(3):before {
+    content: "";
+    font-family: "FontAwesome";
+    font-size: 1.5rem;
+    color: #ebedee;
+    text-align: center;
+    width: 100%;
+    display: block;
+    background-color: #107864;
+  }
+  .navbar .tab:nth-of-type(4):before {
+    content: "";
+    font-family: "FontAwesome";
+    font-size: 1.5rem;
+    color: #ebedee;
+    text-align: center;
+    width: 100%;
+    display: block;
+    background-color: #107864;
   }
   #showMenu {
     display: none;

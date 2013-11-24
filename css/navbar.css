@@ -41,6 +41,7 @@ span.band:target + .tab a {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 .tab >div {
   background: #16a085;
@@ -55,7 +56,9 @@ span.band:target + .tab a {
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
-  padding: 1rem;
+}
+.tab >div > p {
+  padding: 0.5rem 1rem;
 }
 .tab >div.info {
   text-align: justify;

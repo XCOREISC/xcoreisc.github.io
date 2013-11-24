@@ -34,6 +34,7 @@ span
 		text-align: center
 		position: relative
 		transition: all .5s ease
+		cursor pointer
 	& >div 
 		background: COLOR_GREEN
 		width: 100%
@@ -43,7 +44,8 @@ span
 		color: COLOR_WHITE
 		opacity:0
 		transition: all 1s ease
-		padding BASE_SPACE
+		& > p 
+			padding (BASE_SPACE/2) BASE_SPACE
 		&.info
 			text-align justify
 		&.gallery,&.videos
