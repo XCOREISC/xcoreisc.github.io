@@ -475,6 +475,24 @@
     -o-border-radius: 50%;
     border-radius: 50%;
   }
+  .social>a:hover .fa-facebook {
+    color: #3b5998;
+  }
+  .social>a:hover .fa-twitter {
+    color: #00aced;
+  }
+  .social>a:hover .fa-youtube {
+    color: #b00;
+  }
+  .social>a:hover .fa-pinterest {
+    color: #cb2027;
+  }
+  .social>a:hover .fa-foursquare {
+    color: #0072b1;
+  }
+  .social>a:hover .fa-google-plus {
+    color: #dd4b39;
+  }
 }
 @media only screen and (min-width: 1200px) {
   &.xcoreisc {
