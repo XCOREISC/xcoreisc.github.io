@@ -294,6 +294,7 @@
     position: absolute;
     top: 12rem;
     background: transparent;
+    width: 100%;
   }
   img.xcoreisc {
     width: 8rem;
@@ -454,19 +455,25 @@
   .menu > a [class*="fa"] {
     display: none;
   }
-  #countdown {
-    position: absolute;
-    top: 20rem;
-    left: 24.5%;
+  #showSocial {
+    display: none;
   }
-  #countdown input {
-    text-shadow: 0 1px 1px #000;
+  .social {
+    width: 20rem;
+    background-color: transparent;
+    top: 3rem;
+    right: 0;
   }
-  #countdown span {
-    position: relative;
-    top: -55px;
-    font-weight: bold;
-    text-shadow: 0 1px 1px #000;
+  .social>a {
+    width: 2.7rem;
+    height: 2.7rem;
+    padding: 0.2rem;
+    background-color: rgba(0,0,0,0.5);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
   }
 }
 @media only screen and (min-width: 1200px) {

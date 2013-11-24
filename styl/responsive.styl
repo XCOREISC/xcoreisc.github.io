@@ -206,20 +206,18 @@
 			color COLOR_WHITE
 			& [class^="fa"],& [class*="fa"]
 				display none
-
-	#countdown
-		position absolute
-		top 20rem
-		left 24.5%
-		& input
-			text-shadow 0 1px 1px black
-		& span
-			position: relative
-			top -55px
-			font-weight bold
-			text-shadow 0 1px 1px black
-
-
+	#showSocial
+		display none
+	.social
+		width 20rem
+		background-color transparent
+		top 3rem
+		right 0
+		&>a 
+			square(2.7rem)
+			padding .2rem
+			background-color rgba(0, 0, 0, .5)
+			border-radius 50%
 @media only screen and (min-width: 1200px) 
 	&.xcoreisc
 		text-align left
