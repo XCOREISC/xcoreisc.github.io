@@ -345,10 +345,13 @@
   .navbar .tab >div.place {
     padding: 0 0 3rem 0;
   }
-  .navbar .tab:first-of-type:before {
+  .navbar .tab:first-of-type:before,
+  .navbar .tab:nth-of-type(2):before,
+  .navbar .tab:nth-of-type(3):before,
+  .navbar .tab:nth-of-type(4):before {
     content: "";
     font-family: "FontAwesome";
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #ebedee;
     text-align: center;
     width: 100%;
@@ -357,33 +360,12 @@
   }
   .navbar .tab:nth-of-type(2):before {
     content: "";
-    font-family: "FontAwesome";
-    font-size: 1.5rem;
-    color: #ebedee;
-    text-align: center;
-    width: 100%;
-    display: block;
-    background-color: #107864;
   }
   .navbar .tab:nth-of-type(3):before {
     content: "";
-    font-family: "FontAwesome";
-    font-size: 1.5rem;
-    color: #ebedee;
-    text-align: center;
-    width: 100%;
-    display: block;
-    background-color: #107864;
   }
   .navbar .tab:nth-of-type(4):before {
     content: "";
-    font-family: "FontAwesome";
-    font-size: 1.5rem;
-    color: #ebedee;
-    text-align: center;
-    width: 100%;
-    display: block;
-    background-color: #107864;
   }
   #showMenu {
     display: none;
