@@ -7,6 +7,57 @@
     display: table;
     padding: 1rem;
   }
+  .cronograma table td {
+    display: table-cell !important;
+    width: auto !important;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    border-radius: 0.25rem;
+  }
+  .cronograma table td:first-child {
+    background-color: transparent;
+  }
+  .cronograma table td:first-child span {
+    position: relative !important;
+    background-color: #ebedee;
+    cursor: pointer;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0.8rem 0;
+    border: 0.5rem solid #9b59b6;
+  }
+  .cronograma table td:first-child span:before {
+    font-family: FontAwesome;
+    content: "\f0d9";
+    position: absolute;
+    left: 3.5rem;
+    margin-top: -1.3rem;
+    font-size: 4rem;
+    color: #ebedee;
+  }
+  .cronograma table td:first-child span:after {
+    content: "";
+    position: absolute;
+    height: 12rem;
+    border-left: 0.5rem solid #9b59b6;
+    width: 4rem;
+    left: 1.2rem;
+    z-index: -1;
+  }
+  .cronograma table td:nth-child(2),
+  .cronograma table td:nth-child(3),
+  .cronograma table td:nth-child(4) {
+    border-left: none !important;
+    border-bottom: none !important;
+  }
   .cronograma table tr {
     display: table-row;
     border-bottom: none;
@@ -223,56 +274,19 @@
   .cronograma table tr:nth-child(6) td:nth-child(4) > div {
     padding: 6.9rem 0;
   }
-  .cronograma table td {
-    display: table-cell !important;
-    width: auto !important;
-    -webkit-border-radius: 0.25rem;
-    -moz-border-radius: 0.25rem;
-    -ms-border-radius: 0.25rem;
-    -o-border-radius: 0.25rem;
-    border-radius: 0.25rem;
+  .cronograma table tr:nth-child(9) td:first-child span:after {
+    border-left: none;
   }
-  .cronograma table td:first-child {
-    background-color: transparent;
-  }
-  .cronograma table td:first-child span {
-    position: relative !important;
-    background-color: #ebedee;
-    cursor: pointer;
-    display: block;
-    width: 4rem;
-    height: 4rem;
+  #Expositores img {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     border-radius: 50%;
-    padding: 0.8rem 0;
-    border: 0.5rem solid #9b59b6;
+    border: 0.2rem solid #e67e22;
   }
-  .cronograma table td:first-child span:before {
-    font-family: FontAwesome;
-    content: "\f0d9";
-    position: absolute;
-    left: 3.5rem;
-    margin-top: -1.3rem;
-    font-size: 4rem;
-    color: #ebedee;
-  }
-  .cronograma table td:first-child span:after {
-    content: "";
-    position: absolute;
-    height: 12rem;
-    border-left: 0.5rem solid #9b59b6;
-    width: 4rem;
-    left: 1.2rem;
-    z-index: -1;
-  }
-  .cronograma table td:nth-child(2),
-  .cronograma table td:nth-child(3),
-  .cronograma table td:nth-child(4) {
-    border-left: none !important;
-    border-bottom: none !important;
+  #Expositores > div {
+    margin-top: 1rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -342,8 +356,8 @@
   .navbar .tab >div.place {
     min-height: 18rem;
   }
-  .navbar .tab >div.place {
-    padding: 0 0 3rem 0;
+  .navbar .tab >div.place #map-unprg {
+    min-height: 15rem;
   }
   .navbar .tab:first-of-type:before,
   .navbar .tab:nth-of-type(2):before,

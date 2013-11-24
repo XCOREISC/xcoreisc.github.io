@@ -9,39 +9,6 @@
 			background-color transparent
 			display table
 			padding 1rem 
-			& tr 
-				display table-row
-				border-bottom none
-				font-size BASE_SPACE
-				/**************** Conferencias ************************/
-				&:nth-child(2) td:nth-child(2),
-				&:nth-child(3) td:nth-child(2),
-				&:nth-child(6) td:nth-child(2),
-				&:nth-child(7) td:nth-child(2),
-				&:nth-child(8) td:nth-child(2)
-					actividad(true,false,false,false)
-				/**************** Protocolo ************************/
-				&:nth-child(1) td:nth-child(2),
-				&:nth-child(5) td:nth-child(2),
-				&:nth-child(9) td:nth-child(2)
-					actividad(false,true,false,false)
-				/******************* IGNITE ***************************/
-				&:nth-child(4) td:nth-child(2)
-					&:after
-						margin-top -2rem
-						color COLOR_RED
-						top auto
-						right 1.5rem 
-						text-shadow none
-						cursor pointer
-					actividad(false,false,true,false)
-				/***************** taLLERES ***************************/
-				&:nth-child(6) td:nth-child(3),
-				&:nth-child(6) td:nth-child(4)
-					actividad(false,false,false,true)
-				&:nth-child(6) td:nth-child(4)
-					& > div
-						padding 6.9rem 0
 			& td 
 				display table-cell !important
 				width auto !important
@@ -76,6 +43,49 @@
 				&:nth-child(2),&:nth-child(3),&:nth-child(4)
 					border-left none !important
 					border-bottom none !important
+			& tr 
+				display table-row
+				border-bottom none
+				font-size BASE_SPACE
+				/**************** Conferencias ************************/
+				&:nth-child(2) td:nth-child(2),
+				&:nth-child(3) td:nth-child(2),
+				&:nth-child(6) td:nth-child(2),
+				&:nth-child(7) td:nth-child(2),
+				&:nth-child(8) td:nth-child(2)
+					actividad(true,false,false,false)
+				/**************** Protocolo ************************/
+				&:nth-child(1) td:nth-child(2),
+				&:nth-child(5) td:nth-child(2),
+				&:nth-child(9) td:nth-child(2)
+					actividad(false,true,false,false)
+				/******************* IGNITE ***************************/
+				&:nth-child(4) td:nth-child(2)
+					&:after
+						margin-top -2rem
+						color COLOR_RED
+						top auto
+						right 1.5rem 
+						text-shadow none
+						cursor pointer
+					actividad(false,false,true,false)
+				/***************** taLLERES ***************************/
+				&:nth-child(6) td:nth-child(3),
+				&:nth-child(6) td:nth-child(4)
+					actividad(false,false,false,true)
+				&:nth-child(6) td:nth-child(4)
+					& > div
+						padding 6.9rem 0
+				&:nth-child(9) td:first-child
+					& span 
+						&:after
+							border-left none
+	#Expositores
+		& img 
+			border-radius 50%
+			border .2rem solid COLOR_ORANGE
+		& > div
+			margin-top BASE_SPACE
 
 @media only screen and (min-width: 992px)
 
@@ -122,7 +132,8 @@
 				&.info,&.place
 					min-height 18rem
 				&.place
-					padding 0 0 3rem 0
+					& #map-unprg
+						min-height 15rem
 			&:first-of-type:before,&:nth-of-type(2):before,&:nth-of-type(3):before,&:nth-of-type(4):before
 				content ""
 				font-family: "FontAwesome"
