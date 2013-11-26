@@ -1,42 +1,27 @@
 .cronograma {
   display: block;
 }
-.cronograma h2,
-.cronograma time {
-  display: block;
-  text-align: center;
-}
 .cronograma h2 {
+  display: block;
   padding: 0.5rem 0;
-  background-color: #9b59b6;
-  color: #ebedee;
-}
-.cronograma time {
-  padding: 0.25rem 0;
-  background-color: #4f295e;
-  color: #ebedee;
+  color: #4a87ee;
 }
 .cronograma table {
   text-align: center;
   display: block;
-  background-color: #ebedee;
+  background-color: #fff;
 }
 .cronograma table tr {
   display: block;
   font-size: 0;
   border-bottom: 0.1rem solid #9b59b6;
-}
-.cronograma table tr:first-child td:nth-child(2),
-.cronograma table tr:nth-child(5) td:nth-child(2),
-.cronograma table tr:last-child td:nth-child(2) {
-  background-color: rgba(52,152,219,0.3);
-}
-.cronograma table tr:nth-child(2) td:nth-child(2),
-.cronograma table tr:nth-child(3) td:nth-child(2),
-.cronograma table tr:nth-child(6) td:nth-child(2),
-.cronograma table tr:nth-child(7) td:nth-child(2),
-.cronograma table tr:nth-child(8) td:nth-child(2) {
-  background-color: rgba(155,89,182,0.3);
+/*
+			&:first-child td:nth-child(2),&:nth-child(5) td:nth-child(2),&:last-child td:nth-child(2)
+				background-color rgba(52, 152, 219,.3)
+			&:nth-child(2) td:nth-child(2), &:nth-child(3) td:nth-child(2), &:nth-child(6) td:nth-child(2)
+			&:nth-child(7) td:nth-child(2), &:nth-child(8) td:nth-child(2)
+				background-color rgba(155, 89, 182,.3)
+			*/
 }
 .cronograma table tr:nth-child(4) td:nth-child(2) {
   background-color: rgba(231,76,60,0.3);
@@ -45,7 +30,7 @@
 .cronograma table tr:nth-child(4) td:nth-child(2):after {
   font-family: "FontAwesome";
   content: "\f055";
-  color: #ebedee;
+  color: #fff;
   text-shadow: 0 0 2px #34495e;
   position: absolute;
   font-size: 2rem;
@@ -97,7 +82,7 @@
   border-left: 0.1rem solid #9b59b6;
 }
 .leyenda {
-  background-color: #ebedee;
+  background-color: #fff;
 }
 .leyenda:before,
 .leyenda:after {

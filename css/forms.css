@@ -19,8 +19,8 @@ form button {
   border: none;
   cursor: pointer;
   height: 2.5rem;
-  background-color: #3498db;
-  color: #ebedee;
+  background-color: #4a87ee;
+  color: #fff;
   -webkit-border-radius: 0 1rem 1rem 0;
   -moz-border-radius: 0 1rem 1rem 0;
   -ms-border-radius: 0 1rem 1rem 0;
@@ -29,8 +29,8 @@ form button {
 }
 .button {
   padding: 1rem 0.5rem;
-  background-color: #3498db;
-  color: #ebedee;
+  background-color: #4a87ee;
+  color: #fff;
   text-align: center;
   cursor: porinter;
   -webkit-border-radius: 0.5rem;
@@ -38,11 +38,11 @@ form button {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
   border-radius: 0.5rem;
-  -webkit-box-shadow: 0 0.2rem #1d6ca1;
-  -moz-box-shadow: 0 0.2rem #1d6ca1;
-  -ms-box-shadow: 0 0.2rem #1d6ca1;
-  -o-box-shadow: 0 0.2rem #1d6ca1;
-  box-shadow: 0 0.2rem #1d6ca1;
+  -webkit-box-shadow: 0 0.2rem #1356c8;
+  -moz-box-shadow: 0 0.2rem #1356c8;
+  -ms-box-shadow: 0 0.2rem #1356c8;
+  -o-box-shadow: 0 0.2rem #1356c8;
+  box-shadow: 0 0.2rem #1356c8;
 }
 .button-inscribete {
   padding: 1rem 0.5rem;
@@ -53,7 +53,7 @@ form button {
   border: none;
   cursor: pointer;
   background-color: #16a085;
-  color: #ebedee;
+  color: #fff;
   -webkit-border-radius: 0.25rem;
   -moz-border-radius: 0.25rem;
   -ms-border-radius: 0.25rem;
@@ -73,5 +73,5 @@ form button {
   left: 20%;
   margin-top: -1rem;
   font-size: 3.2rem;
-  color: #ebedee;
+  color: #fff;
 }

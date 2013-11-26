@@ -21,7 +21,7 @@
   }
   .cronograma table td:first-child span {
     position: relative !important;
-    background-color: #ebedee;
+    background-color: #fff;
     cursor: pointer;
     display: block;
     width: 4rem;
@@ -41,7 +41,7 @@
     left: 3.5rem;
     margin-top: -1.3rem;
     font-size: 4rem;
-    color: #ebedee;
+    color: #fff;
   }
   .cronograma table td:first-child span:after {
     content: "";
@@ -81,7 +81,7 @@
   .cronograma table tr:nth-child(6) td:nth-child(2) div,
   .cronograma table tr:nth-child(7) td:nth-child(2) div,
   .cronograma table tr:nth-child(8) td:nth-child(2) div {
-    background-color: #ebedee;
+    background-color: #fff;
     padding: 1rem 0;
     -webkit-border-radius: 0.25rem;
     -moz-border-radius: 0.25rem;
@@ -130,7 +130,7 @@
   .cronograma table tr:nth-child(1) td:nth-child(2) div,
   .cronograma table tr:nth-child(5) td:nth-child(2) div,
   .cronograma table tr:nth-child(9) td:nth-child(2) div {
-    background-color: #ebedee;
+    background-color: #fff;
     padding: 1rem 0;
     -webkit-border-radius: 0.25rem;
     -moz-border-radius: 0.25rem;
@@ -163,7 +163,7 @@
   .cronograma table tr:nth-child(5) td:nth-child(2) > div:before,
   .cronograma table tr:nth-child(9) td:nth-child(2) > div:before {
     content: "Protocolo";
-    background-color: #3498db;
+    background-color: #4a87ee;
   }
   .cronograma table tr:nth-child(4) td:nth-child(2) {
     background-color: transparent;
@@ -179,7 +179,7 @@
     cursor: pointer;
   }
   .cronograma table tr:nth-child(4) td:nth-child(2) div {
-    background-color: #ebedee;
+    background-color: #fff;
     padding: 1rem 0;
     -webkit-border-radius: 0.25rem;
     -moz-border-radius: 0.25rem;
@@ -216,7 +216,7 @@
   }
   .cronograma table tr:nth-child(4) td:nth-child(2) > a > div:hover {
     background-color: rgba(231,76,60,0.8);
-    color: #ebedee;
+    color: #fff;
   }
   .cronograma table tr:nth-child(4) td:nth-child(2) > a > div:before {
     content: "Ignite";
@@ -230,7 +230,7 @@
   }
   .cronograma table tr:nth-child(6) td:nth-child(3) div,
   .cronograma table tr:nth-child(6) td:nth-child(4) div {
-    background-color: #ebedee;
+    background-color: #fff;
     padding: 1rem 0;
     -webkit-border-radius: 0.25rem;
     -moz-border-radius: 0.25rem;
@@ -316,7 +316,7 @@
     top: 5.5rem;
     font-size: 1.8rem;
     color: #16a085;
-    background-color: #ebedee;
+    background-color: #fff;
     -webkit-border-radius: 0.4rem;
     -moz-border-radius: 0.4rem;
     -ms-border-radius: 0.4rem;
@@ -367,7 +367,7 @@
     content: "";
     font-family: "FontAwesome";
     font-size: 2rem;
-    color: #ebedee;
+    color: #fff;
     text-align: center;
     width: 100%;
     display: block;
@@ -397,7 +397,7 @@
     position: relative;
     top: 4rem;
     color: #34495e;
-    text-shadow: 0 2px 1px #3498db;
+    text-shadow: 0 2px 1px #4a87ee;
     margin: 0 auto;
     text-align: center;
     width: 30%;
@@ -449,7 +449,7 @@
     width: 16.666666666666668%;
     font-size: 1rem;
     text-align: center;
-    color: #ebedee;
+    color: #fff;
   }
   .menu > a [class^="fa"],
   .menu > a [class*="fa"] {

@@ -3,17 +3,10 @@
 
 .cronograma
 	display block
-	& h2, time
-		display block
-		text-align center
 	& h2
+		display block
 		padding (BASE_SPACE/2) 0
-		background-color COLOR_PURPLE
-		color COLOR_WHITE
-	& time
-		padding (BASE_SPACE/4) 0
-		background-color darken(COLOR_PURPLE,50%)
-		color COLOR_WHITE
+		color COLOR_THEME
 	& table
 		text-align center
 		display block
@@ -22,11 +15,13 @@
 			display: block
 			font-size 0
 			border-bottom 0.1rem solid COLOR_PURPLE
+			/*
 			&:first-child td:nth-child(2),&:nth-child(5) td:nth-child(2),&:last-child td:nth-child(2)
 				background-color rgba(52, 152, 219,.3)
 			&:nth-child(2) td:nth-child(2), &:nth-child(3) td:nth-child(2), &:nth-child(6) td:nth-child(2)
 			&:nth-child(7) td:nth-child(2), &:nth-child(8) td:nth-child(2)
 				background-color rgba(155, 89, 182,.3)
+			*/
 			&:nth-child(4) td:nth-child(2)
 				background-color rgba(231, 76, 60,.3) 
 				position relative
