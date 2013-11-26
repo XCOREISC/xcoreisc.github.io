@@ -21,14 +21,14 @@ img
 		position relative
 		display block
 		margin 0 auto
-		top -3rem
 		border-radius 50%
-		width 6rem
+		width 5.5rem
 		border .2rem solid COLOR_DARK
+		top 1rem
 
 	&.unprg,&.apeisc
+		top 1rem
 		position: absolute
-		top -2.5rem
 		left 30%
 		square(3rem)
 		padding .1rem
@@ -47,6 +47,9 @@ img
 /**************** TEXT *************************************/
 .text-center
 	text-align center
+.text-justify
+	text-align center
+
 .text-bold
 	font-weight bold
 /**************** colors ********************************/
@@ -114,15 +117,12 @@ img
 	margin-top:  BASE_SPACE*6
 
 .margin-bottom  
-
 	margin-bottom:  BASE_SPACE
 
 .margin-bottom-2  
-
 	margin-bottom:  BASE_SPACE*2
 
 .margin-bottom-4  
-
 	margin-bottom:  BASE_SPACE*4
 
 
@@ -159,68 +159,24 @@ img
 	padding-bottom:  BASE_SPACE*4
 
 /****************** figures *************************/
-.circle
-	border-radius 50%
-	&.d4
-		square(4rem)
-		padding 1.3rem 1rem
-
-
-.border-vertical
-	position relative
-	&:before,&:after
-		content ""
-		position absolute
-	&:before
-		left 49%
-		top BASE_SPACE*1.5
-		height 70rem
-		border-right (BASE_SPACE/4) solid COLOR_WHITE
-
-
 .subtitle
 	display block
 	color COLOR_WHITE 
 	text-align center
 	padding (BASE_SPACE/2) 0
 
-/*
-
-@import "reset.styl"
-@import "countdown.styl"
-@import "cronograma.styl"
-@import "forms.styl"
-@import "helpers.styl"
-@import "modals.styl"
-@import "nav.styl"
-@import "navbar.styl"
-@import "tables.styl"
-@import "text.styl"
-@import "responsive.styl"
-
-*/
-
 /***********************  XCOREISC ************************************/
 .border-precio
 	border .2rem solid COLOR_THEME
 .bck-blue 
 	background-color #293863
+.lg-logos
+	background-image url("../images/portada/unprg-xs.jpg")
+	background-size cover 
+	background-position center
+	min-height 221px
 .border-right 
 	border-right .1rem solid COLOR_SKY_BLUE
-.date-fullDay
-	&:after
-		content "2 de Diciembre"
-		color COLOR_WHITE
-		font-weight bold
-		position: absolute
-		width 100%
-		text-align center
-		top 3.5rem
-.xcoreisc-sn
-	font-weight bold
-	color COLOR_WHITE
-	display block
-	margin-top 1rem
 .button-nav
 	background-color COLOR_DARK !important
 	left wNav !important
@@ -250,6 +206,35 @@ mark
 .pago 
 	& li 
 		margin-top BASE_SPACE
+.precio-unidad
+	display: block
+	block-center()
+	square(4.5rem)
+	padding-top 1.2rem
+	border-radius 50%
+	border .2rem dotted COLOR_SKY_BLUE
+.lema
+	margin 10rem 1rem
+	background-color rgba(0, 0, 0, .75)
+	border-radius 0.25rem
+	color COLOR_WHITE
+	text-align center
+	padding .5rem 1rem 
 #Expositores
+	& h3
+		padding .5rem 0
+		text-align center
+		text-transform uppercase
 	& p 
 		min-height 7rem 
+		padding 0 1rem
+	&> div
+		clearfix() 
+		border-bottom 0.1rem solid COLOR_THEME
+	& picture
+		padding-top .5rem
+		padding-left 1rem
+		& img 
+			display block
+			border-radius .25rem
+			border .2rem solid COLOR_THEME

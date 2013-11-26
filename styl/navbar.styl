@@ -10,21 +10,19 @@ span
 		 display none
 		&:target + .tab > div 
 			opacity: 1
-			background-color: COLOR_THEME
+			background-color: COLOR_WHITE
 		&:target + .tab a 
-			background-color: COLOR_THEME
-			border-bottom .1rem solid COLOR_THEME
-			z-index: 2
+			z-index: 3
 
 .tab 
 	position relative
 	& > a
 		float: left
 		width: 25%
-		background-color COLOR_TURQUOSE
-		border-top .1rem solid darken(COLOR_TURQUOSE,20%)
-		border-bottom .1rem solid darken(COLOR_TURQUOSE,20%)
-		border-right .1rem solid darken(COLOR_TURQUOSE,20%)
+		background-color COLOR_THEME
+		border-top .1rem solid COLOR_WHITE
+		border-bottom .1rem solid COLOR_WHITE
+		border-right .1rem solid COLOR_WHITE
 		padding .25rem 0
 		text-decoration: none
 		font-size: 2rem
@@ -33,15 +31,14 @@ span
 		position: relative
 		transition: all .5s ease
 		cursor pointer
-		z-index 2
+		z-index: 3
 	& >div 
-		background: COLOR_TURQUOSE
+		background-color: COLOR_WHITE
 		width: 100%
 		position: absolute
 		border-radius 0 0 .25rem  .25rem 
-		top: 3rem
+		top: 2.5rem
 		left: 0
-		color: COLOR_WHITE
 		opacity:0
 		transition: all 1s ease
 		& > p 
