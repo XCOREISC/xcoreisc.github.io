@@ -4,7 +4,8 @@
 .cronograma h2 {
   display: block;
   padding: 0.5rem 0;
-  color: #4a87ee;
+  color: #fff;
+  background-color: #4a87ee;
 }
 .cronograma table {
   text-align: center;
@@ -14,18 +15,16 @@
 .cronograma table tr {
   display: block;
   font-size: 0;
-  border-bottom: 0.1rem solid #9b59b6;
-/*
-			&:first-child td:nth-child(2),&:nth-child(5) td:nth-child(2),&:last-child td:nth-child(2)
-				background-color rgba(52, 152, 219,.3)
-			&:nth-child(2) td:nth-child(2), &:nth-child(3) td:nth-child(2), &:nth-child(6) td:nth-child(2)
-			&:nth-child(7) td:nth-child(2), &:nth-child(8) td:nth-child(2)
-				background-color rgba(155, 89, 182,.3)
-			*/
+  border-bottom: 0.1rem solid #4a87ee;
+}
+.cronograma table tr:first-child {
+  border-top: 0.1rem solid #4a87ee;
 }
 .cronograma table tr:nth-child(4) td:nth-child(2) {
-  background-color: rgba(231,76,60,0.3);
   position: relative;
+}
+.cronograma table tr:nth-child(4) td:nth-child(2) a {
+  color: #34495e;
 }
 .cronograma table tr:nth-child(4) td:nth-child(2):after {
   font-family: "FontAwesome";
@@ -39,11 +38,11 @@
 }
 .cronograma table tr:nth-child(6) td:nth-child(1) {
   position: relative;
-  top: 3.5rem;
+  top: 5rem;
 }
 .cronograma table tr:nth-child(6) td:nth-child(2),
 .cronograma table tr:nth-child(6) td:nth-child(3) {
-  border-bottom: 0.1rem solid #9b59b6;
+  border-bottom: 0.1rem solid #4a87ee;
 }
 .cronograma table tr:nth-child(6) td:nth-child(3),
 .cronograma table tr:nth-child(6) td:nth-child(4) {
@@ -52,63 +51,31 @@
 .cronograma table tr:nth-child(6) td:nth-child(3),
 .cronograma table tr:nth-child(6) td:nth-child(4) {
   display: block;
-  background-color: rgba(22,160,133,0.2);
 }
 .cronograma table tr:nth-child(6) td:nth-child(3):after {
   content: "Culmina a las 18:00hrs";
-  color: #9b59b6;
+  color: #4a87ee;
 }
 .cronograma table tr:nth-child(6) td:nth-child(4):after {
   content: "Culmina a las 19:30hrs";
-  color: #9b59b6;
+  color: #4a87ee;
 }
 .cronograma table tr:nth-child(6) td:nth-child(2),
 .cronograma table tr:nth-child(6) td:nth-child(3),
 .cronograma table tr:nth-child(6) td:nth-child(4) {
-  border-left: 0.1rem solid #9b59b6;
+  border-left: 0.1rem solid #4a87ee;
 }
 .cronograma table td {
   padding: 0.5rem 0;
   font-size: 1rem;
 }
 .cronograma table td:first-child {
-  color: #9b59b6;
+  color: #4a87ee;
   display: inline-block;
   width: 15%;
 }
 .cronograma table td:nth-child(2) {
   display: inline-block;
   width: 85%;
-  border-left: 0.1rem solid #9b59b6;
-}
-.leyenda {
-  background-color: #fff;
-}
-.leyenda:before,
-.leyenda:after {
-  content: " ";
-  display: table;
-}
-.leyenda:after {
-  clear: both;
-}
-.leyenda figure {
-  padding: 0.5rem 0;
-  text-align: center;
-}
-.leyenda figure:first-child {
-  content: "";
-  background-color: rgba(155,89,182,0.3);
-}
-.leyenda figure:nth-child(2) {
-  content: "";
-  background-color: rgba(22,160,133,0.3);
-}
-.leyenda figure:nth-child(3) {
-  content: "";
-  background-color: rgba(231,76,60,0.3);
-}
-.leyenda figure:last-child {
-  content: "";
-  background-color: rgba(52,152,219,0.3);
+  border-left: 0.1rem solid #4a87ee;
 }

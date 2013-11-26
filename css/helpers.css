@@ -116,6 +116,9 @@ img.apeisc {
 .color-white {
   color: #fff;
 }
+.color-theme {
+  color: #4a87ee;
+}
 .color-dark {
   color: #34495e;
 }
@@ -309,4 +312,7 @@ mark {
 }
 #Expositores p {
   min-height: 7rem;
+}
+#Expositores> div {
+  border-bottom: 0.1rem solid #4a87ee;
 }
