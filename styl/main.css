@@ -647,6 +647,15 @@ mark {
   border-radius: 0.25rem;
   border: 0.2rem solid #4a87ee;
 }
+.share {
+  width: 100%;
+  position: absolute;
+  height: 0;
+}
+.share> div {
+  position: relative;
+  top: -4rem;
+}
 .modal {
   position: fixed;
   top: 0;
