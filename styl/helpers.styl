@@ -57,7 +57,8 @@ img
 	background-color COLOR_SKY_BLUE
 .bck-theme
 	background-color COLOR_THEME
-
+.bck-theme-second
+	background-color COLOR_THEME_SECOND
 .bck-white
 	background-color COLOR_WHITE
 	color COLOR_DARK
@@ -79,6 +80,9 @@ img
 	color COLOR_WHITE
 .color-theme
 	color COLOR_THEME
+.color-theme-second
+	color COLOR_THEME_SECOND
+
 .color-dark
 	color COLOR_DARK
 .color-sky-blue
@@ -206,20 +210,72 @@ mark
 .pago 
 	& li 
 		margin-top BASE_SPACE
-.precio-unidad
-	display: block
-	block-center()
-	square(4.5rem)
-	padding-top 1.2rem
-	border-radius 50%
-	border .2rem dotted COLOR_SKY_BLUE
+.precio-plan-1,.precio-plan-2
+	border .2rem solid COLOR_THEME_SECOND
+	border-radius .25rem
+	& h3
+		color COLOR_WHITE
+		padding .25rem 0
+	& span
+		display block
+		margin .5rem 0
+		text-align center
+	& p 
+		text-align center
+.precio-plan-1
+	margin 1rem .5rem 1rem 1rem
+.precio-plan-2
+	margin 1rem 1rem 1rem .5rem 
+.no-border
+	border-right none
 .lema
-	margin 10rem 1rem
+	margin 8rem 1rem 0 1rem
 	background-color rgba(0, 0, 0, .75)
 	border-radius 0.25rem
 	color COLOR_WHITE
 	text-align center
 	padding .5rem 1rem 
+.time,.full-day
+	position: relative
+	margin-top 1.5rem 
+	margin-bottom .5rem 
+	background-color rgba(0, 0, 0, .5)
+	border-radius 0 .25rem .25rem 0
+	display block
+	padding  .5rem 0 .5rem 1rem 
+	color COLOR_WHITE
+	& span
+		font-size 1.5rem 	
+	& time
+		margin-left .5rem
+		font-weight bold
+		text-align center
+	& p 
+		margin-right .5rem
+		display inline-block
+.full-day
+	padding  .5rem 1rem .5rem  0
+	border-radius .25rem  0 0 .25rem 
+	text-align right
+.pasos
+	list-style: none
+	& > li 
+		position: relative
+		width: 100%
+		clearfix()
+		& span
+			font-size 1.5rem
+			border .2rem solid COLOR_THEME_SECOND
+			display inline-block
+			square(3rem)
+			border-radius 50%
+			float left 
+		& div
+			float left 
+			width 85%
+			border .2rem solid COLOR_THEME_SECOND
+.fix-float
+	overflow hidden
 #Expositores
 	& h3
 		padding .5rem 0

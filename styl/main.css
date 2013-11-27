@@ -63,6 +63,10 @@ dl dt {
 .cronograma {
   display: block;
 }
+.cronograma tbody {
+  display: block;
+  width: 100%;
+}
 .cronograma h2 {
   display: block;
   padding: 0.5rem 0;
@@ -86,13 +90,13 @@ dl dt {
   position: relative;
 }
 .cronograma table tr:nth-child(4) td:nth-child(2) a {
-  color: #34495e;
+  color: #444;
 }
 .cronograma table tr:nth-child(4) td:nth-child(2):after {
   font-family: "FontAwesome";
   content: "\f055";
   color: #fff;
-  text-shadow: 0 0 2px #34495e;
+  text-shadow: 0 0 2px #444;
   position: absolute;
   font-size: 2rem;
   top: 0;
@@ -256,7 +260,7 @@ img.xcoreisc {
   -o-border-radius: 50%;
   border-radius: 50%;
   width: 5.5rem;
-  border: 0.2rem solid #34495e;
+  border: 0.2rem solid #444;
   top: 1rem;
 }
 img.unprg,
@@ -273,7 +277,7 @@ img.apeisc {
   -o-border-radius: 50%;
   border-radius: 50%;
   background-color: #fff;
-  border: 0.1rem solid #34495e;
+  border: 0.1rem solid #444;
 }
 .block-center {
   display: block;
@@ -300,14 +304,17 @@ img.apeisc {
   font-weight: bold;
 }
 .bck-sky-blue {
-  background-color: #5fccff;
+  background-color: #43cee6;
 }
 .bck-theme {
   background-color: #023467;
 }
+.bck-theme-second {
+  background-color: #4a87ee;
+}
 .bck-white {
   background-color: #fff;
-  color: #34495e;
+  color: #444;
 }
 .bck-green {
   background-color: #16a085;
@@ -316,10 +323,10 @@ img.apeisc {
   background-color: #e67e22;
 }
 .bck-dark {
-  background-color: #34495e;
+  background-color: #444;
 }
 .bck-dark-2 {
-  background-color: #0a0f13;
+  background-color: #0e0e0e;
 }
 .bck-glass {
   background-color: #012448;
@@ -338,11 +345,14 @@ img.apeisc {
 .color-theme {
   color: #023467;
 }
+.color-theme-second {
+  color: #4a87ee;
+}
 .color-dark {
-  color: #34495e;
+  color: #444;
 }
 .color-sky-blue {
-  color: #5fccff;
+  color: #43cee6;
 }
 .margin-none {
   margin: 0;
@@ -435,10 +445,10 @@ img.apeisc {
   min-height: 221px;
 }
 .border-right {
-  border-right: 0.1rem solid #5fccff;
+  border-right: 0.1rem solid #43cee6;
 }
 .button-nav {
-  background-color: #34495e !important;
+  background-color: #444 !important;
   left: 14rem !important;
 }
 .hr-orange {
@@ -476,23 +486,41 @@ mark {
 .pago li {
   margin-top: 1rem;
 }
-.precio-unidad {
+.precio-plan-1,
+.precio-plan-2 {
+  border: 0.2rem solid #4a87ee;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  border-radius: 0.25rem;
+}
+.precio-plan-1 h3,
+.precio-plan-2 h3 {
+  color: #fff;
+  padding: 0.25rem 0;
+}
+.precio-plan-1 span,
+.precio-plan-2 span {
   display: block;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 4.5rem;
-  height: 4.5rem;
-  padding-top: 1.2rem;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  border: 0.2rem dotted #5fccff;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+.precio-plan-1 p,
+.precio-plan-2 p {
+  text-align: center;
+}
+.precio-plan-1 {
+  margin: 1rem 0.5rem 1rem 1rem;
+}
+.precio-plan-2 {
+  margin: 1rem 1rem 1rem 0.5rem;
+}
+.no-border {
+  border-right: none;
 }
 .lema {
-  margin: 10rem 1rem;
+  margin: 8rem 1rem 0 1rem;
   background-color: rgba(0,0,0,0.75);
   -webkit-border-radius: 0.25rem;
   -moz-border-radius: 0.25rem;
@@ -502,6 +530,81 @@ mark {
   color: #fff;
   text-align: center;
   padding: 0.5rem 1rem;
+}
+.time,
+.full-day {
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-border-radius: 0 0.25rem 0.25rem 0;
+  -moz-border-radius: 0 0.25rem 0.25rem 0;
+  -ms-border-radius: 0 0.25rem 0.25rem 0;
+  -o-border-radius: 0 0.25rem 0.25rem 0;
+  border-radius: 0 0.25rem 0.25rem 0;
+  display: block;
+  padding: 0.5rem 0 0.5rem 1rem;
+  color: #fff;
+}
+.time span,
+.full-day span {
+  font-size: 1.5rem;
+}
+.time time,
+.full-day time {
+  margin-left: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.time p,
+.full-day p {
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+.full-day {
+  padding: 0.5rem 1rem 0.5rem 0;
+  -webkit-border-radius: 0.25rem 0 0 0.25rem;
+  -moz-border-radius: 0.25rem 0 0 0.25rem;
+  -ms-border-radius: 0.25rem 0 0 0.25rem;
+  -o-border-radius: 0.25rem 0 0 0.25rem;
+  border-radius: 0.25rem 0 0 0.25rem;
+  text-align: right;
+}
+.pasos {
+  list-style: none;
+}
+.pasos > li {
+  position: relative;
+  width: 100%;
+}
+.pasos > li:before,
+.pasos > li:after {
+  content: " ";
+  display: table;
+}
+.pasos > li:after {
+  clear: both;
+}
+.pasos > li span {
+  font-size: 1.5rem;
+  border: 0.2rem solid #4a87ee;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+}
+.pasos > li div {
+  float: left;
+  width: 85%;
+  border: 0.2rem solid #4a87ee;
+}
+.fix-float {
+  overflow: hidden;
 }
 #Expositores h3 {
   padding: 0.5rem 0;
@@ -589,7 +692,7 @@ mark {
   color: #fff;
   width: 3rem;
   height: 3rem;
-  background-color: #34495e;
+  background-color: #444;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1039,13 +1142,18 @@ mark {
   background-color: rgba(2,52,103,0.75);
   position: fixed;
   left: 0;
+  -webkit-border-radius: 0 0 0.25rem 0;
+  -moz-border-radius: 0 0 0.25rem 0;
+  -ms-border-radius: 0 0 0.25rem 0;
+  -o-border-radius: 0 0 0.25rem 0;
+  border-radius: 0 0 0.25rem 0;
 }
 [role="header"] > #showSocial {
   position: absolute;
   right: 0;
 }
 .menu {
-  background-color: #34495e;
+  background-color: #444;
   position: fixed;
   overflow-x: scroll;
   text-shadow: -1rem 0 0rem rgba(0,0,0,0.25) inset;
@@ -1075,14 +1183,14 @@ mark {
 .menu > a {
   display: block;
   padding-left: 1rem;
-  border-bottom: 2px solid #415b75;
+  border-bottom: 2px solid #575757;
   color: #ccc;
   line-height: 2;
   text-decoration: none;
   font-size: 1.2rem;
 }
 .menu > a:first-child {
-  border-top: 2px solid #415b75;
+  border-top: 2px solid #575757;
 }
 .menu > a > span {
   font-size: 1.2rem;
@@ -1141,7 +1249,7 @@ mark {
 }
 .social {
   width: 11rem;
-  background-color: #34495e;
+  background-color: #444;
   position: absolute;
   right: 0;
   top: -20rem;
@@ -1230,6 +1338,9 @@ span.band:target + .tab a {
   transition: all 0.5s ease;
   cursor: pointer;
   z-index: 3;
+}
+.tab > a:nth-of-type(4) {
+  border-right: none;
 }
 .tab >div {
   background-color: #fff;
@@ -1355,6 +1466,9 @@ h4,
   html {
     font-size: 100%;
   }
+  #Expositores p {
+    min-height: 8rem;
+  }
 }
 @media only screen and (min-width: 1200px) {
   html {
@@ -1395,7 +1509,7 @@ h4,
     -o-border-radius: 50%;
     border-radius: 50%;
     padding: 0.8rem 0;
-    border: 0.5rem solid #9b59b6;
+    border: 0.5rem solid #023467;
   }
   .cronograma table td:first-child span:before {
     font-family: FontAwesome;
@@ -1404,13 +1518,13 @@ h4,
     left: 3.5rem;
     margin-top: -1.3rem;
     font-size: 4rem;
-    color: #fff;
+    color: #023467;
   }
   .cronograma table td:first-child span:after {
     content: "";
     position: absolute;
     height: 12rem;
-    border-left: 0.5rem solid #9b59b6;
+    border-left: 0.5rem solid #023467;
     width: 4rem;
     left: 1.2rem;
     z-index: -1;
@@ -1445,12 +1559,13 @@ h4,
   .cronograma table tr:nth-child(7) td:nth-child(2) div,
   .cronograma table tr:nth-child(8) td:nth-child(2) div {
     background-color: #fff;
+    border: 0.2rem solid #023467;
     padding: 1rem 0;
-    -webkit-border-radius: 0.25rem;
-    -moz-border-radius: 0.25rem;
-    -ms-border-radius: 0.25rem;
-    -o-border-radius: 0.25rem;
-    border-radius: 0.25rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    border-radius: 0.4rem;
     cursor: pointer;
     position: relative;
     -webkit-transition: all 0.3s ease-out;
@@ -1494,12 +1609,13 @@ h4,
   .cronograma table tr:nth-child(5) td:nth-child(2) div,
   .cronograma table tr:nth-child(9) td:nth-child(2) div {
     background-color: #fff;
+    border: 0.2rem solid #023467;
     padding: 1rem 0;
-    -webkit-border-radius: 0.25rem;
-    -moz-border-radius: 0.25rem;
-    -ms-border-radius: 0.25rem;
-    -o-border-radius: 0.25rem;
-    border-radius: 0.25rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    border-radius: 0.4rem;
     cursor: pointer;
     position: relative;
     -webkit-transition: all 0.3s ease-out;
@@ -1543,12 +1659,13 @@ h4,
   }
   .cronograma table tr:nth-child(4) td:nth-child(2) div {
     background-color: #fff;
+    border: 0.2rem solid #023467;
     padding: 1rem 0;
-    -webkit-border-radius: 0.25rem;
-    -moz-border-radius: 0.25rem;
-    -ms-border-radius: 0.25rem;
-    -o-border-radius: 0.25rem;
-    border-radius: 0.25rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    border-radius: 0.4rem;
     cursor: pointer;
     position: relative;
     -webkit-transition: all 0.3s ease-out;
@@ -1594,12 +1711,13 @@ h4,
   .cronograma table tr:nth-child(6) td:nth-child(3) div,
   .cronograma table tr:nth-child(6) td:nth-child(4) div {
     background-color: #fff;
+    border: 0.2rem solid #023467;
     padding: 1rem 0;
-    -webkit-border-radius: 0.25rem;
-    -moz-border-radius: 0.25rem;
-    -ms-border-radius: 0.25rem;
-    -o-border-radius: 0.25rem;
-    border-radius: 0.25rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    border-radius: 0.4rem;
     cursor: pointer;
     position: relative;
     -webkit-transition: all 0.3s ease-out;
@@ -1655,7 +1773,7 @@ h4,
 @media only screen and (min-width: 992px) {
   .lg-logos {
     position: absolute;
-    top: 12rem;
+    top: 7rem;
     background: transparent;
     width: 100%;
   }
@@ -1673,18 +1791,6 @@ h4,
     width: 5rem;
     height: 5rem;
     left: auto;
-  }
-  .date-fullDay:after {
-    content: "2 de Diciembre";
-    top: 5.5rem;
-    font-size: 1.8rem;
-    color: #16a085;
-    background-color: #fff;
-    -webkit-border-radius: 0.4rem;
-    -moz-border-radius: 0.4rem;
-    -ms-border-radius: 0.4rem;
-    -o-border-radius: 0.4rem;
-    border-radius: 0.4rem;
   }
   .cronograma.margin-top {
     margin-top: 0;
@@ -1734,7 +1840,7 @@ h4,
     text-align: center;
     width: 100%;
     display: block;
-    background-color: #107864;
+    background-color: #023467;
   }
   .navbar .tab:nth-of-type(2):before {
     content: "";
@@ -1759,8 +1865,8 @@ h4,
     background-color: transparent;
     position: relative;
     top: 4rem;
-    color: #34495e;
-    text-shadow: 0 2px 1px #023467;
+    color: #fff;
+    text-shadow: 0 2px 1px #444;
     margin: 0 auto;
     text-align: center;
     width: 30%;

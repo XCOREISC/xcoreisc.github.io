@@ -23,7 +23,7 @@
 						square(4rem)
 						border-radius 50%
 						padding (BASE_SPACE*0.8) 0
-						border (BASE_SPACE/2) solid COLOR_PURPLE
+						border (BASE_SPACE/2) solid COLOR_THEME
 						&:before
 							font-family FontAwesome
 							content: "\f0d9"
@@ -31,12 +31,12 @@
 							left 3.5rem
 							margin-top -1.3rem
 							font-size 4rem
-							color COLOR_WHITE
+							color COLOR_THEME
 						&:after
 							content ""
 							position absolute
 							height 12rem
-							border-left (BASE_SPACE/2) solid COLOR_PURPLE
+							border-left (BASE_SPACE/2) solid COLOR_THEME
 							width 4rem
 							left 1.2rem
 							z-index -1
@@ -80,6 +80,7 @@
 					& span 
 						&:after
 							border-left none
+
 	#Expositores
 		& img 
 			border-radius 50%
@@ -91,7 +92,7 @@
 
 	.lg-logos
 		position: absolute
-		top 12rem
+		top 7rem
 		background transparent
 		width: 100%
 	img
@@ -104,14 +105,6 @@
 			right 100%
 			square(5rem)
 			left auto
-	.date-fullDay
-		&:after
-			content "2 de Diciembre"
-			top 5.5rem
-			font-size 1.8rem
-			color COLOR_GREEN
-			background-color COLOR_WHITE
-			border-radius .4rem
 
 	.cronograma.margin-top
 		margin-top 0
@@ -143,7 +136,7 @@
 				text-align center
 				width 100%
 				display block
-				background-color darken(COLOR_GREEN,25%)
+				background-color COLOR_THEME
 			&:nth-of-type(2):before
 				content ""
 			&:nth-of-type(3):before
@@ -164,8 +157,8 @@
 			background-color transparent
 			position relative
 			top 4rem
-			color COLOR_DARK
-			text-shadow 0 2px 1px COLOR_THEME
+			color COLOR_WHITE
+			text-shadow 0 2px 1px COLOR_DARK
 			margin 0 auto
 			text-align center
 			width 30%
