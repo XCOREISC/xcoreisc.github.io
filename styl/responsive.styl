@@ -12,6 +12,12 @@
 @media only screen and (min-width: 768px) 
 	.lema
 		margin 10rem 10rem 5rem 10rem
+	.pasos
+		& > li 
+			width: (100/3)%
+			float left
+			& div 
+				width 76%
 	.cronograma
 		table
 			background-color transparent
@@ -55,6 +61,9 @@
 				display table-row
 				border-bottom none
 				font-size BASE_SPACE
+				&:nth-child(6)
+					& td:nth-child(1)
+						top 0
 				/**************** Conferencias ************************/
 				&:nth-child(2) td:nth-child(2),
 				&:nth-child(3) td:nth-child(2),
