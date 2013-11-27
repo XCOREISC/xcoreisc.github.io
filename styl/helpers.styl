@@ -42,14 +42,13 @@ img
 .w100
 	width 100%
 /************************ borders ************************/
-.radius-small
-	border-radius (BASE_SPACE/4)
+.xs-radius
+	border-radius .25rem
 /**************** TEXT *************************************/
 .text-center
 	text-align center
 .text-justify
 	text-align center
-
 .text-bold
 	font-weight bold
 /**************** colors ********************************/
@@ -59,6 +58,7 @@ img
 	background-color COLOR_THEME
 .bck-theme-second
 	background-color COLOR_THEME_SECOND
+	color COLOR_WHITE
 .bck-white
 	background-color COLOR_WHITE
 	color COLOR_DARK
@@ -82,7 +82,6 @@ img
 	color COLOR_THEME
 .color-theme-second
 	color COLOR_THEME_SECOND
-
 .color-dark
 	color COLOR_DARK
 .color-sky-blue
@@ -170,23 +169,14 @@ img
 	padding (BASE_SPACE/2) 0
 
 /***********************  XCOREISC ************************************/
-.border-precio
-	border .2rem solid COLOR_THEME
-.bck-blue 
-	background-color #293863
 .lg-logos
 	background-image url("../images/portada/unprg-xs.jpg")
 	background-size cover 
 	background-position center
 	min-height 221px
-.border-right 
-	border-right .1rem solid COLOR_SKY_BLUE
 .button-nav
 	background-color COLOR_DARK !important
 	left wNav !important
-.hr-orange
-	border-bottom 0.1rem solid lighten(COLOR_ORANGE,50%) 
-
 .video-container
 	position relative
 	padding-bottom 56.25%
@@ -203,13 +193,9 @@ mark
 	display block
 	block-center()
 	padding .5rem 1rem
-	background-color lighten(COLOR_THEME,70%)
-	color COLOR_THEME
+	background-color COLOR_THEME_SECOND
+	color COLOR_WHITE
 	font-weight bold
-	border-radius .2rem
-.pago 
-	& li 
-		margin-top BASE_SPACE
 .precio-plan-1,.precio-plan-2
 	border .2rem solid COLOR_THEME_SECOND
 	border-radius .25rem
@@ -230,7 +216,7 @@ mark
 	border-right none
 .lema
 	margin 8rem 1rem 0 1rem
-	background-color rgba(0, 0, 0, .75)
+	background-color rgba(0, 0, 0, .5)
 	border-radius 0.25rem
 	color COLOR_WHITE
 	text-align center
@@ -260,22 +246,46 @@ mark
 .pasos
 	list-style: none
 	& > li 
+		clearfix()
 		position: relative
 		width: 100%
-		clearfix()
-		& span
+		font-size 0
+		margin-top 1rem
+		& >span
 			font-size 1.5rem
+			square(3rem)
+			position: relative
+			background-color COLOR_WHITE
 			border .2rem solid COLOR_THEME_SECOND
 			display inline-block
-			square(3rem)
 			border-radius 50%
-			float left 
-		& div
-			float left 
-			width 85%
+			vertical-align middle
+			padding-top .5rem
+			&:after
+				font-family FontAwesome
+				content: "\f0d9"
+				position absolute
+				font-size 4rem
+				color COLOR_THEME_SECOND
+				right -1.2rem
+				top -.7rem
+
+		& >div
+			font-size 1rem
+			width 80%
+			position: relative
+			display inline-block
+			left 1rem
 			border .2rem solid COLOR_THEME_SECOND
+			border-radius .25rem
+			vertical-align middle
+			& >p
+				text-align center
+				padding 1.5rem 0
+
 .fix-float
 	overflow hidden
+
 #Expositores
 	& h3
 		padding .5rem 0
@@ -286,11 +296,11 @@ mark
 		padding 0 1rem
 	&> div
 		clearfix() 
-		border-bottom 0.1rem solid COLOR_THEME
+		border-bottom 0.1rem solid COLOR_THEME_SECOND
 	& picture
 		padding-top .5rem
 		padding-left 1rem
 		& img 
 			display block
 			border-radius .25rem
-			border .2rem solid COLOR_THEME
+			border .2rem solid COLOR_THEME_SECOND
