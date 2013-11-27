@@ -492,10 +492,10 @@ mark {
   text-align: center;
 }
 .precio-plan-1 {
-  margin: 1rem 0.5rem 1rem 1rem;
+  margin: 1rem 0.5rem 0 1rem;
 }
 .precio-plan-2 {
-  margin: 1rem 1rem 1rem 0.5rem;
+  margin: 1rem 1rem 0 0.5rem;
 }
 .no-border {
   border-right: none;
@@ -1492,12 +1492,12 @@ h4,
 @media only screen and (min-width: 480px) {
   .lg-logos {
     background-image: url("../images/portada/unprg-md.jpg");
-    min-height: 455px;
+    min-height: 277px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .leyenda {
-    display: none;
+  .lema {
+    margin: 10rem 10rem 5rem 10rem;
   }
   .cronograma table {
     background-color: transparent;
